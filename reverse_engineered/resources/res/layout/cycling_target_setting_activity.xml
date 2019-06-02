@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_theme_black_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <ImageView android:id="@r$id/cycling_target_setting_close" android:layout_width="?attr/actionBarSize" android:layout_height="?attr/actionBarSize" android:src="@drawable/ic_close_icon" android:scaleType="center" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_white_color" android:gravity="center" android:id="@r$id/cycling_target_setting_save" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@r$string/str_save" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <TextView android:textSize="@dimen/font_20" android:textColor="@color/text_white_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/cycling_target_set_target"/>
+        <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_80" android:textColor="@color/text_white_color" android:gravity="center" android:id="@r$id/cycling_target_setting_target_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" app:typefaceName="@r$string/number_type_face_name"/>
+        <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_25" android:textColor="@color/text_white_color" android:gravity="center" android:id="@r$id/cycling_target_setting_target_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_mileage_unit_km" app:typefaceName="@r$string/number_type_face_name"/>
+        <ImageView android:id="@r$id/cycling_target_setting_select" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_arrow_drop_down" android:scaleType="center"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@r$id/cycling_target_config_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+</LinearLayout>

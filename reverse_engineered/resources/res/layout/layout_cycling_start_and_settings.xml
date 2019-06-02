@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.beastbikes.android.widget.RippleView android:gravity="center_horizontal" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@r$id/cycling_fragment_start" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rv_rippleDuration="200" app:rv_centered="true">
+        <ImageView android:id="@r$id/cycling_fragment_start_activity" android:layout_width="94dp" android:layout_height="94dp" android:src="@drawable/ic_start_cycling_en"/>
+        <TextView android:textSize="@dimen/font_18" android:textColor="#ffffff" android:gravity="center" android:id="@r$id/cycling_fragment_start_view" android:background="@drawable/dot_red_bg" android:layout_width="94dp" android:layout_height="94dp" android:text="@r$string/str_start_cycling"/>
+    </com.beastbikes.android.widget.RippleView>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@r$id/cycling_fragment_setting" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="16dp" android:src="@drawable/ic_cycling_fragment_setting" android:scaleType="centerInside"/>
+</FrameLayout>

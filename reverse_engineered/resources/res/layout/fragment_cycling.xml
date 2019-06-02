@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#111" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@r$id/cycling_fragment_target_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp">
+                <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="100sp" android:textColor="@color/text_white_color" android:gravity="center" android:id="@r$id/cycling_fragment_target_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="14dp" android:textColor="@color/text_black_color" android:layout_gravity="center_horizontal" android:id="@r$id/cycling_fragment_target_distance_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/cycling_fragment_current_distance_label"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:id="@r$id/cycling_fragment_target_setting_iv" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="14dp" android:layout_marginRight="15dp" android:src="@drawable/ic_edit_icon" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_black_color" android:id="@r$id/cycling_fragment_current_target_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@r$id/cycling_fragment_target_setting_iv"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@r$string/label_month_target"/>
+                    <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_black_color" android:id="@r$id/fragment_cycling_number_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+                </LinearLayout>
+                <com.beastbikes.android.widget.CyclingTargetProgressBar android:id="@r$id/fragment_cycling_target_progress" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="3dp"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@r$id/fragment_cycling_record" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_30" android:textColor="@color/text_white_color" android:gravity="center_horizontal" android:id="@r$id/cycling_fragment_monthly_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:drawablePadding="4dp" app:typefaceName="@r$string/number_type_face_name"/>
+                    <TextView android:textSize="@dimen/font_10" android:textColor="@color/text_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@r$string/cycling_fragment_monthly_count"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_30" android:textColor="@color/text_white_color" android:gravity="center_horizontal" android:id="@r$id/cycling_fragment_monthly_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:drawablePadding="4dp" app:typefaceName="@r$string/number_type_face_name"/>
+                    <TextView android:textSize="@dimen/font_10" android:textColor="@color/text_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@r$string/cycling_fragment_monthly_time"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_30" android:textColor="@color/text_white_color" android:gravity="center_horizontal" android:id="@r$id/cycling_fragment_monthly_avg_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0" android:drawablePadding="4dp" app:typefaceName="@r$string/number_type_face_name"/>
+                    <TextView android:textSize="@dimen/font_10" android:textColor="@color/text_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@r$string/str_average_speed"/>
+                </LinearLayout>
+            </LinearLayout>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" layout="@r$layout/layout_cycling_start_and_settings"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

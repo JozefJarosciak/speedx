@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_personal_record_data" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@r$id/linear_personal_record_total_mileage" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="55sp" android:textColor="@android:color/white" android:id="@r$id/tv_personal_record_data_total_mileage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                <TextView android:textSize="@dimen/font_11" android:textColor="#999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_total_mileage"/>
+                <TextView android:textSize="@dimen/font_11" android:textColor="#999" android:id="@r$id/tv_personal_record_data_total_mileage_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_mileage_unit_km"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@r$id/linear_personal_record_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.beastbikes.android.modules.user.widget.PersonalRecordHeaderView android:id="@r$id/personal_record_header_item1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_weight="1"/>
+            <com.beastbikes.android.modules.user.widget.PersonalRecordHeaderView android:id="@r$id/personal_record_header_item2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <com.beastbikes.android.modules.user.widget.PersonalRecordHeaderView android:id="@r$id/personal_record_header_item3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="#2b2b2b" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="17.5dp" android:layout_marginTop="20dp" android:layout_marginRight="17.5dp" android:layout_marginBottom="17dp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp">
+            <LinearLayout android:orientation="horizontal" android:id="@r$id/linear_personal_record_row1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.5dp">
+                <com.beastbikes.android.modules.user.widget.PersonalRecordLittleItem android:id="@r$id/personal_record_row1_left" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <com.beastbikes.android.modules.user.widget.PersonalRecordLittleItem android:id="@r$id/personal_record_row1_right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@r$id/linear_personal_record_row2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.5dp">
+                <com.beastbikes.android.modules.user.widget.PersonalRecordLittleItem android:id="@r$id/personal_record_row2_left" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <com.beastbikes.android.modules.user.widget.PersonalRecordLittleItem android:id="@r$id/personal_record_row2_right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@r$id/linear_personal_record_row3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.5dp">
+                <com.beastbikes.android.modules.user.widget.PersonalRecordLittleItem android:id="@r$id/personal_record_row3_left" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <com.beastbikes.android.modules.user.widget.PersonalRecordLittleItem android:id="@r$id/personal_record_row3_right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

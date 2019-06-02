@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_12" android:textColor="@color/member_managet_label" android:gravity="center_vertical" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="@string/activity_member_manager_captain_label" />
+    <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include android:id="@id/captain_layout" layout="@layout/club_member_list_item" />
+    <View android:background="@color/bg_border_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="50.0dip" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="@color/member_managet_label" android:gravity="center_vertical" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="@string/activity_member_manager_member_label" />
+    <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ListView android:id="@id/activity_club_manager_member_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" />
+    <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

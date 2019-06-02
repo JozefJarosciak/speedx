@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="#111111" android:layout_width="match_parent" android:layout_height="70dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/font_15" android:textColor="#ffffff" android:id="@r$id/view_sensor_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_12" android:textColor="#999999" android:id="@r$id/view_sensor_device_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+    </LinearLayout>
+    <ImageView android:id="@r$id/view_sensor_device_delete" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="20dp" android:src="@drawable/ic_setting_clean_cache" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

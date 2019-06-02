@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView_speedx_force_screens" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="48.5dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/recyclerView_speedx_force_screens">
+        <com.beastbikes.android.modules.cycling.activity.ui.widget.CyclingPreviewLayout android:id="@id/cycling_preview_layout" android:background="#ff1e1e1e" android:layout_width="240.0dip" android:layout_height="320.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:id="@id/linear_speedx_force_screen_setting_up" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <ImageView android:id="@id/img_speedx_force_screen_setting_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_speedx_force_screen_up" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linear_speedx_force_screen_setting_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/black" android:gravity="center|top" android:id="@id/tv_speedx_force_screen_setting_edit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/str_edit" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/black" android:gravity="center|top" android:id="@id/tv_speedx_force_screen_setting_delete" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/delete" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

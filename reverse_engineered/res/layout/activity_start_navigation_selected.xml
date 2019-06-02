@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/navigation_textcolor_white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="18.5dip" android:layout_marginLeft="15.0dip">
+            <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_finished_activity_distance_label" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/discover_color1" android:id="@id/activity_start_navigation_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123.2" />
+            <TextView android:textSize="8.5sp" android:textColor="@color/discover_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0999756dip" android:text="@string/str_mileage_unit_km" />
+        </LinearLayout>
+        <View android:background="@color/navigation_textcolor_line" android:layout_width="1.0dip" android:layout_height="21.799988dip" android:layout_marginLeft="13.699982dip" android:layout_marginRight="13.699982dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="18.5dip">
+            <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_time" />
+            <TextView android:textSize="8.5sp" android:textColor="@color/discover_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0999756dip" android:text="@string/activity_start_navigation_selected_time_about" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/discover_color1" android:id="@id/activity_start_navigation_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="59" />
+            <TextView android:textSize="8.5sp" android:textColor="@color/discover_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0999756dip" android:text="@string/activity_start_navigation_selected_time_facility" />
+        </LinearLayout>
+        <com.beastbikes.android.ble.ui.widget.DividerView android:layout_width="3.0dip" android:layout_height="fill_parent" android:layout_marginLeft="44.0dip" android:layerType="software" custom:divider_color="@color/navigation_textcolor_line" custom:divider_dashLength="5.0dip" custom:divider_dashGap="2.0dip" custom:divider_dashThickness="1.0dip" custom:divider_orientation="divider_vertical" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/activity_start_navigation_delete" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ng_delete" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/navigation_textcolor_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_start_navigation_selected_clean_route" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/navigation_textcolor_white" android:gravity="center" android:id="@id/activity_start_navigation_start" android:background="@drawable/activity_start_navigation_selected_tvbg" android:layout_width="280.0dip" android:layout_height="40.0dip" android:layout_marginBottom="17.0dip" android:text="@string/activity_start_navigation" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:id="@r$id/sliding_layout" android:background="#111111" android:layout_width="match_parent" android:layout_height="match_parent" app:umanoDragView="@r$id/record_drag_view" app:umanoScrollableView="@r$id/record_sticky_list" app:umanoOverlay="true">
+    <FrameLayout android:id="@r$id/record_map" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.beastbikes.android.modules.map.SpeedxMap android:id="@r$id/record_map_speedx" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.beastbikes.android.modules.cycling.activity.ui.record.RecordSideBar android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@r$id/record_side_bar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.beastbikes.android.modules.cycling.activity.ui.record.RecordActionBar android:id="@r$id/record_action_bar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:id="@r$id/record_drag_view" android:focusable="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.beastbikes.android.widget.stickylistlibrary.stickylistheaders.StickyListHeadersListView android:id="@r$id/record_sticky_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:drawSelectorOnTop="true" android:cacheColorHint="@android:color/transparent"/>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/record_share_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout>

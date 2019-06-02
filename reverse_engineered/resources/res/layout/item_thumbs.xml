@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/discover_color1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@r$id/thumb_list_item_avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="10dp" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="12.5dp" android:layout_marginBottom="10dp" android:src="@drawable/ic_avatar" android:scaleType="centerInside" android:layout_centerVertical="true" android:contentDescription="@r$string/empty" app:borderWidth="0dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/thumb_text_color" android:id="@r$id/thumbTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@r$id/thumb_list_item_avatar" android:layout_centerVertical="true"/>
+    <View android:id="@r$id/shortView" android:background="@color/thumb_view_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.5dp" android:layout_below="@r$id/thumb_list_item_avatar"/>
+    <View android:id="@r$id/longView" android:background="@color/thumb_view_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@r$id/thumb_list_item_avatar"/>
+</RelativeLayout>

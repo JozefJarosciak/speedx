@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_theme_black_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@r$id/route_list_view" android:background="@color/bg_theme_black_color" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#1cffffff" android:dividerHeight="1px" android:overScrollMode="never"/>
+    <ImageView android:layout_gravity="center" android:id="@r$id/network_err" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_network_err" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@r$string/empty"/>
+</RelativeLayout>

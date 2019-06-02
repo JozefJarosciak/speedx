@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="68dp">
+    <TextView android:textSize="@dimen/font_15" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@r$id/user_achievement_item_name_tv" android:layout_width="wrap_content" android:layout_height="68dp" android:layout_marginLeft="24dp" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_achievement_trophy_icon"/>
+        <TextView android:textSize="@dimen/font_12" android:textColor="#ffffff" android:layout_gravity="bottom" android:id="@r$id/user_achievement_item_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="12dp" android:text="x6"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_shadow" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip">
+        <RelativeLayout android:layout_width="44.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/route_map_search_back" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_new_back_icon" android:scaleType="center" android:layout_centerInParent="true" android:contentDescription="@string/empty" />
+        </RelativeLayout>
+        <View android:background="#ff9c9c9c" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+        <com.beastbikes.android.modules.cycling.sections.ui.widget.CustomEditText android:textSize="@dimen/font_15" android:textColor="#ff9c9c9c" android:id="@id/route_map_search_edittext" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:hint="@string/route_map_search_edittext_hint" />
+    </LinearLayout>
+    <ListView android:id="@id/route_map_search_result" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="16.0dip" android:divider="#ffc9cdd0" android:dividerHeight="1.0px" />
+</LinearLayout>

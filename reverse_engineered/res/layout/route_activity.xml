@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/route_activity_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/route_activity_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v4.view.ViewPager android:layout_gravity="top" android:id="@id/route_activity_view_pager" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/route_activity_indicator" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                <include android:id="@id/view_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/list_loading_view" />
+            </FrameLayout>
+            <RelativeLayout android:gravity="center_vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="67.0dip" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/route_activity_want" android:background="@drawable/route_wanted_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_alignParentRight="true">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#ff777777" android:layout_gravity="center" android:id="@id/route_activity_want_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="@string/routes_activity_want_go" android:drawablePadding="4.0dip" />
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#ff777777" android:layout_gravity="center" android:id="@id/route_activity_want_go_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/route_activity_want">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_12" android:textColor="#ff222222" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/routes_fragment_difficulty_coefficient" />
+                            <RatingBar android:layout_gravity="center" android:id="@id/route_activity_difficulty_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:numStars="5" android:rating="5.0" android:isIndicator="true" style="@style/YellowRatingBar" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_12" android:textColor="#ff222222" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/routes_fragment_view_coefficient" />
+                            <RatingBar android:layout_gravity="center" android:id="@id/route_activity_score_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:numStars="5" android:rating="5.0" android:isIndicator="true" style="@style/YellowRatingBar" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_12" android:textColor="#ff222222" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/routes_fragment_traffic_coefficient" />
+                            <RatingBar android:layout_gravity="center" android:id="@id/route_activity_traffic_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:numStars="5" android:rating="5.0" android:isIndicator="true" style="@style/YellowRatingBar" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_12" android:textColor="#ff222222" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/routes_fragment_activity_total_distance" />
+                            <TextView android:textSize="@dimen/font_14" android:textColor="#ff222222" android:layout_gravity="center" android:id="@id/route_activity_distance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                            <TextView android:textSize="@dimen/font_12" android:textColor="#ff222222" android:layout_gravity="center" android:id="@id/route_activity_distance_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/str_mileage_unit_km" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#ff222222" android:layout_gravity="center_vertical" android:id="@id/route_activity_route_view_introduction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:text="@string/route_activity_view_introduction" />
+                <TextView android:textSize="@dimen/font_14" android:textColor="#ff444444" android:id="@id/route_activity_route_view_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="21.0dip" android:layout_marginBottom="14.0dip" android:maxHeight="140.0dip" />
+            </LinearLayout>
+            <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/map_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" layout="@layout/list_loading_view" />
+                <ImageView android:layout_gravity="center" android:id="@id/route_activity_line_map" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_margin="8.0dip" android:scaleType="centerCrop" android:contentDescription="@string/empty" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <TextView android:textSize="@dimen/font_12" android:textColor="#ff222222" android:id="@id/route_activity_comment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/font_12" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/route_activity_comment_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/route_activity_comment_all" android:drawableRight="@drawable/ic_item_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+                <com.beastbikes.android.widget.NonScrollListView android:id="@id/route_activity_comment_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <EditText android:textSize="@dimen/font_12" android:textColor="#ff222222" android:id="@id/route_activity_send_comment_content" android:background="@drawable/route_comment_edit_text_selector" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/route_comment_exit_hint" android:maxLength="140" android:layout_weight="1.0" android:textCursorDrawable="@null" />
+                <Button android:textSize="@dimen/font_16" android:textColor="#ffffffff" android:id="@id/route_activity_send_comment" android:background="@drawable/route_send_comment_select" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/route_comment_send" android:layout_weight="0.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

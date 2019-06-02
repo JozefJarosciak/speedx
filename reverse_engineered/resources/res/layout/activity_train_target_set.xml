@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/activity_train_target_set" android:background="#ff111111" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@r$id/training_target_set_gender" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="14dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/training_target_set_height" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/training_target_set_weight" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/training_target_set_birthday" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/training_target_set_heart_rate" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <View android:background="#ff222222" android:layout_width="match_parent" android:layout_height="1px"/>
+        <include android:id="@r$id/training_target_set_ftp" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <TextView android:textSize="@dimen/font_11" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@r$string/str_personal_setting_ftp_desc"/>
+        <TextView android:textColor="#ffffff" android:gravity="center" android:id="@r$id/train_target_set_save" android:background="@drawable/red_circle_btn_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="35dp" android:layout_marginTop="30dp" android:layout_marginRight="35dp" android:layout_marginBottom="30dp" android:text="@r$string/str_save"/>
+    </LinearLayout>
+</ScrollView>

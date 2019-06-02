@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/volume_animation" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/rc_ic_voice_sent_play1" />
+    <item android:duration="200" android:drawable="@drawable/rc_ic_voice_sent_play2" />
+    <item android:duration="300" android:drawable="@drawable/rc_ic_voice_sent_play3" />
+</animation-list>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff181818" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="18.0dip" android:paddingEnd="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_input_phone_num" />
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_input_email" />
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" layout="@layout/layout_input_password" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip">
+        <Button android:layout_gravity="end" android:id="@id/btn_auth_login" android:background="@drawable/bg_btn_white_with_corners_without_stroke" android:layout_width="120.0dip" android:layout_height="45.0dip" android:text="@string/str_sign_in" />
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_auth_login_switch" android:layout_height="45.0dip" android:text="@string/str_signin_with_email" style="@style/TVAuthNormalWhite" />
+    </FrameLayout>
+</LinearLayout>

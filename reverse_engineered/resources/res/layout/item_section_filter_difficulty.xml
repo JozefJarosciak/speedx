@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+    <TextView android:textSize="13sp" android:textColor="#ffffff" android:id="@r$id/item_section_filter_difficulty_tv" android:background="@drawable/bg_section_filter_difficulty" android:paddingLeft="16dp" android:paddingTop="5dp" android:paddingRight="16dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

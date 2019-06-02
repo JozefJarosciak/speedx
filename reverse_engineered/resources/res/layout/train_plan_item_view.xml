@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        <TextView android:textSize="@dimen/font_15" android:textColor="#ffffff" android:id="@r$id/train_plan_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+        <TextView android:textSize="@dimen/font_12" android:textColor="#999999" android:id="@r$id/train_plan_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_12" android:textColor="#999999" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@r$id/train_plan_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp"/>
+</FrameLayout>

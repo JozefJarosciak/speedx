@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:paddingLeft="15dp" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@r$string/voice_feedback_setting_activity_category_voice_feedback" android:textAllCaps="true"/>
+        <RelativeLayout android:background="@color/bg_black_color" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/voice_feedback_setting_activity_label_voice_feedback" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/voice_feedback_setting_activity_master_switch" android:layout_marginRight="15dp" style="@r$style/material_design_switch_style"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/voice_feedback_setting_activity_sub_items" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:paddingLeft="15dp" android:paddingTop="0dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@r$string/voice_feedback_setting_activity_category_details" android:textAllCaps="true"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/bg_black_color" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/voice_feedback_setting_activity_label_distance" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/voice_feedback_setting_activity_distance_switch" android:layout_marginRight="15dp" style="@r$style/material_design_switch_style"/>
+                </RelativeLayout>
+                <View android:background="#292929" android:layout_width="match_parent" android:layout_height="1px"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_time" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/voice_feedback_setting_activity_elapsed_time_switch" android:layout_marginRight="15dp" style="@r$style/material_design_switch_style"/>
+                </RelativeLayout>
+                <View android:background="#292929" android:layout_width="match_parent" android:layout_height="1px"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_speed" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/voice_feedback_setting_activity_velocity_switch" android:layout_marginRight="15dp" style="@r$style/material_design_switch_style"/>
+                </RelativeLayout>
+                <View android:background="#292929" android:layout_width="match_parent" android:layout_height="1px"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_calorie" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/voice_feedback_setting_activity_calorie_switch" android:layout_marginRight="15dp" style="@r$style/material_design_switch_style"/>
+                </RelativeLayout>
+                <View android:background="#292929" android:layout_width="match_parent" android:layout_height="1px"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/voice_feedback_setting_activity_label_activity_state" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/voice_feedback_setting_activity_activity_state_switch" android:layout_marginRight="15dp" style="@r$style/material_design_switch_style"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

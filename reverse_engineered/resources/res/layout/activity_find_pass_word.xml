@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/bg_black_color" android:layout_width="match_parent" android:layout_height="40.5dp">
+        <RelativeLayout android:id="@r$id/activity_find_pass_word_mail" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/account_management_color" android:id="@r$id/activity_find_pass_word_mail_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_find_pass_word_by_email" android:layout_centerInParent="true"/>
+            <TextView android:id="@r$id/activity_find_pass_word_mail_line" android:background="@color/account_management_color" android:layout_width="20dp" android:layout_height="1dp" android:layout_marginTop="7dp" android:layout_below="@r$id/activity_find_pass_word_mail_tv" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@r$id/activity_find_pass_word_phone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/text_default" android:id="@r$id/activity_find_pass_word_phone_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_find_pass_word_by_phone" android:layout_centerInParent="true"/>
+            <TextView android:id="@r$id/activity_find_pass_word_phone_line" android:background="@color/account_management_color" android:visibility="gone" android:layout_width="20dp" android:layout_height="1dp" android:layout_marginTop="7dp" android:layout_below="@r$id/activity_find_pass_word_phone_tv" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:id="@r$id/activity_find_pass_word_mail_layout" layout="@r$layout/activity_find_pass_word_mail"/>
+    <include android:id="@r$id/activity_find_pass_word_phone_layout" layout="@r$layout/activity_find_pass_word_phone"/>
+</LinearLayout>

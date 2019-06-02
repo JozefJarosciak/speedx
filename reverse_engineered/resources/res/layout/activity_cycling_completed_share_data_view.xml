@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:id="@r$id/cycling_completed_share_data_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#111111" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="70dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cycling_title"/>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="#fff" android:id="@r$id/share_data_view_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="19:32:12"/>
+                    <TextView android:textSize="13sp" android:textColor="#999" android:id="@r$id/share_data_view_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016-12-31"/>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@r$id/share_data_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@r$id/share_data_content_map" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+                <ImageView android:layout_gravity="bottom" android:id="@r$id/share_data_content_summary" android:background="@drawable/bg_111111_2_000000_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@r$id/share_data_chart_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <android.support.v7.widget.CardView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" app:cardBackgroundColor="#181818" app:cardCornerRadius="10dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="20dp" android:paddingTop="40dp" android:paddingRight="20dp" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="28dp" android:textColor="#fff" android:id="@r$id/share_data_elev_max_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="--" android:drawableTop="@drawable/ic_elev_max" android:drawablePadding="10dp"/>
+                            <TextView android:textSize="10sp" android:textColor="#999" android:gravity="center" android:id="@r$id/share_data_elev_max_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MAX ELEV(M)" android:lines="2"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="28dp" android:textColor="#fff" android:id="@r$id/share_data_elev_gain_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="--" android:drawableTop="@drawable/ic_elev_gain" android:drawablePadding="10dp"/>
+                            <TextView android:textSize="10sp" android:textColor="#999" android:gravity="center" android:id="@r$id/share_data_elev_gain_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ELEV GAIN(M)" android:lines="2"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="28dp" android:textColor="#fff" android:id="@r$id/share_data_elev_distance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="--" android:drawableTop="@drawable/ic_elev_distance" android:drawablePadding="10dp"/>
+                            <TextView android:textSize="10sp" android:textColor="#999" android:gravity="center" android:id="@r$id/share_data_elev_distance_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ELEV DISTANCE" android:lines="2"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="28dp" android:textColor="#fff" android:id="@r$id/share_data_cal_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="--" android:drawableTop="@drawable/ic_cal" android:drawablePadding="10dp"/>
+                            <TextView android:textSize="10sp" android:textColor="#999" android:gravity="center" android:id="@r$id/share_data_cal_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CALORIES(kcal)" android:lines="2"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="28dp" android:textColor="#fff" android:id="@r$id/share_data_cadence_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="--" android:drawableTop="@drawable/ic_rpm" android:drawablePadding="10dp"/>
+                            <TextView android:textSize="10sp" android:textColor="#999" android:gravity="center" android:id="@r$id/share_data_cadence_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AVG CANDACNE(RPM)" android:lines="2"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="28dp" android:textColor="#fff" android:id="@r$id/share_data_elev_heart_rate_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="--" android:drawableTop="@drawable/ic_heart_rate" android:drawablePadding="10dp"/>
+                            <TextView android:textSize="10sp" android:textColor="#999" android:gravity="center" android:id="@r$id/share_data_elev_heart_rate_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AVG 
+ HEART RATE(RPM) " android:lines="2"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <include layout="@r$layout/layout_share_bottom_qr_code"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

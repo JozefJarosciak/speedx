@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@r$id/target_data_popup_list" android:background="@color/bg_theme_black_color" android:layout_width="160dp" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="0dp"/>
+</LinearLayout>

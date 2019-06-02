@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/rc_normal_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="io.rong.imkit.fragment.MessageInputFragment" android:id="@android:id/toggle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <fragment android:name="io.rong.imkit.fragment.MessageListFragment" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@android:id/toggle" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/tab_item" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+    <ImageView android:id="@r$id/tab_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_tab_cycling" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/font_10" android:textColor="@color/tab_item_selector" android:id="@r$id/tab_item_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="骑行" android:layout_below="@r$id/tab_item_icon" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/font_10" android:textColor="@color/bg_white_color" android:id="@r$id/tab_item_dot" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:text="" android:layout_alignLeft="@r$id/tab_item_icon"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.rong.imkit.widget.SquareLayout android:layout_width="fill_parent" android:layout_height="127.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <RelativeLayout android:id="@id/mask" android:background="@drawable/rc_sp_grid_mask" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <view android:id="@id/checkbox" android:focusable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerInside" android:layout_alignParentRight="true" class="io.rong.imkit.activity.PictureSelectorActivity$SelectBox" />
+    </RelativeLayout>
+</io.rong.imkit.widget.SquareLayout>

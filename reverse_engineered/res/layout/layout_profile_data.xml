@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll_profile_data_normal" android:background="#ff1e1e1e" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:number="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:textSize="@dimen/font_11" android:textColor="#ff6a6a6a" android:gravity="center" android:id="@id/tv_profile_data_personal_record" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_personal_record" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="12.0dip" android:layout_alignTop="@id/tv_profile_data_total_mileage" android:layout_alignBottom="@id/tv_profile_data_total_mileage_unit" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_arrow_right" />
+                <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_45" android:textColor="@android:color/white" android:id="@id/tv_profile_data_total_mileage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0" android:lines="1" android:layout_toLeftOf="@id/tv_profile_data_personal_record" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/font_11" android:textColor="#ff999999" android:id="@id/tv_profile_data_total_mileage_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/str_total_mileage" android:layout_toLeftOf="@id/tv_profile_data_personal_record" android:layout_below="@id/tv_profile_data_total_mileage" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/fragment_cycling_record" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip">
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.beastbikes.android.widget.NumberTextView android:id="@id/tv_profile_data_total_time" android:text="0.0" number:typefaceName="@string/number_type_face_name" style="@style/TVProfileDataThreeItemDigit" />
+                    <TextView android:text="@string/str_time_with_unit" style="@style/TVProfileDataThreeItemDesc" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+                    <com.beastbikes.android.widget.NumberTextView android:id="@id/tv_profile_data_avg_speed" android:text="0.0" number:typefaceName="@string/number_type_face_name" style="@style/TVProfileDataThreeItemDigit" />
+                    <TextView android:id="@id/tv_profile_data_avg_speed_unit" android:text="@string/str_average_speed" style="@style/TVProfileDataThreeItemDesc" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+                    <com.beastbikes.android.widget.NumberTextView android:id="@id/tv_profile_data_times" android:text="0" number:typefaceName="@string/number_type_face_name" style="@style/TVProfileDataThreeItemDigit" />
+                    <TextView android:text="@string/str_times" style="@style/TVProfileDataThreeItemDesc" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.beastbikes.android.widget.CyclingTargetProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBar_profile_data_target" android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="18.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="40.0dip">
+                <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_black_color" android:id="@id/tv_profile_data_target_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_month_target" />
+                <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_black_color" android:id="@id/tv_profile_data_target_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/tv_profile_data_target_desc" />
+                <ImageView android:id="@id/img_profile_data_target_edit" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_edit_icon" android:layout_alignParentRight="true" />
+                <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_black_color" android:id="@id/tv_profile_data_finished_target" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/img_profile_data_target_edit" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="#ff111111" android:paddingLeft="20.0dip" android:paddingTop="35.0dip" android:paddingRight="20.0dip" android:paddingBottom="35.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <View android:background="#ffff0b25" android:layout_width="3.5dip" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_profile_data_cycling_calendar" android:layout_alignBottom="@id/tv_profile_data_cycling_calendar" />
+            <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:id="@id/tv_profile_data_cycling_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/str_cycling_calendar" />
+            <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:id="@id/tv_profile_data_cycling_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_cycling_history" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="11.0dip" android:layout_alignParentRight="true" android:drawableEnd="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        <View android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.beastbikes.android.widget.calendar.CalendarView android:id="@id/calendarView_profile_data" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

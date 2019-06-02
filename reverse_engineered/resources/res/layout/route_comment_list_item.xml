@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="6dp">
+        <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@r$id/route_activity_comment_user" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="15dp" android:src="@drawable/ic_avatar" android:layout_weight="0"/>
+        <TextView android:textSize="@dimen/font_14" android:textColor="#222" android:id="@r$id/route_comment_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2">
+            <TextView android:textSize="@dimen/font_14" android:textColor="#999" android:gravity="right" android:id="@r$id/route_comment_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_weight="1"/>
+            <View android:background="#999" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="1px" android:layout_height="match_parent" android:layout_weight="0"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="#999" android:gravity="center_horizontal" android:id="@r$id/route_comment_reply" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_12" android:textColor="#222" android:id="@r$id/route_comment_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="10dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@r$id/route_comment_reply_by_other" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="10dp"/>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="50dp" android:layout_marginTop="10dp"/>
+</LinearLayout>

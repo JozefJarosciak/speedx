@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/activity_other_profile" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+            <TextView android:textSize="@dimen/font_11" android:textColor="#6a6a6a" android:gravity="center" android:id="@r$id/tv_other_profile_data_personal_record" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="60dp" android:text="@r$string/str_personal_record" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_arrow_right" android:layout_alignParentEnd="true"/>
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_45" android:textColor="@android:color/white" android:id="@r$id/tv_other_profile_data_total_mileage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0" android:lines="1" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="@dimen/font_11" android:textColor="#999" android:id="@r$id/tv_other_profile_data_total_mileage_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@r$string/str_total_mileage" android:layout_below="@r$id/tv_other_profile_data_total_mileage" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp">
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.beastbikes.android.widget.CyclingNumberTextView android:id="@r$id/tv_other_profile_data_total_time" android:text="0.0" style="@r$style/TVProfileDataThreeItemDigit"/>
+                <TextView android:text="@r$string/str_time_with_unit" style="@r$style/TVProfileDataThreeItemDesc"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="1">
+                <com.beastbikes.android.widget.CyclingNumberTextView android:id="@r$id/tv_other_profile_data_avg_speed" android:text="0.0" style="@r$style/TVProfileDataThreeItemDigit"/>
+                <TextView android:id="@r$id/tv_other_profile_data_avg_speed_unit" android:text="@r$string/str_average_speed" style="@r$style/TVProfileDataThreeItemDesc"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="1">
+                <com.beastbikes.android.widget.CyclingNumberTextView android:id="@r$id/tv_other_profile_data_times" android:text="0" style="@r$style/TVProfileDataThreeItemDigit"/>
+                <TextView android:text="@r$string/str_times" style="@r$style/TVProfileDataThreeItemDesc"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#111111" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <include android:id="@r$id/base_profile_detail_item_activities" android:layout_width="match_parent" android:layout_height="76dp" android:layout_marginTop="10dp" layout="@r$layout/profile_fragment_statistic"/>
+    <View android:background="#111111" android:layout_width="match_parent" android:layout_height="1px"/>
+    <include android:id="@r$id/base_profile_detail_item_medal" android:layout_width="match_parent" android:layout_height="76dp" layout="@r$layout/profile_fragment_statistic"/>
+    <View android:background="#111111" android:layout_width="match_parent" android:layout_height="1px"/>
+    <include android:id="@r$id/base_profile_detail_item_grid" android:layout_width="match_parent" android:layout_height="76dp" layout="@r$layout/profile_fragment_statistic"/>
+    <View android:background="#111111" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="40dp"/>
+</LinearLayout>

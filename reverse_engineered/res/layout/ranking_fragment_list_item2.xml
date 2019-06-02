@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rank_list_item_layout" android:background="@color/discover_color3" android:layout_width="fill_parent" android:layout_height="60.0dip" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ranking_fragment_list_item_ordinal" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="0.0" android:contentDescription="@string/empty" />
+        <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@id/ranking_fragment_list_item_avatar" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_margin="10.0dip" android:src="@drawable/ic_avatar" android:scaleType="centerInside" android:layout_weight="0.0" android:contentDescription="@string/empty" app:borderWidth="0.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:gravity="left" android:id="@id/ranking_fragment_list_item_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/font_11" android:textColor="#ffffffff" android:gravity="left" android:id="@id/ranking_fragment_list_item_level" android:background="@drawable/red_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/club_info_manager" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.5dip" android:layout_marginBottom="6.0dip">
+                <TextView android:textSize="@dimen/font_10" android:textColor="#ff919191" android:id="@id/ranking_fragment_list_item_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5" />
+                <TextView android:textSize="@dimen/font_10" android:textColor="#ff919191" android:id="@id/ranking_fragment_list_item_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:alpha="0.5" />
+                <TextView android:textSize="@dimen/font_10" android:textColor="#ff919191" android:id="@id/ranking_fragment_list_item_district" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:alpha="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/ranking_framgent_list_item_km" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:text="@string/str_mileage_unit_km" android:layout_alignBaseline="@id/ranking_fragment_list_item_distance" android:layout_alignParentRight="true" android:alpha="0.6" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/ranking_fragment_list_item_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/ranking_framgent_list_item_km" />
+    </RelativeLayout>
+    <View android:background="#33666666" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="42.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

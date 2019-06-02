@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/rc_bg_voice_popup" android:layout_width="186.0dip" android:layout_height="186.0dip">
+        <ImageView android:id="@id/rc_audio_state_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="41.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="41.0dip" android:layout_marginBottom="11.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="80.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/rc_audio_timer" android:visibility="gone" android:layout_width="105.0dip" android:layout_height="105.0dip" android:layout_marginLeft="41.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="41.0dip" android:layout_marginBottom="11.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/rc_audio_state_text" android:background="@drawable/rc_corner_voice_style" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="11.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

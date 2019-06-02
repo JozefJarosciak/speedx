@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="bg_1b1b1b">#1b1b1b</drawable>
+    <drawable name="bg_222222">#222222</drawable>
+    <drawable name="bg_303030">#202020</drawable>
+    <drawable name="gray">#f0f0f0</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="ssdk_oks_classic_platfrom_cell_back_nor">#ffffffff</drawable>
+    <drawable name="ssdk_oks_classic_platfrom_cell_back_sel">#ffeeeeee</drawable>
+    <drawable name="transparent">#00000000</drawable>
+</resources>

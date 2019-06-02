@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:id="@r$id/histogram_view_title_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@r$string/label_every_month_distance" android:layout_alignParentLeft="true"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12dp" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@r$string/label_profile_rank_msg"/>
+                <TextView android:textSize="@dimen/font_15" android:textColor="@color/design_color_c7" android:gravity="center_vertical" android:id="@r$id/histogram_view_rank_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:text="－－"/>
+                <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@r$string/club_rank_rank_desc"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="7dp" android:layout_marginRight="7dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="200dp">
+            <android.support.v7.widget.RecyclerView android:gravity="center" android:id="@r$id/histogram_recycler_view" android:layout_width="match_parent" android:layout_height="200dp" android:overScrollMode="never"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@r$id/histogram_view_distance_view" android:background="@drawable/bg_histogram_view_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginTop="46dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_histogram_view_distance_icon" android:scaleType="centerInside"/>
+                    <TextView android:textSize="@dimen/font_13" android:textColor="@color/design_color_c7" android:gravity="center" android:id="@r$id/histogram_view_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:minWidth="40dp" android:text="0.0"/>
+                    <TextView android:textSize="@dimen/font_10" android:textColor="@color/design_color_c7" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="12dp" android:text="@r$string/kilometre"/>
+                </LinearLayout>
+                <View android:id="@r$id/histogram_view_point_view" android:background="@drawable/histogram_view_point_line" android:visibility="gone" android:layout_width="1px" android:layout_height="60dp" android:layout_marginTop="60dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

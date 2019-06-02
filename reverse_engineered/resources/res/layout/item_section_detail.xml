@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="50dp" android:minHeight="50dp">
+    <TextView android:textColor="@color/text_light_color" android:gravity="center" android:id="@r$id/item_section_detail_rank_tv" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="8dp" android:layout_centerVertical="true"/>
+    <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@r$id/item_section_detail_avater" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="12dp" android:src="@drawable/ic_avatar" android:layout_toRightOf="@r$id/item_section_detail_rank_tv" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12sp" android:textColor="@color/pinkishGrey" android:id="@r$id/item_section_detail_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@r$id/item_section_detail_avater" android:layout_centerVertical="true"/>
+    <TextView android:textSize="15sp" android:textColor="@color/text_light_color" android:id="@r$id/item_section_detail_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@r$id/section_detail_list_headview_view" android:background="@color/bg_theme_black_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

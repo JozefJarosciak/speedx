@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/ic_popup_down_bg" android:padding="16.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_12" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_personal_record_popup_cycling_time" android:layout_width="wrap_content" android:layout_height="60.0dip" android:text="@string/str_cycling_start_end_time" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_personal_record_popup_cycling_mileage" android:layout_width="wrap_content" android:layout_height="60.0dip" android:text="@string/str_mileage" />
+</LinearLayout>

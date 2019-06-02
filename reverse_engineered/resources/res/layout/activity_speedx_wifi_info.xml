@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/activity_speedx_wifi_info" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@r$id/speedx_wifi_info_connect_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="40dp" android:text="@r$string/str_device_connect_wifi_desc"/>
+        <TextView android:textSize="@dimen/font_17" android:textColor="#ffffff" android:id="@r$id/speedx_wifi_info_uuid_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="33dp"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_15" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@r$id/speedx_wifi_info_disconnect_view" android:layout_width="180dp" android:layout_height="wrap_content" android:text="@r$string/str_device_disconnect_wifi_desc" android:drawableTop="@drawable/ic_device_connect_wifi" android:drawablePadding="30dp"/>
+</FrameLayout>

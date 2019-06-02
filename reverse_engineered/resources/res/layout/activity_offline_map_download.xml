@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:background="#f3f3f3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@r$id/offlinemap_fragment_download_lvDown" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="0px"/>
+    <TextView android:textSize="14sp" android:textColor="#646464" android:gravity="center" android:layout_gravity="center" android:id="@r$id/offlinemap_fragment_download_no_download" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@r$string/offline_map_setting_activity_undownload" android:drawableTop="@drawable/ic_offline_map_no_download" android:drawablePadding="29dp"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_speedx_training_target" android:background="#ff141414" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/training_target_setting_ftp" android:layout_width="fill_parent" android:layout_height="60.0dip" layout="@layout/speed_force_setting_item" />
+    <include android:id="@id/training_target_setting_gender" android:layout_width="fill_parent" android:layout_height="60.0dip" layout="@layout/speed_force_setting_item" />
+    <include android:id="@id/training_target_setting_height" android:layout_width="fill_parent" android:layout_height="60.0dip" layout="@layout/speed_force_setting_item" />
+    <include android:id="@id/training_target_setting_weight" android:layout_width="fill_parent" android:layout_height="60.0dip" layout="@layout/speed_force_setting_item" />
+    <include android:id="@id/training_target_setting_age" android:layout_width="fill_parent" android:layout_height="60.0dip" layout="@layout/speed_force_setting_item" />
+    <Button android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:id="@id/training_target_setting_submit" android:background="@drawable/bg_red_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="20.0dip" android:text="@string/label_sure" />
+</LinearLayout>

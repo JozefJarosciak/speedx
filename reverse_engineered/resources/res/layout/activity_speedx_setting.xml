@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/activity_speedx_setting" android:background="#141414" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@r$id/speed_force_setting_language" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/speed_force_setting_mileage_unit" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/speed_force_setting_diameter" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/speed_force_setting_training_target" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/speed_force_setting_display_setting" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/speed_force_setting_back_auto_light" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <include android:id="@r$id/speed_force_setting_wifi" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+        <View android:background="#222222" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="20dp" android:layout_marginBottom="25dp"/>
+        <include android:id="@r$id/speed_force_setting_message" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_switch_item"/>
+        <include android:id="@r$id/speed_force_setting_vibration_wake" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_switch_item"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="#111" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@r$id/dialog_start_train_use_app" android:layout_width="0dp" android:layout_height="150dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/font_13" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="@r$string/str_training_start_with_app"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:src="@drawable/ic_start_train_use_app"/>
+    </LinearLayout>
+    <View android:background="#222222" android:layout_width="1px" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@r$id/dialog_start_train_use_speedforce" android:layout_width="0dp" android:layout_height="150dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/font_13" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="@r$string/str_training_start_with_device"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:src="@drawable/ic_start_train_use_speedforce"/>
+    </LinearLayout>
+</LinearLayout>

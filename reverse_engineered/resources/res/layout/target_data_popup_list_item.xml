@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_24" android:textColor="@color/text_black_color" android:gravity="center" android:id="@r$id/target_data_popup_item_value" android:layout_width="match_parent" android:layout_height="50dp" android:text="50" app:typefaceName="@r$string/number_type_face_name"/>
+</LinearLayout>

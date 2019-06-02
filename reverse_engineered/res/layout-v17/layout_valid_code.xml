@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ff181818" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.beastbikes.android.widget.ClearableEditText android:gravity="center_vertical" android:id="@id/activity_bound_phone_verificationcode" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/str_valid_code" android:maxLines="1" android:maxLength="20" android:digits="\ 1234567890" android:layout_weight="4.0" android:inputType="phone" style="@style/et_account" />
+    <TextView android:enabled="false" android:textSize="@dimen/font_12" android:textColor="@color/text_white_color" android:gravity="center" android:id="@id/activity_bound_phone_verificationcode_ok" android:background="@drawable/selector_btn_red_2_grep" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="13.0dip" android:text="@string/authentication_send_valid" android:layout_marginStart="15.0dip" android:layout_marginEnd="13.0dip" />
+</LinearLayout>

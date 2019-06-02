@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/rc_title_layout" android:background="@drawable/rc_bg_item" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <io.rong.imkit.widget.AsyncImageView android:layout_gravity="center" android:id="@+id/rc_img" android:background="@drawable/rc_bg_item" android:layout_width="match_parent" android:layout_height="150dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="18dp" android:textColor="#ffffff" android:gravity="left" android:layout_gravity="bottom" android:id="@+id/rc_txt" android:background="#75000000" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ImageView android:background="@color/rc_normal_bg" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <ListView android:id="@+id/rc_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

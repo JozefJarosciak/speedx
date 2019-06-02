@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider_2" android:background="#fff4f3f1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:layout_marginBottom="8.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff9a9a9a" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/llmore" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ff9a9a9a" android:layout_gravity="center_vertical" android:id="@id/textViewmore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" android:layout_marginRight="8.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.699982dip" android:src="@drawable/ic_club_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" /> ¬
+</LinearLayout>
+    </RelativeLayout> ¬
+<View android:background="#7fd9d9d9" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

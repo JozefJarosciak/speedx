@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@r$id/view" android:background="#282828" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@r$id/view">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@r$id/linear_temp" android:layout_width="65dp" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="25sp" android:textColor="@android:color/white" android:id="@r$id/tv_chart_data_compare_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/ic_chart_speed" android:drawablePadding="5dp"/>
+            <TextView android:textSize="@dimen/font_11" android:textColor="@android:color/white" android:id="@r$id/tv_chart_data_compare_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dp"/>
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.LineChart android:id="@r$id/linear_chart_data_compare" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="21dp" android:layout_toRightOf="@r$id/linear_temp"/>
+    </RelativeLayout>
+</RelativeLayout>

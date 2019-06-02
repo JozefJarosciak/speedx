@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="16dp" android:paddingTop="35dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@r$id/head" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.beastbikes.framework.ui.android.widget.CircleImageView android:layout_gravity="center_horizontal" android:id="@r$id/iv_avatar1" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_avatar" android:contentDescription="@r$string/empty"/>
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:id="@r$id/header_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@r$id/header_club_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/font_10" android:textStyle="normal|bold|italic" android:textColor="#ffffff" android:gravity="center" android:id="@r$id/header_club_level" android:background="@drawable/red_circle_btn_bg" android:layout_width="32dp" android:layout_height="16dp"/>
+            <TextView android:textSize="@dimen/font_13" android:textColor="#ffffff" android:id="@r$id/header_club_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#292929" android:layout_width="match_parent" android:layout_height="0.5px" android:layout_marginLeft="8dp" android:layout_marginTop="15dp" android:layout_marginRight="8dp" android:layout_marginBottom="10dp"/>
+</LinearLayout>

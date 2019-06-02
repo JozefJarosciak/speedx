@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25dp">
+    <com.beastbikes.android.ble.ui.widget.VerticalDashedLine android:layout_width="1.5dp" android:layout_height="match_parent" android:layout_marginLeft="7.5dp"/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="29dp"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_black_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textSize="@dimen/font_16" android:textColor="@color/clubinfosetting_label_color" android:id="@r$id/edit_text_activity_value" android:background="@color/common_bg_color" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="20dp" android:maxEms="16" android:maxLength="30" android:inputType="text" android:textCursorDrawable="@null"/>
+</LinearLayout>

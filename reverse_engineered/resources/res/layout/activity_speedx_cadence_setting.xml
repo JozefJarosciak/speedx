@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/action_bar_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="45dp">
+        <com.beastbikes.android.ble.ui.widget.ShapeIndicatorView android:layout_gravity="bottom" android:id="@r$id/activity_speddx_cadence_setting_tab_indicator" android:layout_width="match_parent" android:layout_height="2dp" app:fullColor="@color/red_color"/>
+        <android.support.design.widget.TabLayout android:id="@r$id/activity_speedx_cadence_setting_tablayout" android:layout_width="match_parent" android:layout_height="45dp" app:tabIndicatorColor="@color/red_color" app:tabIndicatorHeight="0dp" app:tabContentStart="0dp" app:tabBackground="@color/bg_black_color" app:tabMode="0" app:tabGravity="0" app:tabTextColor="@color/text_white_color" app:tabSelectedTextColor="@color/text_white_color"/>
+        <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:background="@drawable/bg_cadence_tab_left" android:layout_width="30dp" android:layout_height="42dp"/>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:background="@drawable/bg_cadence_tab_right" android:layout_width="50dp" android:layout_height="42dp"/>
+    </FrameLayout>
+    <android.support.v4.view.ViewPager android:id="@r$id/activity_speedx_cadence_setting_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <Button android:textSize="@dimen/font_15" android:textColor="#ffffff" android:id="@r$id/activity_speedx_cadence_setting_btn" android:background="@drawable/selector_btn_red_to_grep_bg" android:layout_width="match_parent" android:layout_height="45dp" android:text="@r$string/select" android:layout_weight="0"/>
+</LinearLayout>

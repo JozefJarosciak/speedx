@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/rc_conversation_item_system_left_fl" android:layout_width="wrap_content" android:layout_height="74.0dip" android:layout_marginLeft="13.0dip" android:layout_centerVertical="true">
+        <com.beastbikes.framework.ui.android.widget.CircleImageView android:layout_gravity="center" android:id="@id/rc_image_view" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_launch_logo" android:scaleType="center" />
+        <TextView android:textSize="10.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/rc_unread_message1" android:background="@drawable/rc_unread_count_bg" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="4.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="74.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/rc_conversation_item_system_left_fl" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toLeftOf="@id/rc_time">
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/rc_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/beast_helper" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffa7a7a7" android:ellipsize="end" android:id="@id/rc_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ffd8d8d8" android:id="@id/rc_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="13.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

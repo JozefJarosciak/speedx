@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/rc_web_progressbar" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:progressDrawable="@color/rc_web_progress_bar" style="?android:attr/progressBarStyleHorizontal" />
+    <io.rong.common.RongWebView android:id="@id/rc_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

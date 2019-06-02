@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/activity_ble_sensor_manager" android:background="#ff111111" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="24.0dip" android:text="@string/str_ble_sensor_enable_description" />
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="24.0dip" android:text="@string/str_ble_sensor_subtitle_manage_sensor" />
+        <FrameLayout android:id="@id/ble_sensor_manager_heart_rate_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+            <include android:id="@id/ble_sensor_manager_heart_rate" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginRight="30.0dip" layout="@layout/speed_force_setting_switch_item" />
+            <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_arrow_right" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/ble_sensor_manager_power_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/ble_sensor_manager_power" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginRight="30.0dip" layout="@layout/speed_force_setting_switch_item" />
+            <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_arrow_right" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/ble_sensor_manager_speed_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/ble_sensor_manager_speed" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginRight="30.0dip" layout="@layout/speed_force_setting_switch_item" />
+            <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_arrow_right" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/ble_sensor_manager_cadence_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/ble_sensor_manager_cadence" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginRight="30.0dip" layout="@layout/speed_force_setting_switch_item" />
+            <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_arrow_right" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/ble_sensor_manager_speed_and_cadence_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/ble_sensor_manager_speed_and_cadence" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginRight="30.0dip" layout="@layout/speed_force_setting_switch_item" />
+            <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_arrow_right" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

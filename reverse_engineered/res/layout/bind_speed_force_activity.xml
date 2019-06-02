@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/action_bar_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bind_speed_force_success_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bind_speed_force_success_icon" android:contentDescription="@string/empty" />
+        <TextView android:textSize="@dimen/font_16" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="10.0dip" android:text="@string/bind_speed_force_success" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/connect_speed_force_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="300.0dip" android:layout_height="300.0dip" android:maxWidth="2.0dip" android:indeterminateDrawable="@drawable/bg_bind_speedx_device" android:indeterminateDuration="1500" style="?android:attr/progressBarStyleLarge" />
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/font_20" android:textColor="@color/text_light_color" android:layout_gravity="center_horizontal" android:id="@id/bind_speedx_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/bind_speed_force_connect_msg_1_new" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/font_12" android:textColor="@color/text_light_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/bind_speed_force_connect_msg_2_new" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/bind_speed_force_connect_icon_iv" android:layout_width="160.0dip" android:layout_height="160.0dip" android:src="@drawable/ic_ble_bluetooth" android:scaleType="center" android:contentDescription="@string/empty" />
+        <TextView android:textSize="@dimen/font_13" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="60.0dip" android:text="@string/label_discover_no_device" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:heartRate="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/HorizontalWeightLinear">
+            <TextView android:id="@id/textView_heart_rate_pie_desc" android:text="--" style="@style/HeartRateChartBottomTV" />
+        </LinearLayout>
+        <LinearLayout style="@style/HorizontalWeightLinear">
+            <TextView android:id="@id/textView_heart_rate_pie_time" android:text="--" android:drawableLeft="@drawable/ic_heart_chart_time" style="@style/HeartRateChartBottomTV" />
+        </LinearLayout>
+        <LinearLayout style="@style/HorizontalWeightLinear">
+            <TextView android:id="@id/textView_heart_rate_pie_percent" android:text="--" android:drawableLeft="@drawable/ic_heart_chart_percent" style="@style/HeartRateChartBottomTV" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="95.0dip">
+        <com.beastbikes.android.modules.cycling.activity.ui.record.widget.HeartRateBottomItemView android:id="@id/heart_rate_bottom_item_view1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" heartRate:rateRange="--" heartRate:rateDesc="@string/label_heart_rate_recovery_area" heartRate:rateColor="#fff6a09a" />
+        <View android:background="#ff222222" android:layout_width="1.0dip" android:layout_height="65.0dip" />
+        <com.beastbikes.android.modules.cycling.activity.ui.record.widget.HeartRateBottomItemView android:id="@id/heart_rate_bottom_item_view2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" heartRate:rateRange="--" heartRate:rateDesc="@string/label_heart_rate_burning_fat_area" heartRate:rateColor="#fff06c63" />
+        <View android:background="#ff222222" android:layout_width="1.0dip" android:layout_height="65.0dip" />
+        <com.beastbikes.android.modules.cycling.activity.ui.record.widget.HeartRateBottomItemView android:id="@id/heart_rate_bottom_item_view3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" heartRate:rateRange="--" heartRate:rateDesc="@string/label_heart_rate_train_area" heartRate:rateColor="#ffe8372d" />
+        <View android:background="#ff222222" android:layout_width="1.0dip" android:layout_height="65.0dip" />
+        <com.beastbikes.android.modules.cycling.activity.ui.record.widget.HeartRateBottomItemView android:id="@id/heart_rate_bottom_item_view4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" heartRate:rateRange="--" heartRate:rateDesc="@string/label_heart_rate_anaerobic_area" heartRate:rateColor="#ffc91c03" />
+        <View android:background="#ff222222" android:layout_width="1.0dip" android:layout_height="65.0dip" />
+        <com.beastbikes.android.modules.cycling.activity.ui.record.widget.HeartRateBottomItemView android:id="@id/heart_rate_bottom_item_view5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" heartRate:rateRange="--" heartRate:rateDesc="@string/label_heart_rate_limit_area" heartRate:rateColor="#ff931506" />
+    </LinearLayout>
+</LinearLayout>

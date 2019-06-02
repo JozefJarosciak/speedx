@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="@r$string/str_input_valid_code" style="@r$style/TVAuthNormalWhite"/>
+    <com.beastbikes.android.modules.user.ui.binding.widget.ValidCodeView android:id="@r$id/validCode_auth_vcode" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="15dp"/>
+</LinearLayout>

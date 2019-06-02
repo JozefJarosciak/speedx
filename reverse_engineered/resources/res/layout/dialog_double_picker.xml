@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <com.beastbikes.android.dialog.DoublePicker android:id="@r$id/dialog_double_picker_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <com.beastbikes.android.dialog.PickerView android:id="@r$id/double_picker_view_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:normalTextColor="#ff999999" app:normalTextSize="14sp" app:selecredTextColor="#ffffffff" app:selecredTextSize="22sp" app:unitHight="50dp" app:itemNumber="5" app:lineColor="#ff222222" app:maskHight="32dp" app:noEmpty="true" app:unitSize="15sp"/>
+            <com.beastbikes.android.dialog.PickerView android:id="@r$id/double_picker_view_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:normalTextColor="#ff999999" app:normalTextSize="14sp" app:selecredTextColor="#ffffffff" app:selecredTextSize="22sp" app:unitHight="50dp" app:itemNumber="5" app:lineColor="#ff222222" app:maskHight="32dp" app:noEmpty="true" app:unitSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="250dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <View android:background="@drawable/bg_141414_2_transparent" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="2"/>
+            <View android:layout_width="wrap_content" android:layout_height="50dp" android:layout_weight="0"/>
+            <View android:background="@drawable/bg_transparent_2_141414" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="2"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

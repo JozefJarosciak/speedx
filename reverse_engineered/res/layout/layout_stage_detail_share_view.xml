@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/scrollView_share_stage_detail" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ff0e0e0e" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/share_data_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_share_stage_content_map" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="bottom" android:id="@id/img_share_stage_base" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_300" android:scaleType="center" />
+                <ImageView android:layout_gravity="bottom" android:id="@id/img_share_stage_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+            </LinearLayout>
+            <include layout="@layout/layout_share_title" />
+        </FrameLayout>
+        <include layout="@layout/layout_share_bottom_qr_code" />
+    </LinearLayout>
+</ScrollView>

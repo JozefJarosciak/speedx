@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="50dp">
+    <TextView android:textSize="@dimen/font_15" android:textColor="#dfdfdf" android:id="@r$id/tv_profile_score_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    <ImageView android:id="@r$id/img_profile_score_item_beast" android:visibility="gone" android:layout_width="19dp" android:layout_height="35dp" android:layout_marginLeft="12dp" android:src="@drawable/ic_profile_score_trophy" android:layout_toRightOf="@r$id/tv_profile_score_item_date" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/font_15" android:textColor="#dfdfdf" android:id="@r$id/tv_profile_score_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="13dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

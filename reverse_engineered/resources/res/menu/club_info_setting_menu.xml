@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@r$id/club_info_menu_setting_savr_item" android:title="@r$string/str_save" app:showAsAction="always"/>
+</menu>

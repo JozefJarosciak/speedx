@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout android:gravity="bottom" android:id="@id/sliding_layout" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent" sothree:umanoDragView="@id/record_drag_view" sothree:umanoScrollableView="@id/record_sticky_list" sothree:umanoOverlay="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sothree="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/record_map" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.beastbikes.android.modules.map.SpeedxMap android:id="@id/record_map_speedx" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.beastbikes.android.modules.cycling.activity.ui.record.RecordSideBar android:layout_gravity="bottom|center|right" android:id="@id/record_side_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.beastbikes.android.modules.cycling.activity.ui.record.RecordActionBar android:id="@id/record_action_bar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/record_drag_view" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.beastbikes.android.widget.stickylistlibrary.stickylistheaders.StickyListHeadersListView android:id="@id/record_sticky_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="true" android:cacheColorHint="@android:color/transparent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/record_share_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout>

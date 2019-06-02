@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="14dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_section_filter_star"/>
+                <TextView android:textSize="13sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@r$string/speedx_difficulty"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp">
+                <include android:id="@r$id/item_section_filter_difficulty1" layout="@r$layout/item_section_filter_difficulty"/>
+                <include android:id="@r$id/item_section_filter_difficulty2" layout="@r$layout/item_section_filter_difficulty"/>
+                <include android:id="@r$id/item_section_filter_difficulty3" layout="@r$layout/item_section_filter_difficulty"/>
+                <include android:id="@r$id/item_section_filter_difficulty4" layout="@r$layout/item_section_filter_difficulty"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp">
+                <include android:id="@r$id/item_section_filter_difficulty5" layout="@r$layout/item_section_filter_difficulty"/>
+                <include android:id="@r$id/item_section_filter_difficulty6" layout="@r$layout/item_section_filter_difficulty"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/discover_color2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="10dp"/>
+        <include android:id="@r$id/layout_activity_section_filter_seekbar1" layout="@r$layout/layout_activity_section_filter_seekbar"/>
+        <include android:id="@r$id/layout_activity_section_filter_seekbar2" layout="@r$layout/layout_activity_section_filter_seekbar"/>
+        <include android:id="@r$id/layout_activity_section_filter_seekbar3" layout="@r$layout/layout_activity_section_filter_seekbar"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/common_bg_color" android:gravity="center" android:layout_gravity="bottom" android:id="@r$id/layout_activity_section_filter_submit" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="40dp" android:text="@r$string/activity_alert_dialog_text_ok"/>
+</LinearLayout>

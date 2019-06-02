@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@r$id/tv_mail_phone_valid_tip" android:layout_width="match_parent" android:layout_height="44dp" style="@r$style/tv_account_tip"/>
+    <com.beastbikes.android.modules.user.ui.binding.widget.ValidCodeView android:id="@r$id/tv_mail_phone_valid_view" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <TextView android:enabled="false" android:id="@r$id/tv_mail_phone_valid_commit" android:layout_marginTop="33dp" android:text="@r$string/activity_alert_dialog_text_ok" style="@r$style/btn_account"/>
+</LinearLayout>

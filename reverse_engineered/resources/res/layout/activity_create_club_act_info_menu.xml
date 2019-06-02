@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <HorizontalScrollView android:background="@color/activity_create_club_act_info_bg" android:scrollbars="none" android:layout_width="0dp" android:layout_height="51dp" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@r$id/action_insert_image" android:background="@null" android:layout_width="51dp" android:layout_height="51dp" android:src="@drawable/rich_insert_image" android:contentDescription="@null"/>
+            <ImageButton android:id="@r$id/action_bold" android:background="@null" android:layout_width="51dp" android:layout_height="51dp" android:src="@drawable/not_rich_bold" android:contentDescription="@null"/>
+            <ImageButton android:id="@r$id/action_italic" android:background="@null" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/not_rich_italic" android:contentDescription="@null"/>
+            <ImageButton android:id="@r$id/action_underline" android:background="@null" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/not_rich_underline" android:contentDescription="@null"/>
+            <ImageButton android:id="@r$id/action_textcolor" android:background="@null" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/rich_textcolor" android:contentDescription="@null"/>
+            <ImageButton android:id="@r$id/action_align_left" android:background="@null" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/rich_justify_left" android:contentDescription="@null"/>
+            <ImageButton android:id="@r$id/action_align_center" android:background="@null" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/rich_justify_center" android:contentDescription="@null"/>
+            <ImageButton android:id="@r$id/action_align_right" android:background="@null" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/rich_justify_right" android:contentDescription="@null"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:textSize="15sp" android:textColor="@color/design_color_c7" android:gravity="center" android:id="@r$id/activity_create_club_act_info_commit" android:background="#fff" android:layout_width="60dp" android:layout_height="51dp" android:text="@r$string/activity_state_label_finish"/>
+</LinearLayout>

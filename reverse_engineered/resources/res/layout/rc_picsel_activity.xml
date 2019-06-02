@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/rc_picsel_toolbar" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageButton android:id="@+id/back" android:background="@drawable/rc_sel_picsel_toolbar_back" android:layout_width="48dp" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginBottom="1dp" android:text="@string/rc_picsel_toolbar" android:layout_toRightOf="@+id/back"/>
+        <Button android:enabled="false" android:textSize="14sp" android:textColor="@color/rc_picsel_toolbar_send_text_disable" android:id="@+id/send" android:background="@drawable/rc_sel_picsel_toolbar_send" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginRight="8dp" android:minWidth="0dp" android:text="@string/rc_picsel_toolbar_send" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="1dp">
+        <GridView android:gravity="center" android:id="@+id/gridlist" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="2dp" android:verticalSpacing="2dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+        <RelativeLayout android:id="@+id/catalog_window" android:background="@color/rc_picsel_catalog_shadow" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="48dp">
+            <ListView android:id="@+id/catalog_listview" android:background="@android:color/white" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:background="@color/rc_picsel_toolbar_transparent" android:clickable="true" android:layout_width="match_parent" android:layout_height="48dp">
+            <view android:id="@+id/pic_type" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="16dp" class="io.rong.imkit.activity.PictureSelectorActivity$PicTypeBtn">
+                <TextView android:textSize="16sp" android:textColor="@color/rc_picsel_toolbar_send_text_disable" android:gravity="center_vertical" android:id="@+id/type_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/rc_picsel_pictype"/>
+                <ImageView android:id="@+id/type_image" android:paddingLeft="4dp" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/rc_picsel_pictype_normal"/>
+            </view>
+            <view android:id="@+id/preview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" class="io.rong.imkit.activity.PictureSelectorActivity$PreviewBtn">
+                <ImageView android:layout_gravity="center_vertical" android:background="#2a2a2a" android:layout_width="1dp" android:layout_height="30dp"/>
+                <TextView android:textSize="16sp" android:textColor="@color/rc_picsel_toolbar_send_text_disable" android:gravity="center_vertical" android:id="@+id/preview_text" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/rc_picsel_toolbar_preview"/>
+            </view>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

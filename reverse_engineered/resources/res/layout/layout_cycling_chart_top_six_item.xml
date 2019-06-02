@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/linear_cycling_chart_top_with_six_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="30sp" android:textColor="@android:color/white" android:id="@r$id/textView_left_top_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:lines="1"/>
+            <TextView android:textSize="11sp" android:textColor="#999999" android:id="@r$id/textView_left_top_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+        </LinearLayout>
+        <View android:background="#222" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="30sp" android:textColor="@android:color/white" android:id="@r$id/textView_middle_top_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:lines="1"/>
+            <TextView android:textSize="11sp" android:textColor="#999999" android:id="@r$id/textView_middle_top_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+        </LinearLayout>
+        <View android:background="#222" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="30sp" android:textColor="@android:color/white" android:id="@r$id/textView_right_top_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:lines="1"/>
+            <TextView android:textSize="11sp" android:textColor="#999999" android:id="@r$id/textView_right_top_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#222" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="30sp" android:textColor="@android:color/white" android:id="@r$id/textView_left_bottom_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:lines="1"/>
+            <TextView android:textSize="11sp" android:textColor="#999999" android:id="@r$id/textView_left_bottom_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+        </LinearLayout>
+        <View android:background="#222" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="30sp" android:textColor="@android:color/white" android:id="@r$id/textView_middle_bottom_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:lines="1"/>
+            <TextView android:textSize="11sp" android:textColor="#999999" android:id="@r$id/textView_middle_bottom_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+        </LinearLayout>
+        <View android:background="#222" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="30sp" android:textColor="@android:color/white" android:id="@r$id/textView_right_bottom_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:lines="1"/>
+            <TextView android:textSize="11sp" android:textColor="#999999" android:id="@r$id/textView_right_bottom_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

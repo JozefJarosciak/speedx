@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/discover_color3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.beastbikes.android.widget.PullRefreshListView android:id="@id/monthly_ranking_fragment_list" android:background="@color/discover_color3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/club_rank_listview_diver_color" android:dividerHeight="0.0dip" />
+    <ImageView android:id="@id/monthly_nerwork_err" android:visibility="gone" android:layout_width="128.0dip" android:layout_height="130.0dip" android:src="@drawable/ic_network_err" android:layout_centerInParent="true" android:contentDescription="@string/empty" />
+</RelativeLayout>

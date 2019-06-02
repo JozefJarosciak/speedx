@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.beastbikes.framework.ui.android.widget.CircleImageView android:layout_gravity="center_horizontal" android:id="@r$id/avatar" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_avatar" android:contentDescription="@r$string/empty"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+            <TextView android:textSize="14sp" android:textColor="#dddddd" android:id="@r$id/activity_complete_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="11sp" android:textColor="#dddddd" android:id="@r$id/tv_extra" android:background="@drawable/bg_red_btn" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@r$string/clubfeed_notice" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+        <FrameLayout android:id="@r$id/container" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="30dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:textSize="10sp" android:textColor="#444" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <TextView android:textSize="10sp" android:textColor="#ccc" android:id="@r$id/delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@r$string/delete" android:layout_toRightOf="@+id/time" android:layout_centerVertical="true"/>
+            <ImageView android:id="@r$id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageButton android:id="@r$id/praise" android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/selector_clubfeed_praise_bg" android:layout_toLeftOf="@r$id/comment" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@r$id/common_container" android:background="#1b1b1b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</LinearLayout>

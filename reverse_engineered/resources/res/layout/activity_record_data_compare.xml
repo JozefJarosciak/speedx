@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/activity_record_data_compare" android:background="#111111" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@r$id/linear_temp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="18dp">
+        <LinearLayout style="@r$style/HorizontalWeightLinear">
+            <CheckedTextView android:id="@r$id/checked_tv_speed" android:checked="true" android:text="@r$string/str_speed" style="@r$style/ChartDataCompareCheckedTV"/>
+        </LinearLayout>
+        <LinearLayout style="@r$style/HorizontalWeightLinear">
+            <CheckedTextView android:id="@r$id/checked_tv_heart_rate" android:checked="true" android:text="@r$string/str_heart_rate" style="@r$style/ChartDataCompareCheckedTV"/>
+        </LinearLayout>
+        <LinearLayout style="@r$style/HorizontalWeightLinear">
+            <CheckedTextView android:id="@r$id/checked_tv_cadence" android:checked="true" android:text="@r$string/str_cadence" style="@r$style/ChartDataCompareCheckedTV"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@r$id/linear_temp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="horizontal" android:id="@r$id/relative_bottom" android:background="#242424" android:layout_width="match_parent" android:layout_height="67.5dp" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@r$id/linear_left_temp" android:layout_width="69dp" android:layout_height="match_parent">
+                    <com.beastbikes.android.widget.NumberTextView android:textSize="25sp" android:textColor="@android:color/white" android:id="@r$id/tv_chart_data_compare_bottom_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5dp"/>
+                    <TextView android:textSize="@dimen/font_11" android:textColor="@android:color/white" android:id="@r$id/tv_chart_data_compare_bottom_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dp"/>
+                </LinearLayout>
+                <View android:id="@r$id/view1" android:background="#282828" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_toRightOf="@r$id/linear_left_temp"/>
+                <View android:id="@r$id/view2" android:background="#1f1f1f" android:layout_width="match_parent" android:layout_height="3dp" android:layout_toLeftOf="@r$id/view3" android:layout_toRightOf="@r$id/view1" android:layout_centerVertical="true"/>
+                <View android:id="@r$id/view3" android:background="#282828" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginRight="25dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@r$id/relative_bottom">
+                <com.beastbikes.android.modules.cycling.activity.ui.record.widget.ChartDataCompareItemView android:id="@r$id/chart_data_compare_speed" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:valueDrawable="@drawable/ic_chart_speed" app:chartDataLineColor="#2ecc71"/>
+                <com.beastbikes.android.modules.cycling.activity.ui.record.widget.ChartDataCompareItemView android:id="@r$id/chart_data_compare_heart_rate" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:valueDrawable="@drawable/ic_chart_heart_rate" app:chartDataLineColor="#d62424"/>
+                <com.beastbikes.android.modules.cycling.activity.ui.record.widget.ChartDataCompareItemView android:id="@r$id/chart_data_compare_cadence" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:valueDrawable="@drawable/ic_chart_cadence" app:chartDataLineColor="#2ea0cc"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.v7.widget.AppCompatSeekBar android:id="@r$id/seekBar_record_data_compare" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="52dp" android:layout_marginRight="8dp" android:layout_marginBottom="16.5dp" android:progressDrawable="@drawable/bg_progress_drawable" android:thumb="@drawable/bg_progress_thumb" android:thumbOffset="16dp" android:layout_alignParentBottom="true"/>
+            <com.beastbikes.android.modules.cycling.activity.ui.record.widget.CustomVerticalLineView android:id="@r$id/custom_vertical_line" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="69dp" android:layout_marginRight="21dp" android:layout_above="@r$id/seekBar_record_data_compare"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

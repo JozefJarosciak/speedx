@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/relative_navigation_route_info" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:id="@id/activity_navigation_tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:id="@id/activity_navigation_tv_distance_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.5dip" android:text="@string/label_distance_unit" android:layout_toRightOf="@id/activity_navigation_tv_distance" android:layout_alignBottom="@id/activity_navigation_tv_distance" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ff999999" android:id="@id/activity_navigation_tv_total_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.5dip" android:layout_alignBottom="@id/activity_navigation_tv_distance" android:layout_centerHorizontal="true" />
+</RelativeLayout>

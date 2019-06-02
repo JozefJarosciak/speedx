@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_theme_black_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/route_list_view" android:background="@color/bg_theme_black_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#1cffffff" android:dividerHeight="1.0px" android:overScrollMode="never" />
+    <ImageView android:layout_gravity="center" android:id="@id/network_err" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_network_err" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@string/empty" />
+</RelativeLayout>

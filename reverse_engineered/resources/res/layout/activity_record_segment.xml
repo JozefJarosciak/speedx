@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/blackSix" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@r$id/record_segment_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@r$id/frag_section_list_no_content_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="135dp" android:src="@drawable/frag_section_list_content_no_content"/>
+        <TextView android:textColor="@color/frag_section_list_no_content_tv" android:layout_gravity="center_horizontal" android:id="@r$id/frag_section_list_no_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:text="@r$string/no_pass_any_section"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_club_msg" android:background="@color/discover_color3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@id/club_msg_list_item_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="15.0dip" android:src="@drawable/ic_avatar" android:scaleType="centerInside" android:contentDescription="@string/empty" app:borderWidth="0.0dip" app:borderColor="@color/discover_color3" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/club_msg_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_toRightOf="@id/club_msg_list_item_avatar" />
+    <TextView android:textSize="11.0sp" android:textColor="#ff666666" android:id="@id/club_msg_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:layout_below="@id/club_msg_name" android:layout_alignLeft="@id/club_msg_name" />
+    <RelativeLayout android:id="@id/rightrl" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/thumbnailIV" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:ellipsize="end" android:id="@id/rightTV" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/club_msg_pinkishGrey" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="18.0dip" android:layout_toLeftOf="@id/rightrl" android:layout_below="@id/club_msg_time" android:layout_alignLeft="@id/club_msg_name" />
+    <View android:background="@color/discover_color1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="16.0dip" android:layout_below="@id/content" />
+</RelativeLayout>

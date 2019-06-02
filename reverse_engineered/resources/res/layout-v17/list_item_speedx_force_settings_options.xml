@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.widget.RippleView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_black_color" android:layout_width="match_parent" android:layout_height="wrap_content" app:rv_type="2">
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@r$id/img_speedx_force_screen_edit_delete" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_item_edit_delete"/>
+            <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:id="@r$id/tv_speedx_force_screen_settings_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            <TextView android:textSize="@dimen/font_13" android:textColor="#fff" android:id="@r$id/tv_speedx_force_screen_setting_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp"/>
+            <ImageView android:id="@r$id/speedx_force_screen_blue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_screen_setting_bluetooth"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@r$id/img_speedx_force_screen_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/ic_screen_data_select"/>
+            <ImageView android:layout_gravity="right" android:id="@r$id/img_speedx_force_screen_edit_drag" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="20dp" android:src="@drawable/route_map_make_item_drag" android:scaleType="center" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.beastbikes.android.widget.RippleView>

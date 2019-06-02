@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/menu_post_dynamic" android:id="@r$id/menu_post_dynamic" android:title="@r$string/menu_post_dynamic" app:showAsAction="never"/>
+    <item android:icon="@drawable/menu_post_activity" android:id="@r$id/menu_post_activity" android:title="@r$string/menu_post_activity" app:showAsAction="never"/>
+    <item android:icon="@drawable/menu_post_notice" android:id="@r$id/menu_post_notice" android:title="@r$string/menu_post_notice" app:showAsAction="never"/>
+</menu>

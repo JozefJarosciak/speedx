@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="64dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="64dp" android:layout_marginLeft="22dp">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:id="@r$id/stage_collection_item_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_12" android:textColor="#999999" android:id="@r$id/stage_collection_item_data_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:id="@r$id/stage_collection_item_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="18dp" android:text="@r$string/str_segment_people_join" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@r$id/view_divider" android:background="#282828" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_black_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/topview" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="15.5dip" />
+    <ImageView android:id="@id/notice_history_icon" android:layout_width="18.0dip" android:layout_height="15.0dip" android:layout_margin="15.0dip" android:src="@drawable/ic_club_manager_history" android:layout_below="@id/topview" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/notice_history_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.5dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="19.0dip" android:layout_toRightOf="@id/notice_history_icon" android:layout_below="@id/topview" />
+    <TextView android:textSize="11.0sp" android:textColor="#ff777777" android:id="@id/notice_history_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.5dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/notice_history_tv" android:layout_alignParentRight="true" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/notice_history_time_tv" />
+</RelativeLayout>

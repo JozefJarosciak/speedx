@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="16.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="37.0dip" android:layout_marginRight="37.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff757575" android:gravity="center_horizontal" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+    </LinearLayout>
+    <View android:background="#33979797" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <Button android:textSize="15.5sp" android:textColor="#ff1981fb" android:gravity="center" android:id="@id/cancle" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/activity_alert_dialog_text_cancel" android:layout_weight="1.0" />
+        <View android:background="#33979797" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <Button android:textSize="15.5sp" android:textColor="#ff1981fb" android:gravity="center" android:id="@id/sure" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/activity_alert_dialog_text_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

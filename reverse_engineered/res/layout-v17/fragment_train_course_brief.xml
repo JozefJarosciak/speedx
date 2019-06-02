@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/window_background" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+            <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@id/tv_train_course_brief_idea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/str_training_advice" android:layout_marginStart="15.0dip" />
+            <TextView android:textSize="@dimen/font_11" android:textColor="#ff999999" android:id="@id/tv_train_course_brief_idea_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/str_training_advice_desc" android:layout_below="@id/tv_train_course_brief_idea" android:layout_marginStart="15.0dip" />
+            <View android:background="#ffff002a" android:layout_width="5.0dip" android:layout_height="32.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_train_course_brief_idea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip" />
+        <com.github.mikephil.charting.charts.CandleStickChart android:id="@id/candleChart_train_course_brief" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:minHeight="200.0dip" />
+    </LinearLayout>
+</ScrollView>

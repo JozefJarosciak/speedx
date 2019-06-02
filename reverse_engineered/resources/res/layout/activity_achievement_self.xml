@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_theme_black_color" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="96dp" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" app:cardBackgroundColor="#181818" app:cardCornerRadius="4dp" app:cardElevation="4dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_50" android:textColor="#ffffff" android:id="@r$id/activity_achievement_self_section_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                    <TextView android:textSize="@dimen/font_13" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_segment"/>
+                </LinearLayout>
+                <View android:background="#222222" android:layout_width="1px" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_50" android:textColor="#ffffff" android:id="@r$id/activity_achievement_self_ach_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                    <TextView android:textSize="@dimen/font_13" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_personal_achievement"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp" app:cardBackgroundColor="#181818" app:cardCornerRadius="4dp" app:cardElevation="4dp">
+            <com.beastbikes.android.widget.NonScrollListView android:id="@r$id/activity_achievement_self_section_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

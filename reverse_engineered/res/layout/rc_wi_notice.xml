@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@android:id/icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/rc_notice_text" android:layout_gravity="center_vertical" android:id="@android:id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无法连接服务器" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:id="@id/histogram_view_title_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="@string/label_every_month_distance" android:layout_alignParentLeft="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/label_profile_rank_msg" />
+                <TextView android:textSize="@dimen/font_15" android:textColor="@color/design_color_c7" android:gravity="center_vertical" android:id="@id/histogram_view_rank_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="－－" />
+                <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/club_rank_rank_desc" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <android.support.v7.widget.RecyclerView android:gravity="center" android:id="@id/histogram_recycler_view" android:layout_width="fill_parent" android:layout_height="200.0dip" android:overScrollMode="never" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/histogram_view_distance_view" android:background="@drawable/bg_histogram_view_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="46.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_histogram_view_distance_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/font_13" android:textColor="@color/design_color_c7" android:gravity="center" android:id="@id/histogram_view_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:minWidth="40.0dip" android:text="0.0" />
+                    <TextView android:textSize="@dimen/font_10" android:textColor="@color/design_color_c7" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="12.0dip" android:text="@string/kilometre" />
+                </LinearLayout>
+                <View android:id="@id/histogram_view_point_view" android:background="@drawable/histogram_view_point_line" android:visibility="gone" android:layout_width="1.0px" android:layout_height="60.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

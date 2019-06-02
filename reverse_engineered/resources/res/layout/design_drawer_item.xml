@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/nav_item_selector" android:layout_width="match_parent" android:layout_height="50dp">
+    <ImageView android:id="@r$id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?attr/listPreferredItemPaddingLeft" android:layout_marginRight="?attr/listPreferredItemPaddingRight"/>
+    <TextView android:textAppearance="?attr/textAppearanceListItem" android:textSize="@dimen/font_14" android:textColor="#fff" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@r$id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:lines="1"/>
+    <TextView android:textSize="@dimen/font_12" android:id="@r$id/tv_dot" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+</LinearLayout>

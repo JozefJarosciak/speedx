@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/action_bar_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_17" android:textColor="@color/text_light_color" android:layout_gravity="center_horizontal" android:id="@r$id/speedx_agps_update_agps_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@r$string/str_ble_speedx_agps_file_can_update"/>
+    <TextView android:textSize="@dimen/font_13" android:textColor="#999999" android:layout_gravity="center_horizontal" android:id="@r$id/speedx_agps_update_agps_content_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@r$string/label_speedx_agps_update_msg_2"/>
+    <com.beastbikes.android.ble.ui.painter.PowerView android:layout_gravity="center_horizontal" android:id="@r$id/speedx_agps_update_view" android:layout_width="200dp" android:layout_height="200dp" android:layout_marginTop="44dp" app:external_progress_color="@color/design_color_c7"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textSize="@dimen/font_15" android:textColor="@color/text_black_color" android:id="@r$id/speedx_agps_update_cancel" android:background="@drawable/border_1px_solid_white_black_radius_2dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_margin="35dp" android:text="@r$string/str_start_update" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

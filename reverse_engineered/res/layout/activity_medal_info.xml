@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_medal_info" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewPager_medal_info" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/activity_medal_info_close" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_close_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/activity_medal_info_dot_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="96.0dip">
+        <FrameLayout android:id="@id/user_profile_medal_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_personal_my_medal" android:drawableTop="@drawable/ic_profile_medal" android:drawablePadding="10.0dip" />
+        </FrameLayout>
+        <View android:background="#ff222222" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" />
+        <FrameLayout android:id="@id/user_profile_grid_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_grid_explore" android:drawableTop="@drawable/ic_profile_grid" android:drawablePadding="10.0dip" />
+        </FrameLayout>
+        <View android:background="#ff222222" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" />
+        <FrameLayout android:id="@id/user_profile_message_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_personal_my_message" android:drawableTop="@drawable/ic_profile_message" android:drawablePadding="10.0dip" />
+            <TextView android:textSize="@dimen/font_10" android:textColor="#ffffffff" android:layout_gravity="center|top" android:id="@id/user_profile_message_dot" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

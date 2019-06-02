@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#ff191919" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <FrameLayout android:id="@id/nav_member" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+            <TextView android:textSize="11.0sp" android:textColor="#ff6c6c6c" android:gravity="center" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_member_manager_member_label" android:drawableTop="@drawable/ic_clubfeed_members" android:drawablePadding="-10.0dip" />
+            <TextView android:textSize="@dimen/font_10" android:layout_gravity="center|right|top" android:id="@id/dot_member" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/nav_group_chat" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+            <TextView android:textSize="11.0sp" android:textColor="#ff6c6c6c" android:gravity="center" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/club_feed_group_chat" android:drawableTop="@drawable/ic_clubfeed_chat" android:drawablePadding="-10.0dip" />
+            <TextView android:textSize="@dimen/font_10" android:layout_gravity="center|right|top" android:id="@id/dot_chat" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/nav_activity" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+            <TextView android:textSize="11.0sp" android:textColor="#ff6c6c6c" android:gravity="center" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/club_info_task" android:drawableTop="@drawable/ic_clubfeed_activity" android:drawablePadding="-10.0dip" />
+            <TextView android:textSize="@dimen/font_10" android:layout_gravity="center|right|top" android:id="@id/dot_activity" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+            <TextView android:textSize="@dimen/font_10" android:textColor="#ffffffff" android:layout_gravity="center|right|top" android:id="@id/dot_activity_item_dot" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/nav_scroe" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+            <TextView android:textSize="11.0sp" android:textColor="#ff6c6c6c" android:gravity="center" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/club_rank" android:drawableTop="@drawable/ic_clubfeed_scroe" android:drawablePadding="-10.0dip" />
+            <TextView android:textSize="@dimen/font_10" android:layout_gravity="center|right|top" android:id="@id/dot_score" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/nav_more" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+            <TextView android:textSize="11.0sp" android:textColor="#ff6c6c6c" android:gravity="center" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/club_discover_group_more" android:drawableTop="@drawable/ic_clubfeed_more" android:drawablePadding="-10.0dip" />
+            <TextView android:textSize="@dimen/font_10" android:layout_gravity="center|right|top" android:id="@id/dot_more" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+            <TextView android:textSize="@dimen/font_10" android:textColor="#ffffffff" android:layout_gravity="center|right|top" android:id="@id/dot_more_item_dot" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tv_tip" android:background="#ff404040" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_warning" />
+        <TextView android:textColor="#ff999999" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/activity_club_manager_title" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textColor="#ffdedede" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_new_msg" android:background="@drawable/bg_1b1b1b_btn" android:paddingLeft="22.0dip" android:paddingTop="5.0dip" android:paddingRight="22.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/clubfeed_new_msg" />
+</LinearLayout>

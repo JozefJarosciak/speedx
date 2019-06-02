@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.beastbikes.android.widget.NumberTextView android:textSize="40.0sp" android:textColor="@android:color/white" android:id="@id/textView_left_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/textView_left_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.beastbikes.android.widget.NumberTextView android:textSize="40.0sp" android:textColor="@android:color/white" android:id="@id/textView_right_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/textView_right_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+    </LinearLayout>
+</LinearLayout>

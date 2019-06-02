@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/clubmsg_footview" android:background="@color/discover_color3" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/club_rank_listview_diver_color" android:gravity="center" android:layout_gravity="center" android:id="@id/footview_tv" android:layout_width="wrap_content" android:layout_height="39.0dip" android:text="@string/showclubmsghistory" />
+    <View android:layout_gravity="bottom" android:background="@color/discover_color1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

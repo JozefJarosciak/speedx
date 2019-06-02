@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <include android:id="@r$id/activity_club_manager_history_notice" android:layout_width="wrap_content" android:layout_height="50dp" layout="@r$layout/universal_item"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/activity_club_manager_items" android:background="@color/common_bg_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <include android:id="@r$id/activity_club_level" android:layout_width="wrap_content" android:layout_height="50dp" layout="@r$layout/universal_item"/>
+            <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="62dp"/>
+            <include android:id="@r$id/activity_club_manager_ablum" android:layout_width="wrap_content" android:layout_height="50dp" layout="@r$layout/universal_item"/>
+            <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="62dp"/>
+            <include android:id="@r$id/activity_club_manager_member" android:layout_width="wrap_content" android:layout_height="50dp" layout="@r$layout/universal_item"/>
+            <View android:id="@r$id/activity_club_manager_apply_view" android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="62dp"/>
+            <include android:id="@r$id/activity_club_manager_apply" android:layout_width="wrap_content" android:layout_height="50dp" layout="@r$layout/universal_item"/>
+            <View android:id="@r$id/activity_club_manager_member_view" android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="62dp"/>
+            <include android:id="@r$id/activity_club_manager_info_setting" android:layout_width="wrap_content" android:layout_height="50dp" layout="@r$layout/universal_item"/>
+            <View android:id="@r$id/activity_club_manager_info_setting_view" android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="62dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <include android:id="@r$id/activity_club_manager_invite" android:layout_width="wrap_content" android:layout_height="50dp" layout="@r$layout/universal_item"/>
+            <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="62dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/activity_club_manager_transfer_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@r$id/activity_club_manager_transfer" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="20dp" layout="@r$layout/universal_item"/>
+            <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/activity_club_manager_quit_club" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="@dimen/font_17" android:textColor="@color/design_color_c7" android:gravity="center" android:layout_width="match_parent" android:layout_height="48dp" android:text="@r$string/activity_club_manager_item_quit"/>
+            <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

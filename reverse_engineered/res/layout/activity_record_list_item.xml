@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_black_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/activity_record_activity_route" android:layout_width="63.0dip" android:layout_height="63.0dip" android:layout_margin="11.0dip" android:scaleType="centerCrop" android:layout_weight="0.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/activity_record_activity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="sss" android:singleLine="true" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/font_10" android:textColor="#ff999999" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_record_label_elapsed_time" />
+                    <TextView android:textSize="@dimen/font_10" android:textColor="#ff999999" android:id="@id/activity_record_activity_elapsed_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/activity_record_activity_bottom_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_record_activity_fake" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/ic_activity_record_cheat" />
+                    <ImageView android:id="@id/activity_record_activity_offline" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/ic_activity_record_offline" />
+                    <TextView android:textSize="@dimen/font_10" android:textColor="@color/white" android:id="@id/activity_record_activity_source" android:background="@drawable/bg_central_name" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SPEEDX-012012" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="85.0dip" android:layout_height="fill_parent" android:layout_weight="0.0">
+                <View android:layout_gravity="center_vertical" android:background="#ff222222" android:layout_width="1.0dip" android:layout_height="60.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_20" android:textColor="#ffffffff" android:id="@id/activity_record_activity_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                    <TextView android:textSize="@dimen/font_10" android:textColor="#ff777777" android:id="@id/activity_record_activity_distance_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_record_label_distance" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

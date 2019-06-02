@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/blackSix" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/favor_segment_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="@color/frag_section_list_no_content_tv" android:layout_gravity="center" android:id="@id/activity_favor_segment_empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_activity_favor_segment_empty" android:drawableTop="@drawable/frag_section_list_content_no_content" android:drawablePadding="30.0dip" />
+</FrameLayout>

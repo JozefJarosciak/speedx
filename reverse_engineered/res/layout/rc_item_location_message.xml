@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.rong.imkit.widget.RCMessageFrameLayout android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/rc_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <io.rong.imkit.widget.AsyncImageView android:id="@id/rc_img" android:layout_width="204.0dip" android:layout_height="120.0dip" android:scaleType="fitXY" app:RCMask="true" app:RCDefDrawable="@drawable/rc_ic_location_item_default" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center|left" android:id="@id/rc_content" android:background="@drawable/rc_corner_location_style" android:layout_width="195.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentBottom="true" />
+</io.rong.imkit.widget.RCMessageFrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="bg_1b1b1b">#ff1b1b1b</item>
+    <item type="drawable" name="bg_222222">#ff222222</item>
+    <item type="drawable" name="bg_303030">#ff202020</item>
+    <item type="drawable" name="gray">#fff0f0f0</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="ssdk_oks_classic_platfrom_cell_back_nor">#ffffffff</item>
+    <item type="drawable" name="ssdk_oks_classic_platfrom_cell_back_sel">#ffeeeeee</item>
+    <item type="drawable" name="transparent">#00000000</item>
+</resources>

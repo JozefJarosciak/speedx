@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/activity_train_courses" android:background="#111111" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@r$id/train_courses_bg_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@r$string/empty"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:layout_marginBottom="130dp">
+                <TextView android:textSize="@dimen/font_30" android:textStyle="italic" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@r$id/train_courses_train_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+                <TextView android:textSize="@dimen/font_16" android:textStyle="italic" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@r$id/train_courses_train_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <ExpandableListView android:id="@r$id/train_courses_list_view" android:background="#181818" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

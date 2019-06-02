@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/discover_color1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/rank_fragment_view_country" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/ranking_fragment_menu_whole_country" android:layout_weight="1.0" />
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/rank_fragment_view_province" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/ranking_fragment_menu_whole_area" android:layout_weight="1.0" />
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/rank_fragment_view_net" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/ranking_fragment_menu_safety_net" android:layout_weight="1.0" />
+</LinearLayout>

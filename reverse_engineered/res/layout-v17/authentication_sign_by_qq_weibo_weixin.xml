@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/authentication_activity_auth_weibo" android:background="@drawable/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35.0dip" android:src="@drawable/ic_account_weibo_disable" android:layout_marginEnd="35.0dip" />
+    <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/authentication_activity_auth_weixin" android:background="@drawable/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip" android:src="@drawable/ic_account_wechat_disable" />
+    <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/authentication_activity_auth_tencent" android:background="@drawable/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:src="@drawable/ic_account_qq_disable" android:layout_marginStart="35.0dip" />
+</LinearLayout>

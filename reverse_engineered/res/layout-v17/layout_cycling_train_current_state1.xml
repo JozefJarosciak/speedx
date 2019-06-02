@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_cycling_train_state1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_cycling_train_power_state" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cycling_train_higher" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_cycling_train_power_no_data" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/img_cycling_train_power_state" android:layout_alignBottom="@id/img_cycling_train_power_state">
+                <View android:background="#ff555555" android:layout_width="30.0dip" android:layout_height="5.5dip" />
+                <View android:background="#ff555555" android:layout_width="30.0dip" android:layout_height="5.5dip" android:layout_marginLeft="5.5dip" android:layout_marginStart="5.5dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_25" android:textColor="@android:color/white" android:id="@id/tv_cycling_train_target_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.5dip" android:layout_above="@id/tv_temp_power" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:id="@id/tv_temp_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_target_power" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:background="@android:color/black" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_cycling_train_cadence_state" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cycling_train_higher" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_cycling_train_cadence_no_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/img_cycling_train_cadence_state" android:layout_alignBottom="@id/img_cycling_train_cadence_state">
+                <View android:background="#ff555555" android:layout_width="30.0dip" android:layout_height="5.5dip" />
+                <View android:background="#ff555555" android:layout_width="30.0dip" android:layout_height="5.5dip" android:layout_marginLeft="5.5dip" android:layout_marginStart="5.5dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_25" android:textColor="@android:color/white" android:id="@id/tv_cycling_train_target_cadence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.5dip" android:layout_above="@id/tv_temp_cadence" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:id="@id/tv_temp_cadence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_target_cadence" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_segment_menu_collection" android:id="@r$id/menu_segment_collection" android:title="" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_segment_menu_list" android:id="@r$id/menu_segment_list" android:title="" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_record_share" android:id="@r$id/menu_segment_share" android:title="" app:showAsAction="always"/>
+</menu>

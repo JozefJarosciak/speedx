@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="14sp" android:textColor="@color/offline_map_activity_tab_bar_item_label_selector" android:gravity="center" android:id="@r$id/activity_offlinemap_tab_title1" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@r$string/offline_map_setting_city_list" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/offline_map_activity_tab_bar_item_label_selector" android:gravity="center" android:id="@r$id/activity_offlinemap_tab_title2" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@r$string/offline_map_setting_activity_already_downloaded" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:id="@r$id/activity_offlinemap_tab_cursor" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/offline_map_tab_cursor" android:scaleType="matrix"/>
+    <View android:background="#c8c7cc" android:layout_width="match_parent" android:layout_height="1px"/>
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@r$id/activity_offlinemap_tab_content" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30"/>
+</LinearLayout>

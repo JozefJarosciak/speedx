@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_12" android:textColor="#161616" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@r$string/str_next_program_stage"/>
+    <TextView android:textSize="@dimen/font_24" android:textStyle="italic" android:textColor="#161616" android:id="@r$id/tv_cycling_train_dialog_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dp"/>
+    <com.beastbikes.android.widget.NumberTextView android:textSize="80sp" android:textColor="#111" android:id="@r$id/tv_cycling_train_dialog_count_down" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="13dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_25" android:textColor="#161616" android:id="@r$id/tv_cycling_train_dialog_target_power" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/font_12" android:textColor="#222" android:id="@r$id/tv_cycling_train_dialog_target_power_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_target_power"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_25" android:textColor="#161616" android:id="@r$id/tv_cycling_train_dialog_target_cadence" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/font_12" android:textColor="#222" android:id="@r$id/tv_cycling_train_dialog_target_cadence_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_target_cadence"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

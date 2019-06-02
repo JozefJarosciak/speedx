@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="74.0dip">
+        <include android:id="@id/conversation_list_header" layout="@layout/rc_conversation_item_system" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/frag_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

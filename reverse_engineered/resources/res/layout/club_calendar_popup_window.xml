@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@r$id/club_calendar_popup_window_view" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_15" android:textColor="@color/wheelviewsave" android:id="@r$id/club_calendar_popup_window_save_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@r$string/activity_alert_dialog_text_ok" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="15sp" android:textColor="@color/wheel_view_cancel" android:id="@r$id/club_calendar_popup_window_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@r$string/cancel" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="15sp" android:textColor="#444" android:id="@r$id/club_calendar_popup_window_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="200dp">
+            <com.beastbikes.android.dialog.Wheelview android:id="@r$id/popup_window_wheel_year_view" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginLeft="1dp" android:layout_marginRight="1dp" android:layout_weight="1" app:normalTextColor="#777" app:normalTextSize="14sp" app:selecredTextColor="#ff000000" app:selecredTextSize="22sp" app:unitHight="50dp" app:itemNumber="3" app:lineColor="@color/wheel_view_line_color" app:maskHight="32dp" app:noEmpty="true"/>
+            <com.beastbikes.android.dialog.Wheelview android:id="@r$id/popup_window_wheel_month_view" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginLeft="1dp" android:layout_marginRight="1dp" android:layout_weight="1" app:normalTextColor="#777" app:normalTextSize="14sp" app:selecredTextColor="#ff000000" app:selecredTextSize="22sp" app:unitHight="50dp" app:itemNumber="3" app:lineColor="@color/wheel_view_line_color" app:maskHight="32dp" app:noEmpty="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

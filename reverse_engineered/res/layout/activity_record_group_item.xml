@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffff002a" android:layout_width="4.0dip" android:layout_height="14.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:id="@id/record_group_item_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:id="@id/record_group_item_total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:id="@id/record_group_item_total_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_toLeftOf="@id/record_group_item_total_time" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:id="@id/record_group_item_total_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_toLeftOf="@id/record_group_item_total_distance" android:layout_centerVertical="true" />
+</RelativeLayout>

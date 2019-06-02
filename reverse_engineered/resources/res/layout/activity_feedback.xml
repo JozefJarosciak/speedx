@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:id="@r$id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:background="@color/bg_white_color" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:id="@r$id/tab_app_error" android:layout_width="80dp" android:layout_height="30dp" android:text="@r$string/feedback_app_error"/>
+            <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:id="@r$id/tab_product_suggest" android:layout_width="80dp" android:layout_height="30dp" android:layout_marginLeft="70dp" android:text="@r$string/feedback_product_suggest"/>
+        </LinearLayout>
+        <View android:background="#aa979797" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/feedback_issue_type" android:background="@color/bg_white_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="#000" android:id="@r$id/tv_feedback_issue_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@r$string/feedback_issue_type" android:drawableRight="@drawable/ic_shop_detail_desc_icon_unfold"/>
+            <View android:background="#aa979797" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/feedback_suggest_ll" android:background="@color/bg_white_color" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="15sp" android:textColor="#000" android:textColorHint="#999999" android:gravity="left" android:id="@r$id/feedback_suggest_et" android:background="@color/bg_white_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="80dp" android:hint="@r$string/feedback_suggest_hint" android:maxLength="300"/>
+            <TextView android:textColor="#999999" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="300"/>
+            <ImageView android:id="@r$id/feedback_iv_picture" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_image_select"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/feedback_upload_log_ll" android:background="@color/bg_white_color" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="#aa979797" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="20dp"/>
+            <CheckBox android:textSize="15sp" android:textColor="#000000" android:id="@r$id/feedback_upload_log_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:checked="true" android:text="@r$string/feedback_uploade_log" style="@r$style/Checkbox"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:text="@r$string/feedback_uploade_log_tip"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/feedback_contact_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@r$string/feedback_contact"/>
+            <EditText android:textSize="15sp" android:textColorHint="#999999" android:gravity="center_vertical" android:id="@r$id/feedback_contact" android:background="@color/bg_white_color" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" android:hint="@r$string/feedback_contact_hint"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

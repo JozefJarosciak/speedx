@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@r$id/club_gallery_lit_item" android:paddingLeft="1dp" android:paddingTop="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@r$id/club_gallery_list_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+    <CheckBox android:enabled="false" android:id="@r$id/club_gallery_list_item_check" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:checked="false" android:layout_alignParentRight="true" style="@r$style/TutorialCheckbox"/>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+        <ImageView android:id="@r$id/bike_shop_item_avatar" android:layout_width="75dp" android:layout_height="75dp" android:src="@drawable/ic_avatar_club" android:scaleType="centerCrop" android:contentDescription="@r$string/empty"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginLeft="10dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_11" android:gravity="center" android:id="@r$id/bike_shop_auth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@r$string/bike_shop_auth"/>
+                    <TextView android:textSize="@dimen/font_15" android:textColor="#ffffff" android:id="@r$id/bike_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                    <TextView android:textSize="12sp" android:textColor="#fff" android:gravity="center" android:id="@r$id/bike_shop_status" android:background="@drawable/selector_shop_status" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" android:maxLines="1"/>
+                </LinearLayout>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:id="@r$id/bike_shop_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:textColor="#cccccc" android:ellipsize="end" android:id="@r$id/str_bicycle_shop_tag_fix" android:background="@drawable/bg_bike_shop_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@r$string/str_bicycle_shop_tag_fix" android:lines="1"/>
+                <TextView android:textSize="10sp" android:textColor="#cccccc" android:ellipsize="end" android:id="@r$id/str_bicycle_shop_tag_care" android:background="@drawable/bg_bike_shop_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@r$string/str_bicycle_shop_tag_care" android:lines="1"/>
+                <TextView android:textSize="10sp" android:textColor="#cccccc" android:ellipsize="end" android:id="@r$id/str_bicycle_shop_tag_offline" android:background="@drawable/bg_bike_shop_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@r$string/str_bicycle_shop_tag_offline" android:lines="1"/>
+                <TextView android:textSize="10sp" android:textColor="#cccccc" android:ellipsize="end" android:id="@r$id/str_bicycle_shop_tag_rent" android:background="@drawable/bg_bike_shop_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@r$string/str_bicycle_shop_tag_rent" android:lines="1"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="#666666" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@r$id/bike_shop_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="17dp" android:maxLines="1"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

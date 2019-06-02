@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/bike_shop_detail_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_white_color" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+            <ImageView android:id="@id/activity_bikeshop_detail_logo" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/ic_launcher" android:scaleType="centerInside" android:contentDescription="@string/empty" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_11" android:layout_gravity="center_vertical" android:id="@id/activity_bike_shop_state" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/font_17" android:textColor="#ff000000" android:id="@id/activity_bikeshop_detail_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/activity_fragment_tab_bar_item_label_default" android:id="@id/activity_bikeshop_detail_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/diatance_to" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/activity_fragment_tab_bar_item_label_default" android:id="@id/activity_bikeshop_detail_distance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/bike_shop_server_linear" android:background="@color/bg_white_color" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/bikeshop_auth_1" />
+            <View android:background="@color/whiteTwo" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/bike_shop_auth_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/design_color_c7" android:gravity="center" android:id="@id/str_bicycle_shop_tag_fix" android:background="@drawable/border_1px_solid_red_radius_6dp" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="25.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/design_color_c7" android:gravity="center" android:id="@id/bike_shop_tag_activity" android:background="@drawable/border_1px_solid_red_radius_6dp" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="25.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/design_color_c7" android:gravity="center" android:id="@id/str_bicycle_shop_tag_care" android:background="@drawable/border_1px_solid_red_radius_6dp" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="25.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/design_color_c7" android:gravity="center" android:id="@id/str_bicycle_shop_tag_rent" android:background="@drawable/border_1px_solid_red_radius_6dp" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="25.0dip" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="@color/bike_shop_detail_div_view" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/bike_shop_detail_black" android:gravity="center_vertical" android:id="@id/bike_shop_address" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginRight="50.0dip" android:drawableLeft="@drawable/ic_bike_shop_location_icon" android:drawablePadding="10.0dip" />
+            <View android:background="@color/bike_shop_detail_div_view" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/bike_shop_detail_black" android:gravity="center_vertical" android:id="@id/bike_shop_telephone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:drawableLeft="@drawable/ic_shop_detail_phone_icon" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+        <HorizontalScrollView android:id="@id/activity_bikeshop_pictures_horizon_lay" android:background="@color/bg_white_color" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/activity_bikeshop_detail_pictures" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/bike_shop_club_lay" android:background="@color/bg_white_color" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/bikeshop_club" android:drawablePadding="7.0dip" />
+            <View android:background="@color/whiteTwo" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bike_shop_club_click_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@id/bike_shop_club_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_avatar_club" android:scaleType="centerInside" android:contentDescription="@string/empty" custom:borderWidth="0.0dip" />
+                <TextView android:id="@id/bike_shop_club_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:drawableRight="@drawable/ic_arrow_right_icon" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_white_color" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/discover_color3" android:id="@id/activity_bikeshop_detail_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_detail" android:layout_centerVertical="true" />
+            <View android:background="@color/bike_shop_detail_div_view" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/member_list_item_diver" android:id="@id/bike_shop_shop_hours" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/discover_color3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/bike_shop_main_brand" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/member_list_item_diver" android:id="@id/bike_shop_brands" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:maxLines="3" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_white_color" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/discover_color3" android:id="@id/activity_bikeshop_detail_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/car_store_profile" android:layout_centerVertical="true" />
+            <View android:background="@color/bike_shop_detail_div_view" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/member_list_item_diver" android:id="@id/activity_bikeshop_detail_desc_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/activity_bikeshop_activity_notice_lay" android:background="@color/bg_white_color" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="42.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/discover_color3" android:id="@id/activity_bikeshop_activity_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bike_shop_activity_notice" android:layout_centerVertical="true" />
+            <View android:background="@color/bike_shop_detail_div_view" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/member_list_item_diver" android:id="@id/activity_bikeshop_activity_notice_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

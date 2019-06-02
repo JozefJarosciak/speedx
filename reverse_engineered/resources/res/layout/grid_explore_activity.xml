@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@r$id/grid_explore_activity_map" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+        <RelativeLayout android:id="@r$id/grid_explore_activity_map_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.beastbikes.framework.ui.android.widget.CircleImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@r$id/grid_explore_activity_avatar" android:layout_width="@dimen/grid_explore_avatar_width" android:layout_height="@dimen/grid_explore_avatar_width" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <View android:background="@drawable/grid_explore_bg" android:layout_width="match_parent" android:layout_height="80dp"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/font_18" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@r$id/grid_explore_activity_nick_name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="20dp">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/font_10" android:textColor="#aaa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/activity_finished_activity_distance_label"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <TextView android:textSize="@dimen/font_20" android:textStyle="bold" android:textColor="#fff" android:id="@r$id/grid_explore_activity_distance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/font_12" android:textColor="#fff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@r$string/str_mileage_unit_km"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#6f565656" android:layout_width="1px" android:layout_height="match_parent"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/font_10" android:textColor="#aaa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/grid_explore_activity_grid_count"/>
+                <TextView android:textSize="@dimen/font_20" android:textStyle="bold" android:textColor="#fff" android:id="@r$id/grid_explore_activity_grid_count_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+            </LinearLayout>
+            <View android:background="#565656" android:layout_width="1px" android:layout_height="match_parent"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/font_10" android:textColor="#aaa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/activity_finished_activity_elapsed_label"/>
+                <TextView android:textSize="@dimen/font_20" android:textStyle="bold" android:textColor="#fff" android:id="@r$id/grid_explore_activity_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

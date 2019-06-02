@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/activity_speedx_training_target" android:background="#141414" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@r$id/training_target_setting_ftp" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+    <include android:id="@r$id/training_target_setting_gender" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+    <include android:id="@r$id/training_target_setting_height" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+    <include android:id="@r$id/training_target_setting_weight" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+    <include android:id="@r$id/training_target_setting_age" android:layout_width="match_parent" android:layout_height="60dp" layout="@r$layout/speed_force_setting_item"/>
+    <Button android:textSize="@dimen/font_15" android:textColor="#ffffff" android:id="@r$id/training_target_setting_submit" android:background="@drawable/bg_red_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="20dp" android:text="@r$string/label_sure"/>
+</LinearLayout>

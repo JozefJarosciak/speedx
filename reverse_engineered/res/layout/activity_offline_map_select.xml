@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/detail_content" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:id="@id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:title="" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:contentScrim="?colorPrimary" app:titleEnabled="false">
+        <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:layout_collapseMode="parallax">
+            <com.mapbox.mapboxsdk.maps.MapView android:id="@id/mapView_select_offline_area" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:layout_collapseMode="parallax" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_select_offline_area_sync" android:background="#ffff002a" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/str_sync_offline_map_region" android:layout_alignParentBottom="true" />
+                <RelativeLayout android:id="@id/rela_temp" android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="82.5dip" android:layout_marginBottom="17.5dip" android:text="@string/str_ble_select_offline_area_desc" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rela_temp1" android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_select_offline_area_sync">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_select_offline_area_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="62.0dip" android:text="@string/str_offline_map_choose_description" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <View android:id="@id/view_select_offline_area" android:background="@drawable/bg_select_offline_area_with_red_bounds" android:layout_width="300.0dip" android:layout_height="375.0dip" android:layout_above="@id/rela_temp1" android:layout_below="@id/rela_temp" android:layout_centerHorizontal="true" />
+                <View android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/view_select_offline_area" android:layout_above="@id/rela_temp1" android:layout_below="@id/rela_temp" />
+                <View android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/view_select_offline_area" android:layout_above="@id/rela_temp1" android:layout_below="@id/rela_temp" />
+            </RelativeLayout>
+        </FrameLayout>
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:title="@string/str_ble_select_offline_area" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:layout_collapseMode="pin" />
+    </android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.CoordinatorLayout>

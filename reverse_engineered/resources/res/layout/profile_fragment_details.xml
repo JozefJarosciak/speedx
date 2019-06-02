@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/profile_fragment_detail_items" android:background="@color/bg_black_color" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@r$id/profile_fragment_detail_item_club" android:layout_width="match_parent" android:layout_height="67.5dp" layout="@r$layout/profile_fragment_statistic"/>
+    <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="42dp"/>
+    <include android:id="@r$id/profile_fragment_detail_item_activities" android:layout_width="match_parent" android:layout_height="67.5dp" layout="@r$layout/profile_fragment_statistic"/>
+    <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="42dp"/>
+    <include android:id="@r$id/profile_fragment_detail_item_route_favorites" android:layout_width="match_parent" android:layout_height="67.5dp" layout="@r$layout/profile_fragment_statistic"/>
+    <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="42dp"/>
+    <include android:id="@r$id/profile_fragment_detail_item_speedforce" android:layout_width="match_parent" android:layout_height="67.5dp" layout="@r$layout/profile_fragment_statistic"/>
+    <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="42dp"/>
+    <include android:id="@r$id/profile_fragment_detail_item_route_book" android:layout_width="match_parent" android:layout_height="67.5dp" layout="@r$layout/profile_fragment_statistic"/>
+    <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="42dp"/>
+    <include android:id="@r$id/profile_fragment_detail_item_grid" android:layout_width="match_parent" android:layout_height="67.5dp" layout="@r$layout/profile_fragment_statistic"/>
+</LinearLayout>

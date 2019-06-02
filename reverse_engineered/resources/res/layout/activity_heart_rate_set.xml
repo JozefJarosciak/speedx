@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/activity_heart_rate_set" android:background="#141414" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="90dp">
+        <TextView android:textSize="@dimen/font_15" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@r$string/str_calculate_by_birthday"/>
+        <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@r$id/heart_rate_setting_switch" android:layout_marginRight="20dp" style="@r$style/material_design_switch_style"/>
+    </FrameLayout>
+    <View android:background="#222222" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@r$id/heart_rate_set_view" android:layout_width="match_parent" android:layout_height="90dp" layout="@r$layout/speed_force_setting_item"/>
+        <View android:id="@r$id/heart_rate_set_mask" android:background="#6f141414" android:visibility="gone" android:layout_width="match_parent" android:layout_height="90dp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dialog_date_picker_age_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/str_training_target_age" />
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ff999999" android:layout_gravity="center|right" android:id="@id/dialog_date_picker_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.beastbikes.android.dialog.PickerView android:id="@id/date_picker_view_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.4" app:normalTextColor="#ff999999" app:normalTextSize="14.0sp" app:selecredTextColor="#ffffffff" app:selecredTextSize="22.0sp" app:unitHight="50.0dip" app:itemNumber="5" app:lineColor="#ff222222" app:maskHight="32.0dip" app:noEmpty="true" app:unitSize="15.0sp" app:unitColor="#ffffffff" />
+        <com.beastbikes.android.dialog.PickerView android:id="@id/date_picker_view_center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:normalTextColor="#ff999999" app:normalTextSize="14.0sp" app:selecredTextColor="#ffffffff" app:selecredTextSize="22.0sp" app:unitHight="50.0dip" app:itemNumber="5" app:lineColor="#ff222222" app:maskHight="32.0dip" app:noEmpty="true" app:unitSize="15.0sp" app:unitColor="#ffffffff" />
+        <com.beastbikes.android.dialog.PickerView android:id="@id/date_picker_view_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.1" app:normalTextColor="#ff999999" app:normalTextSize="14.0sp" app:selecredTextColor="#ffffffff" app:selecredTextSize="22.0sp" app:unitHight="50.0dip" app:itemNumber="5" app:lineColor="#ff222222" app:maskHight="32.0dip" app:noEmpty="true" app:unitSize="15.0sp" app:unitColor="#ffffffff" />
+    </LinearLayout>
+</LinearLayout>

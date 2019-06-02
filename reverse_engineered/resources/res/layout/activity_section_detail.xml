@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.widget.ScrollView4CheckBottom xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/section_detail_scrollview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <RelativeLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@r$id/section_detail_map_rl" android:layout_width="match_parent" android:layout_height="200dp">
+            <com.baidu.mapapi.map.MapView android:id="@r$id/section_detail_baidu_map" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <FrameLayout android:id="@r$id/section_google_mapview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include android:id="@r$id/section_detail_no_google_play_service" android:visibility="gone" layout="@r$layout/layout_nogoogleplayservice1"/>
+            <ImageView android:id="@r$id/transparent_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@r$id/section_detail_info" android:background="@color/blackFive" android:layout_width="match_parent" android:layout_height="104dp" android:layout_below="@r$id/section_detail_map_rl">
+            <TextView android:textSize="17sp" android:textColor="#ffffff" android:id="@r$id/section_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginTop="18dp" android:layout_marginRight="110dp" android:singleLine="true"/>
+            <LinearLayout android:id="@r$id/section_detail_data_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginTop="8dp" android:layout_below="@r$id/section_detail_title">
+                <TextView android:textSize="10sp" android:textColor="@color/text_light_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_slope"/>
+                <TextView android:textSize="10sp" android:textColor="@color/text_light_color" android:id="@r$id/section_detail_slopes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+                <TextView android:textSize="10sp" android:textColor="@color/text_light_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@r$string/str_elevation_diff"/>
+                <TextView android:textSize="10sp" android:textColor="@color/text_light_color" android:id="@r$id/section_detail_altitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+                <TextView android:textSize="10sp" android:textColor="@color/text_light_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@r$string/str_distance"/>
+                <TextView android:textSize="10sp" android:textColor="@color/text_light_color" android:id="@r$id/section_detail_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginTop="8dp" android:layout_below="@r$id/section_detail_data_1">
+                <RatingBar android:layout_gravity="center_vertical" android:id="@r$id/section_detail_ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="0" style="@r$style/sectionRatingBar"/>
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@r$id/section_detail_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@r$id/section_ratingbar"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@r$id/section_detail_right_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@r$id/section_detail_favourite_iv" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="42dp" android:layout_height="34dp" android:src="@drawable/selector_section_detail_favourite"/>
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@r$string/speedx_favourite_section"/>
+                <TextView android:textSize="11sp" android:textColor="@color/gray" android:id="@r$id/section_detail_favourite_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <View android:background="@color/member_manager_listview_divider" android:layout_width="1px" android:layout_height="46dp" android:layout_toLeftOf="@r$id/section_detail_right_ll" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@r$id/section_detail_list_headview_view1" android:background="@color/bg_theme_black_color" android:layout_width="match_parent" android:layout_height="6dp" android:layout_below="@r$id/section_detail_info"/>
+        <LinearLayout android:id="@r$id/section_detail_list_headview" android:background="@color/blackFive" android:layout_width="match_parent" android:layout_height="36dp" android:layout_below="@r$id/section_detail_list_headview_view1">
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@r$string/section_ranking"/>
+        </LinearLayout>
+        <View android:id="@r$id/section_detail_list_headview_view" android:background="@color/bg_theme_black_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@r$id/section_detail_list_headview"/>
+        <com.beastbikes.android.widget.PullRefreshListView4ScrollView android:id="@r$id/section_detail_list" android:background="@color/blackFive" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/bg_theme_black_color" android:dividerHeight="1px" android:layout_below="@r$id/section_detail_list_headview_view"/>
+    </RelativeLayout>
+</com.beastbikes.android.widget.ScrollView4CheckBottom>

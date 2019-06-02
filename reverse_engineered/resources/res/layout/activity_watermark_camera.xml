@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@r$id/activity_watermark_surfaceView_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@r$id/activity_watermark_bar">
+        <com.beastbikes.android.modules.user.filter.other.SquareCameraPreview android:id="@r$id/activity_watermark_surfaceView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.beastbikes.android.modules.user.filter.other.SaveImageView android:id="@r$id/activity_watermark_captureView" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@r$string/empty"/>
+        <View android:id="@r$id/activity_watermark_cover_top_view" android:background="@android:color/holo_green_dark" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignTop="@r$id/activity_watermark_surfaceView"/>
+        <View android:id="@r$id/activity_watermark_cover_bottom_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignBottom="@r$id/activity_watermark_surfaceView"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@r$id/activity_watermark_bar" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageView android:id="@r$id/activity_watermark_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_activity_watermark_back" android:contentDescription="@r$string/empty"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@r$id/activity_watermark_camera_tools" android:background="#7f000000" android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageView android:id="@r$id/activity_watermark_switch_camera" android:padding="10dp" android:layout_width="50dp" android:layout_height="28dp" android:layout_marginLeft="69dp" android:src="@drawable/ic_activity_watermark_switch_camera" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:contentDescription="@r$string/empty"/>
+        <ImageView android:id="@r$id/activity_watermark_switch_flash" android:padding="10dp" android:layout_width="50dp" android:layout_height="28dp" android:layout_marginRight="69dp" android:src="@drawable/ic_activity_watermark_switch_flash_auto" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:contentDescription="@r$string/empty"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@r$id/bar" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@r$id/activity_watermark_camera_tools">
+        <ImageView android:id="@r$id/activity_watermark_capture" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/ic_activity_watermark_capture" android:layout_centerInParent="true" android:contentDescription="@r$string/empty"/>
+        <ImageView android:id="@r$id/activity_watermark_gallery" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="60dp" android:src="@drawable/ic_activity_watermark_no_image" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@r$string/empty"/>
+    </RelativeLayout>
+</RelativeLayout>

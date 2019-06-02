@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rc_content" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/rc_list" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+    <Button android:textSize="14.0sp" android:textColor="#ff0195ff" android:gravity="center|left" android:layout_gravity="right" android:id="@id/rc_unread_message_count" android:background="@drawable/rc_unread_message_count" android:paddingLeft="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="12条新消息" />
+    <RelativeLayout android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip">
+        <ImageButton android:gravity="center" android:id="@id/rc_new_message_count" android:background="@drawable/rc_conversation_newmsg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/rc_new_message_number" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/rc_new_message_count" android:layout_alignTop="@id/rc_new_message_count" android:layout_alignRight="@id/rc_new_message_count" android:layout_alignBottom="@id/rc_new_message_count" />
+    </RelativeLayout>
+</FrameLayout>

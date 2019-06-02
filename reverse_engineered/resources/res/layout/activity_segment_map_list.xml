@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:id="@r$id/sliding_layout_segment" android:layout_width="match_parent" android:layout_height="match_parent" app:umanoFadeColor="@android:color/transparent" app:umanoDragView="@r$id/linear_segment_drag_view" app:umanoScrollableView="@r$id/nested_scrollView_segment_bottom" app:umanoOverlay="true" app:umanoAnchorPoint="0.7">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.CoordinatorLayout android:id="@r$id/detail_content" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.design.widget.CollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:id="@r$id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:title="" app:layout_scrollFlags="3" app:contentScrim="?attr/colorPrimary" app:titleEnabled="false">
+                <com.beastbikes.android.modules.map.SpeedxMap android:id="@r$id/mapView_segment" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="3" app:layout_collapseMode="2"/>
+                <android.support.v7.widget.Toolbar android:id="@r$id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:title="" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:layout_collapseMode="1"/>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.CoordinatorLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@r$id/rela_segment_my_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp" android:layout_marginBottom="15dp">
+            <ImageView android:id="@r$id/img_segment_my_location" android:layout_width="35.5dp" android:layout_height="35.5dp" android:src="@drawable/ic_segment_my_location" android:layout_alignParentLeft="true"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:gravity="center" android:id="@r$id/tv_segment_not_find_segment" android:background="@drawable/bg_segment_not_find_segment" android:visibility="gone" android:layout_width="140dp" android:layout_height="35.5dp" android:layout_marginRight="20dp" android:text="@r$string/str_loading" android:layout_alignParentRight="true"/>
+                <android.support.v7.widget.CardView android:id="@r$id/cardView_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:cardBackgroundColor="#181818" app:cardCornerRadius="5dp">
+                    <RelativeLayout android:id="@r$id/rela_segment_refresh" android:layout_width="35.5dp" android:layout_height="35.5dp" android:layout_alignParentRight="true">
+                        <ImageView android:id="@r$id/img_segment_refresh" android:layout_width="19dp" android:layout_height="19dp" android:src="@drawable/ic_segment_refresh" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@r$id/linear_segment_drag_view" android:focusable="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView android:orientation="vertical" android:id="@r$id/nested_scrollView_segment_bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@r$id/frame_segment_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@r$layout/layout_segment_base_info"/>
+                    <LinearLayout android:orientation="vertical" android:id="@r$id/linear_segment_content" android:background="#0e0e0e" android:paddingLeft="8.5dp" android:paddingRight="8.5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <include layout="@r$layout/layout_segment_relative_segment"/>
+                        <include layout="@r$layout/layout_segment_rank"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@r$id/linear_stage_share_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout>

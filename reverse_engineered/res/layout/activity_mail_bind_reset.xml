@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_mail_phone_valid_tip" android:layout_width="fill_parent" android:layout_height="44.0dip" style="@style/tv_account_tip" />
+        <EditText android:id="@id/et_mail_phone_binding_update_mail" android:layout_width="fill_parent" android:layout_height="44.0dip" android:hint="@string/str_please_input_email" android:inputType="textEmailAddress" style="@style/et_account" />
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.beastbikes.android.modules.user.ui.binding.widget.ValidCodeView android:id="@id/vv_mail_phone_binding_update_valid_view" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        <TextView android:enabled="false" android:gravity="center" android:id="@id/tv_mail_phone_binding_update_commit" style="@style/btn_account" />
+    </LinearLayout>
+</ScrollView>

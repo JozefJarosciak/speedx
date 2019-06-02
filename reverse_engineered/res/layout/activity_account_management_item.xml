@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_black_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/account_management_item_layout" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:enabled="false" android:textSize="@dimen/font_14" android:textColor="@color/text_white_color" android:gravity="center|left" android:id="@id/activity_account_management_item_account_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="11.5dip" android:text="@string/club_phone" android:drawablePadding="11.0dip" />
+        <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@id/activity_account_management_item_binding" android:layout_marginRight="12.5dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/material_design_switch_style" />
+    </RelativeLayout>
+    <View android:background="#ff292929" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="50.0dip" />
+</LinearLayout>

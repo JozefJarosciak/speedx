@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="rc_enable_get_remote_history_message">false</bool>
+    <bool name="rc_enable_mentioned_message">false</bool>
+    <bool name="rc_enable_message_recall">false</bool>
+    <bool name="rc_is_show_warning_notification">true</bool>
+    <bool name="rc_play_audio_continuous">true</bool>
+    <bool name="rc_read_receipt">false</bool>
+    <bool name="rc_stop_custom_service_when_quit">true</bool>
+    <bool name="rc_typing_status">false</bool>
+    <bool name="spb_default_mirror_mode">false</bool>
+    <bool name="spb_default_progressiveStart_activated">false</bool>
+    <bool name="spb_default_reversed">false</bool>
+</resources>

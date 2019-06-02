@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/activity_line" android:background="@drawable/bg_cycling_data_black_with_corners" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@r$id/rela_temp" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="45dp">
+        <View android:id="@r$id/view_cycling_report_name_left" android:layout_width="10dp" android:layout_height="20dp" android:layout_centerVertical="true"/>
+        <ImageView android:id="@r$id/img_cycling_report_chart_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="@drawable/ic_menu" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+        <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_20" android:ellipsize="end" android:id="@r$id/tv_cycling_report_chart_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:lines="1" android:layout_toRightOf="@r$id/view_cycling_report_name_left" android:layout_centerVertical="true" android:layout_marginStart="15dp"/>
+        <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_12" android:textColor="#b2999999" android:id="@r$id/tv_cycling_report_virtual" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@r$string/str_cycling_report_virtual" android:lines="1" android:minEms="7" android:layout_toLeftOf="@r$id/img_cycling_report_chart_menu" android:layout_toRightOf="@r$id/tv_cycling_report_chart_title" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_toStartOf="@r$id/img_cycling_report_chart_menu" android:layout_toEndOf="@r$id/tv_cycling_report_chart_title"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@r$id/relative_temp" android:layout_width="match_parent" android:layout_height="150dp" android:layout_below="@r$id/rela_temp">
+        <ViewStub android:id="@r$id/layout_cycling_data_heart_rate_bar" android:layout="@r$layout/layout_cycling_chart_top_heart_rate_bar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true"/>
+        <ViewStub android:id="@r$id/layout_cycling_data_three_items" android:layout="@r$layout/layout_cycling_chart_top_three_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <ViewStub android:id="@r$id/layout_cycling_data_two_items" android:layout="@r$layout/layout_cycling_chart_top_two_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <ViewStub android:id="@r$id/layout_cycling_data_with_six_items" android:layout="@r$layout/layout_cycling_chart_top_six_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <ViewStub android:id="@r$id/layout_cycling_data_with_one_items" android:layout="@r$layout/layout_cycling_chart_top_one_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <ViewStub android:id="@r$id/viewStub_slope_bottom" android:layout="@r$layout/layout_slope_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <ViewStub android:id="@r$id/viewStub_heart_rate_bottom" android:layout="@r$layout/layout_heart_rate_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@r$id/view_temp" android:background="#222" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@r$id/relative_temp"/>
+    <RelativeLayout android:id="@r$id/rela_cycling_report_unit" android:layout_width="match_parent" android:layout_height="36dp" android:layout_below="@r$id/view_temp">
+        <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_12" android:textColor="@android:color/white" android:id="@r$id/tv_cycling_report_chart_y_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.5dp" android:layout_centerVertical="true" android:layout_marginStart="6.5dp"/>
+        <TextView android:textColor="#f9f9f9" android:gravity="center_vertical" android:id="@r$id/tv_cycling_report_change_screen_to_horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp" android:text="@r$string/str_cycling_report_change_screen_direction_title" android:drawableRight="@drawable/ic_change_screen_to_horizontal" android:drawablePadding="13.5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_change_screen_to_horizontal" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:id="@r$id/view_temp1" android:background="#222" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@r$id/rela_cycling_report_unit"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@r$id/view_temp1">
+        <include layout="@r$layout/layout_chart_background"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ViewStub android:id="@r$id/viewStub_line_chart" android:layout="@r$layout/layout_line_chart" android:layout_width="match_parent" android:layout_height="360dp"/>
+            <ViewStub android:id="@r$id/viewStub_pie_chart" android:layout="@r$layout/layout_pie_chart" android:layout_width="match_parent" android:layout_height="360dp"/>
+            <ViewStub android:id="@r$id/viewStub_bar_chart" android:layout="@r$layout/layout_bar_chart" android:layout_width="match_parent" android:layout_height="360dp"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <ViewStub android:id="@r$id/viewStub_chart_no_data" android:layout="@r$layout/layout_chart_no_relative_data" android:layout_width="match_parent" android:layout_height="600dp"/>
+</RelativeLayout>

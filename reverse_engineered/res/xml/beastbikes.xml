@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="true" android:key="beast.setting.autopause" android:defaultValue="true" />
+    <com.beastbikes.framework.android.preference.IntegerEditTextPreference android:persistent="true" android:key="beast.setting.voicefeedback" android:defaultValue="0x8000000F" />
+    <com.beastbikes.framework.android.preference.IntegerEditTextPreference android:persistent="true" android:key="beast.setting.accuracy" android:defaultValue="0" />
+</PreferenceScreen>

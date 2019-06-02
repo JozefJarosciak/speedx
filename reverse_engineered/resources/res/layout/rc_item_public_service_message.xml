@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/rc_bg_item" android:paddingLeft="12dp" android:paddingRight="6dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingTop="4dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16dp" android:textColor="#353535" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/rc_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="80dp" android:lines="2"/>
+        <io.rong.imkit.widget.AsyncImageView android:layout_gravity="center_vertical" android:id="@+id/rc_img" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="centerCrop" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

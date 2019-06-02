@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_filter_bg" android:padding="2.0dip" android:focusable="true" android:clickable="true" android:layout_width="98.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/activity_watermark_gallery_lv_item_filter_img" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/tutorial_page_1" android:scaleType="centerCrop" android:contentDescription="@string/empty" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="#ff7e7e7e" android:ellipsize="end" android:gravity="center" android:id="@id/activity_watermark_gallery_lv_item_filter_name" android:background="#ff1a1a1a" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="@string/activity_watermark_tab_filter" android:singleLine="true" />
+</LinearLayout>

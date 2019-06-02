@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@id/zxing_barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:zxing_use_texture_view="true" app:zxing_scanner_layout="@layout/layout_qrcode_scanner" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|top" android:id="@id/scan_qrcode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:text="@string/str_scan_qrcode_message_title" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@id/scan_qrcode_desc_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:layout_marginRight="38.0dip" android:layout_marginBottom="70.0dip" android:text="@string/str_scan_qrcode_description_1" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/scan_qrcode_desc_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/str_scan_qrcode_description_2" />
+    <FrameLayout android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="258.0dip" android:layout_height="258.0dip">
+        <ImageView android:layout_gravity="center|left|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_scan_qrcode_top_left" />
+        <ImageView android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_scan_qrcode_top_right" />
+        <ImageView android:layout_gravity="bottom|center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_scan_qrcode_bottom_left" />
+        <ImageView android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_scan_qrcode_bottom_right" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_laser" android:layout_width="230.0dip" android:layout_height="230.0dip" android:src="@drawable/ic_scan_qrcode_laser" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.widget.RippleView android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:number="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_alignParentLeft="true">
+        <TextView android:textSize="@dimen/font_15" android:textColor="@color/text_white_color" android:gravity="center|left" android:id="@id/cycling_target_config_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上月里程" />
+        <TextView android:textSize="@dimen/font_12" android:textColor="@color/text_black_color" android:id="@id/cycling_target_config_item_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上月里程" />
+    </LinearLayout>
+    <ImageView android:id="@id/cycling_target_config_item_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/ic_speed_force_device_checked_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_20" android:textColor="@color/text_white_color" android:id="@id/cycling_target_config_item_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="100km" android:layout_toLeftOf="@id/cycling_target_config_item_check" android:layout_centerVertical="true" number:typefaceName="@string/number_type_face_name" />
+</com.beastbikes.android.widget.RippleView>

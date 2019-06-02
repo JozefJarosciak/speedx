@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/discover_color3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.beastbikes.android.widget.PullRefreshListView android:id="@r$id/club_msg_list" android:background="@color/discover_color3" android:layout_width="match_parent" android:layout_height="match_parent" android:dividerHeight="0dp"/>
+</LinearLayout>

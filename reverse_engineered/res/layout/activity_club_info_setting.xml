@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <RelativeLayout android:gravity="center" android:id="@id/activity_club_info_setting_logo" android:layout_width="fill_parent" android:layout_height="80.0dip">
+            <TextView android:textSize="@dimen/font_15" android:textColor="@color/clubinfosetting_label_color" android:gravity="center" android:id="@id/activity_club_info_setting_logo_lable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/club_info_setting_logo_label" android:layout_centerVertical="true" />
+            <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@id/activity_club_info_setting_logo_img" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_club_setting_default_logo" android:layout_toLeftOf="@id/activity_club_info_setting_logo_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/activity_club_info_setting_logo_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/ic_arrow_right_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/empty" />
+        </RelativeLayout>
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/bg_border_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/activity_club_info_setting_name" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_15" android:textColor="@color/clubinfosetting_label_color" android:gravity="center" android:id="@id/activity_club_info_setting_name_lable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/club_info_setting_name_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/font_14" android:textColor="@color/clubinfosetting_label_color2" android:gravity="right" android:id="@id/activity_club_info_setting_name_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_toLeftOf="@id/activity_club_info_setting_name_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/activity_club_info_setting_name_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/ic_arrow_right_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/empty" />
+            </RelativeLayout>
+            <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/activity_club_info_setting_desc" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_15" android:textColor="@color/clubinfosetting_label_color" android:gravity="center" android:id="@id/activity_club_info_setting_desc_lable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/club_info_setting_desc_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/font_14" android:textColor="@color/clubinfosetting_label_color2" android:gravity="right" android:id="@id/activity_club_info_setting_desc_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_toLeftOf="@id/activity_club_info_setting_desc_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/activity_club_info_setting_desc_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/ic_arrow_right_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/empty" />
+            </RelativeLayout>
+            <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_15" android:textColor="@color/clubinfosetting_label_color" android:id="@id/privateclubtv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/set_to_private_clubs" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/openprivateclubrl" android:layout_width="35.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/privateclubtv">
+                    <ImageView android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/ic_privateclubhelp" />
+                </RelativeLayout>
+                <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@id/create_club_private_sv" android:layout_marginRight="12.5dip" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/material_design_switch_style" />
+            </RelativeLayout>
+            <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

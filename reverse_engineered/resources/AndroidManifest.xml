@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="90100" android:versionName="3.0.0" package="com.beastbikes.android" platformBuildVersionCode="24" platformBuildVersionName="7">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="21"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="true"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <permission android:name="com.beastbikes.android.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.beastbikes.android.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.location"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <application android:theme="@r$style/Theme_Holo_Beast" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.beastbikes.android.BeastBikes" android:debuggable="false" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true">
+        <activity android:theme="@r$style/Theme_Holo_Beast_MainActivity" android:label="@string/app_name" android:name="com.beastbikes.android.main.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="speedx"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@r$style/Theme_Holo_Beast_AuthenticationActivity" android:name="com.beastbikes.android.authentication.ui.AuthenticationActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Transparent_NoActionBar_FullScreen" android:name="com.beastbikes.android.main.MiuiSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Transparent_NoActionBar_FullScreen" android:name="com.beastbikes.android.main.MeiZuSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/HomeActionBar" android:label="@string/app_name" android:name="com.beastbikes.android.home.HomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.beastbikes.android.widget.multiimageselector.MultiImageSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_settings" android:name="com.beastbikes.android.modules.preferences.ui.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/laboratory" android:name="com.beastbikes.android.modules.setting.ui.LaboratoryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/label_cycling_keepalive_suggest" android:name="com.beastbikes.android.modules.setting.ui.KeepAliveHelperActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_AppCompat_Light_NoActionBar_FullScreen" android:name="com.beastbikes.android.modules.user.ui.AvatarViewer" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_AppCompat_Light_NoActionBar_FullScreen" android:name="com.beastbikes.android.modules.user.ui.WatermarkCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_AppCompat_Light_NoActionBar_FullScreen" android:name="com.beastbikes.android.modules.user.ui.WatermarkGalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_AppCompat_Light_NoActionBar_FullScreen" android:name="com.beastbikes.android.modules.user.ui.WatermarkCropperActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_AppCompat_Light_NoActionBar_FullScreen" android:name="com.beastbikes.android.modules.user.ui.WatermarkFinishedActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/ProfileMenuStyle" android:label="@r$string/empty" android:name="com.beastbikes.android.modules.user.ui.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Beast" android:label="@r$string/str_cycling_history" android:name="com.beastbikes.android.modules.user.ui.CyclingRecordActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.beastbikes.android.modules.cycling.activity.ui.MapActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:label="@r$string/activity_finished_activity_title" android:name="com.beastbikes.android.modules.cycling.activity.ui.record.CyclingCompletedActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.beastbikes.intent.action.ACTIVITY_COMPLETE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@r$string/activity_complain_activity_title" android:name="com.beastbikes.android.modules.user.ui.ActivityComplainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.beastbikes.android.modules.cycling.route.ui.RouteSaveByWebActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/personal_record_activity_title" android:name="com.beastbikes.android.modules.user.ui.PersonalRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/about_activity_title" android:name="com.beastbikes.android.main.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/user_setting_activity_title" android:name="com.beastbikes.android.modules.preferences.ui.UserSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:label="@r$string/user_setting_activity_title" android:name="com.beastbikes.android.modules.preferences.ui.UserSettingActivityFromAuth" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/cut_avatar_activity_title" android:name="com.beastbikes.android.modules.preferences.ui.CutAvatarActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/offline_map_setting_activity_title" android:name="com.beastbikes.android.modules.preferences.ui.offlineMap.OfflineMapActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/accuracy_setting_activity_title" android:name="com.beastbikes.android.modules.preferences.ui.AccuracySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/voice_feedback_setting_activity_title" android:name="com.beastbikes.android.modules.preferences.ui.VoiceFeedbackSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_edit" android:name="com.beastbikes.android.modules.preferences.ui.EditTextActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Transparent_NoActionBar_FullScreen" android:label="@r$string/about_activity_title" android:name="com.beastbikes.android.main.TutorialActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/route_activity_title" android:name="com.beastbikes.android.modules.cycling.route.ui.RouteActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/discovery_fragment_good_route" android:name="com.beastbikes.android.modules.cycling.route.ui.RoutesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.cycling.route.ui.RouteCommentActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/route_map_activity_title" android:name="com.beastbikes.android.modules.cycling.route.ui.RouteMapActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/route_self_activity_title" android:name="com.beastbikes.android.modules.cycling.route.ui.RouteSelfActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Transparent_NoActionBar" android:name="com.beastbikes.android.modules.cycling.route.ui.RouteElevationActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.beastbikes.android.modules.cycling.route.ui.RoutePlanActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.beastbikes.android.modules.cycling.route.ui.RouteMapSearchGeoActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:label="@r$string/message_activity_title" android:name="com.beastbikes.android.modules.message.ui.MessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.embapi.BrowserActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="app" android:host="beastbikes.com"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.beastbikes.intent.action.VIEW_PUSHDATA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.beastbikes.intent.action.VIEW_PUSHDATA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@r$string/str_edit" android:name="com.beastbikes.android.modules.preferences.ui.BaseEditTextActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_create_activity_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@r$string/club_info_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubDiscoverActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_search_activity_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Beast" android:label="@r$string/activity_club_manager_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/activity_member_manager_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubMemberManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/activity_club_apply_manager_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ApplyManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/activity_club_info_setting_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubInfoSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_member_rank_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubMemberRankActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_info_item_club_post_notice" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubPostNoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_notice_history" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubHistoryNoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Beast" android:label="@r$string/club_post_dynamic" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubFeedPostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@r$string/empty" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubFeedInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/clubfeed_image_details" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubFeedImageDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:label="@r$string/str_album" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubGalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Beast" android:label="@r$string/clubfeed_image_details" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubFeedDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Beast" android:label="@r$string/clubfeed_level" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubLevelActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/clubfeed_image_details" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubImageDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/clubfeed_image_details" android:name="com.beastbikes.android.modules.cycling.club.ui.ThumbsListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_upload_image_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubUploadImageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@r$string/message" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubMsgActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_upload_image_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubFeedPicUploadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <service android:name="com.mapbox.mapboxsdk.telemetry.TelemetryService"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.beastbikes.android.modules.cycling.club.ui.MemberRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubRankActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/cycling_data_title" android:name="com.beastbikes.android.modules.cycling.activity.ui.CyclingDataActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/friends_apply_title" android:name="com.beastbikes.android.modules.social.im.ui.FriendsApplyActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/friends_search_result_title" android:name="com.beastbikes.android.modules.social.im.ui.FriendsSearchResultActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:label="@r$string/location_select" android:name="com.beastbikes.android.modules.social.im.ui.conversation.LocationSelectActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:label="@r$string/str_grid_explore" android:name="com.beastbikes.android.modules.user.ui.GridExploreActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/cycling_setting" android:name="com.beastbikes.android.modules.preferences.ui.CyclingSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/cycling_setting_title" android:name="com.beastbikes.android.modules.cycling.activity.ui.CyclingSettingPageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:label="@r$string/empty" android:name="com.beastbikes.android.modules.cycling.activity.ui.CyclingTargetSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/empty" android:name="com.beastbikes.android.ble.ui.DiscoveryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.beastbikes.intent.action.BIND_SPEED_FORCE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@r$style/SpeedForceActivity" android:label="" android:name="com.beastbikes.android.ble.ui.DiscoveryResultActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Transparent_NoActionBar_FullScreen" android:name="com.beastbikes.android.modules.cycling.club.ui.CaptureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:name="com.beastbikes.android.ble.CentralService" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.beastbikes.android.ble.intent.action.CENTRAL_CONTROL"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.beastbikes.android.ble.BleNotificationService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.beastbikes.android.ble.intent.action.NOTIFICATION_LISTENER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.beastbikes.android.modules.cycling.SyncService"/>
+        <service android:name="com.beastbikes.android.main.adv.AdvService"/>
+        <service android:name="com.beastbikes.android.modules.cycling.activity.biz.ActivityService" android:enabled="true" android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.beastbikes.intent.action.ACTIVITY_MANAGER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="cYN62WkIhrX1d5f8VouoXqg9yzlvWMGs"/> //v2.6.0更新，下面为原先的key
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"/>
+        <receiver android:name="com.beastbikes.android.KeepAliveReceiver">
+            <intent-filter android:priority="7fffffff">
+                <action android:name="android.media.SCO_AUDIO_STATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter android:priority="7fffffff">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter android:priority="7fffffff">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+            <intent-filter android:priority="7fffffff">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter android:priority="7fffffff">
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+            </intent-filter>
+            <intent-filter android:priority="7fffffff">
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+            </intent-filter>
+            <intent-filter android:priority="7fffffff">
+                <action android:name="android.intent.action.SCREEN_ON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.beastbikes.android.update.VersionUpdateReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="UMENG_APPKEY" android:value="5639ace4e0f55a6cf4001fc3"/>
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="87bbf458a3015a6bd764352f84c8b484"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.beastbikes.android.wxapi.WXEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="DdLqllMyHpyj45ohZW7WCZHZK"/>
+        <receiver android:name="com.beastbikes.android.modules.social.im.RongPushReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@r$string/firends_chat_title" android:name="com.beastbikes.android.modules.social.im.ui.conversation.ConversationListStaticActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="rong" android:host="com.beastbikes.android" android:pathPrefix="/conversationlist"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.beastbikes.android.modules.social.im.ui.conversation.ConversationStaticActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="rong" android:host="com.beastbikes.android" android:pathPrefix="/conversation/"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.beastbikes.android.modules.social.im.ui.conversation.ConversationMapView" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.social.im.ui.conversation.PhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.social.im.ui.conversation.GroupSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.beastbikes.android.modules.user.ui.binding.CountryPageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+        <service android:name="io.rong.imlib.ipc.RongService" android:exported="true" android:process=":ipc"/>
+        <service android:name="io.rong.imlib.ReConnectService"/>
+        <activity android:name="io.rong.imkit.tools.RongWebviewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="io.rong.imkit.intent.action.webview"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="http" android:host="*"/>
+                <data android:scheme="https" android:host="*"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="io.rong.imkit.widget.provider.TakingPicturesActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <service android:name="io.rong.push.PushService" android:exported="false" android:process="io.rong.push">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="io.rong.push"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="io.rong.push.PushReceiver" android:process="io.rong.push">
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="io.rong.push.intent.action.HEART_BEAT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="io.rong.imlib.HeartbeatReceiver" android:process=":ipc"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyC37s5-sXx9mrZJYRuSje9RmJaczmf721k"/>
+        <service android:name="com.beastbikes.android.locale.googlemaputils.FetchAddressIntentService" android:exported="false"/>
+        <activity android:label="@r$string/ranking_fragment_title" android:name="com.beastbikes.android.modules.cycling.ranking.ui.RankActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/menu_post_activity" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubActivityReleaseActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:label="@r$string/club_write_infor_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubWriteInforActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_activity_list_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubActivitiesListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_activity_manage_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubActivityManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_activity_user_list_tittle" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubActUserListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_account_manage_account_and_pwd" android:name="com.beastbikes.android.modules.user.ui.binding.AccountManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.user.ui.binding.ResetBindPhoneActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.user.ui.binding.ResetBindMailActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.user.ui.binding.ResetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.user.ui.binding.BindMailPhoneSuccessActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.user.ui.binding.ValidMailPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.mob.tools.MobUIShell" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@r$string/activity_find_pass_word" android:name="com.beastbikes.android.authentication.ui.FindPassWordActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/activity_find_pass_word" android:name="com.beastbikes.android.authentication.ui.FindPasswordSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Beast_SplashActivity" android:name="com.beastbikes.android.main.adv.AdvertiseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.ble.ui.StartNavigationActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/club_act_info_str" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubActInfoEditorActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@r$string/facebook_app_id"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <provider android:name="com.facebook.FacebookContentProvider" android:exported="true" android:authorities="com.facebook.app.FacebookContentProvider1521430224854105"/>
+        <service android:name="com.beastbikes.android.ble.otadownload.OTADownLoadService" android:exported="false"/>
+        <activity android:name="com.beastbikes.android.modules.cycling.club.ui.ClubCutBitmapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.cycling.club.ui.ClubActivityInfoBrowserActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/route_self_activity_title" android:name="com.beastbikes.android.modules.cycling.club.ui.ClubActRouteSelfActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/HomeActionBar" android:name="com.beastbikes.android.modules.cycling.sections.ui.CompetitionSectionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/filter" android:name="com.beastbikes.android.modules.cycling.sections.ui.SectionFiltersActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/speedx_section_detail" android:name="com.beastbikes.android.modules.cycling.sections.ui.SectionDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_segment_collection" android:name="com.beastbikes.android.modules.cycling.sections.ui.FavorSegmentActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/record_segment" android:name="com.beastbikes.android.modules.cycling.sections.ui.RecordSegmentActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/discovery_fragment_store" android:name="com.beastbikes.android.modules.shop.ui.BikeShopListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@r$style/ProfileMenuStyle" android:label="@r$string/shop_detail" android:name="com.beastbikes.android.modules.shop.ui.BikeShopDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/profile_fragment_follower" android:name="com.beastbikes.android.modules.user.ui.FansActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/profile_fragment_follow" android:name="com.beastbikes.android.modules.user.ui.FollowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.user.ui.FollowSearchResultActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.beastbikes.android.modules.cycling.activity.ui.CyclingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.cycling.club.ui.ClubTransferActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/feedback_issue_ack" android:name="com.beastbikes.android.modules.user.ui.FeedBackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.beastbikes.android.widget.multiimageselector.LookImageActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/empty" android:name="com.beastbikes.android.modules.user.ui.MedalsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_AppCompat_Light_NoActionBar_FullScreen" android:label="@r$string/empty" android:name="com.beastbikes.android.modules.user.ui.MedalInfoActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.beastbikes.android.PushReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.beastbikes.android"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="fd2370dacc7c25531ed9c55a"/>
+        <activity android:label="@r$string/label_version_update" android:name="com.beastbikes.android.ble.ui.SpeedXOtaVersionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_ble_gps_file_update" android:name="com.beastbikes.android.ble.ui.SpeedXGpsUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/label_app_version_update" android:name="com.beastbikes.android.update.ui.VersionUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.pingplusplus.android.PaymentActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize"/>
+        <activity-alias android:name="com.beastbikes.android.wxapi.WXPayEntryActivity" android:exported="true" android:targetActivity="com.pingplusplus.android.PaymentActivity"/>
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:name="com.alipay.sdk.auth.AuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@r$style/SpeedForceActivity" android:name="com.beastbikes.android.ble.ui.SpeedForceActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/label_central_setting" android:name="com.beastbikes.android.ble.ui.SpeedXSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.strava.ui.StravaAuthWebActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/label_service_manager" android:name="com.beastbikes.android.modules.preferences.ui.ServiceManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/label_cadence_setting" android:name="com.beastbikes.android.ble.ui.SpeedXCadenceSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/label_speedx_max_heart_rate_setting" android:name="com.beastbikes.android.ble.ui.SpeedXHeartRateSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Beast" android:label="@r$string/record_analysis" android:name="com.beastbikes.android.modules.cycling.activity.ui.record.RecordDataCompareActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <service android:name="com.mapbox.mapboxsdk.telemetry.TelemetryService"/>
+        <activity android:theme="@r$style/AppTheme_Toolbar" android:label="" android:name="com.beastbikes.android.ble.ui.DisclaimerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/AppTheme_Toolbar" android:label="" android:name="com.beastbikes.android.ble.ui.SearchLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/AppTheme_Toolbar" android:label="" android:name="com.beastbikes.android.ble.ui.SelectOnMapActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/AppTheme_Toolbar" android:label="" android:name="com.beastbikes.android.ble.ui.NavigationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Beast" android:label="@r$string/str_navigation_central_use_desc" android:name="com.beastbikes.android.ble.ui.NavigationDescActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/discovery_fragment_store" android:name="com.beastbikes.android.modules.shop.ui.NearbyBikeShopActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_bicycle_shop_all" android:name="com.beastbikes.android.modules.shop.ui.BikeShopsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/AppTheme_Toolbar" android:label="" android:name="com.beastbikes.android.modules.cycling.stage.ui.StageMapListBaseActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_cycling_use_route_un_selected" android:name="com.beastbikes.android.modules.cycling.stage.ui.StageAndRouteActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_segments_description_static_vc_title" android:name="com.beastbikes.android.modules.cycling.stage.ui.StageAchievementDescActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_achievements_list_title" android:name="com.beastbikes.android.modules.cycling.achievement.ui.AchievementSelfActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.cycling.achievement.ui.AchievementsStageActivity"/>
+        <activity android:label="@r$string/str_segment_personal" android:name="com.beastbikes.android.modules.cycling.stage.ui.StageProfileScoreActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_segment_near" android:name="com.beastbikes.android.modules.cycling.stage.ui.StageListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_segment_collection" android:name="com.beastbikes.android.modules.cycling.stage.ui.StageCollectionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_segment_score" android:name="com.beastbikes.android.modules.cycling.stage.ui.StageScoreListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/AppTheme_Toolbar" android:label="@r$string/ranking_fragment_title" android:name="com.beastbikes.android.modules.cycling.stage.ui.StageRankListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_ble_connect_with_qrcode_title" android:name="com.beastbikes.android.ble.ui.ScanConnectActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/profile_fragment_detail_item_speed_force_title" android:name="com.beastbikes.android.ble.ui.ChooseDeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/profile_fragment_detail_item_speed_force_title" android:name="com.beastbikes.android.ble.ui.SpeedXDevicesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.ble.ui.SpeedXForceScreenEditActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_ble_config_display_setting" android:name="com.beastbikes.android.ble.ui.SpeedXForceScreenSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_ble_config_training_target" android:name="com.beastbikes.android.ble.ui.SpeedXTrainingTargetActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/AppTheme_Toolbar" android:label="@r$string/str_ble_select_offline_area" android:name="com.beastbikes.android.ble.ui.OfflineMapSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_ble_version_info" android:name="com.beastbikes.android.ble.ui.S605FirmwareInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_ble_config_wifi_setting" android:name="com.beastbikes.android.ble.ui.SpeedXWiFiInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_train_course_title" android:name="com.beastbikes.android.modules.train.ui.TrainDefaultActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Transparent_NoActionBar_FullScreen" android:label="" android:name="com.beastbikes.android.modules.cycling.activity.ui.record.CyclingReportHorizontalActivity" android:screenOrientation="landscape"/>
+        <activity android:label="@r$string/str_create_train_long_time_plan" android:name="com.beastbikes.android.modules.train.ui.CreateTrainLongTimePlanActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:label="@r$string/empty" android:name="com.beastbikes.android.modules.train.ui.CreateTrainPlanSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_train_course_title" android:name="com.beastbikes.android.modules.train.ui.TrainCourseInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/empty" android:name="com.beastbikes.android.modules.train.ui.TrainCoursesActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Transparent_NoActionBar_FullScreen" android:label="@r$string/str_cycling_report_training_analysis_title" android:name="com.beastbikes.android.modules.cycling.activity.ui.record.CyclingReportTrainStatisticsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_train_single_course_title" android:name="com.beastbikes.android.modules.train.ui.SingleTrainListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Beast_FullScreen" android:label="@r$string/empty" android:name="com.beastbikes.android.modules.cycling.activity.ui.CyclingStartAnimationActivity"/>
+        <activity android:name="com.beastbikes.android.ble.ui.ScanQRCodeActivity"/>
+        <activity android:label="@r$string/str_ble_config_training_target" android:name="com.beastbikes.android.modules.user.ui.TrainTargetSetActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_max_heart_rate" android:name="com.beastbikes.android.modules.user.ui.HeartRateSetActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.beastbikes.android.authentication.login.LoginSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.beastbikes.android.authentication.register.RegisterSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@r$style/Theme_Holo_Transparent_NoActionBar_FullScreen" android:name="com.beastbikes.android.main.SelectAuthActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.beastbikes.android.authentication.login.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.beastbikes.android.authentication.register.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.beastbikes.android.authentication.inputpassword.InputPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.beastbikes.android.authentication.validcode.ValidCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.beastbikes.android.authentication.findpassword.FindPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_profile_info" android:name="com.beastbikes.android.modules.user.ui.ProfileSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_profile_info" android:name="com.beastbikes.android.modules.user.ui.UserBaseInfoSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_setting_ftp" android:name="com.beastbikes.android.modules.user.ui.FTPListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="FTP" android:name="com.beastbikes.android.modules.user.ui.FTPSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_filter_by_time" android:name="com.beastbikes.android.modules.user.ui.CyclingRecordFilterTimeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_region" android:name="com.beastbikes.android.modules.user.ui.SearchRegionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_nickname" android:name="com.beastbikes.android.modules.user.ui.InputNicknameActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@r$string/str_ble_sensor_device_title" android:name="com.beastbikes.android.modules.cycling.activity.ui.BleSensorManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.beastbikes.android.modules.cycling.activity.ui.BleSensorListActivity"/>
+        <activity android:theme="@r$style/EmptyStyle" android:name="com.beastbikes.android.modules.cycling.activity.ui.EmptyActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.beastbikes.android.modules.cycling.club.ui.ClubDefaultActivity"/>
+        <activity android:name="io.rong.imkit.activity.PictureSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="io.rong.imkit.activity.PicturePreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="io.rong.imkit.activity.PicturePagerActivity"/>
+        <activity android:name="io.rong.imkit.mention.MemberMentionedActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <service android:name="io.rong.push.core.PushRegistrationService" android:exported="false"/>
+        <service android:name="io.rong.push.core.MessageHandleService" android:exported="true"/>
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver"/>
+        <activity android:theme="@style/MyDialogStyle" android:name="cn.jpush.android.ui.PopWinActivity" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="cn.jpush.android.ui.PushActivity" android:exported="false" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.beastbikes.android"/>
+            </intent-filter>
+        </activity>
+        <service android:name="cn.jpush.android.service.DownloadService" android:enabled="true" android:exported="false"/>
+        <service android:name="cn.jpush.android.service.PushService" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <service android:name="cn.jpush.android.service.DaemonService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.beastbikes.android"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="cn.jpush.android.service.PushReceiver" android:enabled="true" android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.beastbikes.android"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+        <activity android:name="com.digits.sdk.android.PhoneNumberActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.digits.sdk.android.ConfirmationCodeActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.digits.sdk.android.LoginCodeActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.digits.sdk.android.PinCodeActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.digits.sdk.android.FailureActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.digits.sdk.android.ContactsActivity" android:exported="false" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.digits.sdk.android.EmailRequestActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.digits.sdk.android.PhoneNumberActionBarActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.digits.sdk.android.ConfirmationCodeActionBarActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.digits.sdk.android.LoginCodeActionBarActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.digits.sdk.android.FailureActionBarActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.digits.sdk.android.ContactsActionBarActivity" android:exported="false" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.digits.sdk.android.PinCodeActionBarActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.digits.sdk.android.EmailRequestActionBarActivity" android:exported="false" android:taskAffinity="com.digits.sdk.android" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <service android:name="com.digits.sdk.android.ContactsUploadService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" android:exported="false" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <service android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/MediaTheme" android:name="com.twitter.sdk.android.tweetui.PlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/MediaTheme" android:name="com.twitter.sdk.android.tweetui.GalleryActivity"/>
+        <activity android:name="com.twitter.sdk.android.core.identity.OAuthActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="orientation|screenSize"/>
+        <activity android:label="@string/kit_name" android:icon="@drawable/tw__transparent" android:name="com.twitter.sdk.android.core.identity.ShareEmailActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <activity android:theme="@style/zxing_CaptureTheme" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+</manifest>

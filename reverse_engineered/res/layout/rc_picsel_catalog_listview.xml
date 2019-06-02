@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="92.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/image_layout" android:background="@drawable/rc_picsel_catalog_pic_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/image" android:layout_width="75.0dip" android:layout_height="75.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@id/image_layout" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DCIM" />
+        <TextView android:textSize="13.0sp" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="42张" />
+    </LinearLayout>
+    <ImageView android:id="@id/selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:src="@drawable/rc_picsel_catalog_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

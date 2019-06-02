@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/infowindow_content" android:background="@drawable/bg_infowindow_content" android:paddingLeft="20dp" android:paddingTop="14dp" android:paddingRight="20dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/infowindow_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="@string/infoWindowTitle" android:maxEms="17"/>
+        <TextView android:textSize="14sp" android:textColor="@color/gray" android:id="@+id/infowindow_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="@string/infoWindowDescription" android:maxEms="17" android:lineSpacingExtra="1dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black" android:id="@+id/infowindow_subdescription" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/infoWindowAddress" android:maxEms="17"/>
+    </LinearLayout>
+    <com.mapbox.mapboxsdk.annotations.InfoWindowTipView android:id="@+id/infowindow_tipview" android:layout_width="@dimen/infowindow_tipview_width" android:layout_height="14dp" android:layout_below="@+id/infowindow_content"/>
+</merge>

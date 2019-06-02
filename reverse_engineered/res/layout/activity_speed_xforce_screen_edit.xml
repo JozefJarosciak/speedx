@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.beastbikes.android.modules.cycling.activity.ui.widget.CyclingPreviewLayout android:id="@id/cycling_preview_layout_edit" android:background="#ff333333" android:layout_width="192.0dip" android:layout_height="256.0dip" android:layout_marginTop="15.0dip" />
+    <View android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+    <android.support.design.widget.TabLayout android:id="@id/tabLayout_speedx_force_settings_options" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="#ffff002a" app:tabIndicatorHeight="2.0dip" />
+    <View android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView_speedx_force_settings_options_child" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

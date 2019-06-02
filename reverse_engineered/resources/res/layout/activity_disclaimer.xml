@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@r$id/linear_temp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="42.5dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.beastbikes.android.ble.ui.widget.TextViewWithBoardAndCorners android:textSize="@dimen/font_14" android:textColor="#232323" android:gravity="center" android:id="@r$id/textView_refuse_disclaimer" android:layout_width="123dp" android:layout_height="match_parent" android:text="@r$string/activity_club_apply_item_btn_refuse" app:drawableColor="#979797" app:radius="3dp" app:solidColor="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.beastbikes.android.ble.ui.widget.TextViewWithBoardAndCorners android:textSize="@dimen/font_14" android:textColor="#232323" android:gravity="center" android:id="@r$id/textView_accept_disclaimer" android:layout_width="123dp" android:layout_height="match_parent" android:text="@r$string/activity_club_apply_item_btn_agree" app:drawableColor="#979797" app:radius="3dp" app:solidColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@r$id/activity_disclaimer" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@r$id/linear_temp">
+        <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:text="@r$string/str_navigation_disclaimer"/>
+        <TextView android:textSize="@dimen/font_13" android:textColor="#070707" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@r$string/str_navigation_disclaimer_first_item"/>
+        <TextView android:textSize="@dimen/font_13" android:textColor="#070707" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@r$string/str_navigation_disclaimer_second_item"/>
+        <TextView android:textSize="@dimen/font_13" android:textColor="#070707" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@r$string/str_navigation_disclaimer_third_item"/>
+    </LinearLayout>
+</RelativeLayout>

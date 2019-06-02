@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerInParent="true">
+        <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@id/club_info_logo" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/ic_avatar_club" android:layout_centerHorizontal="true" android:contentDescription="@string/empty" app:borderWidth="4.0dip" app:borderColor="#2cffffff" app:borderType="outside" />
+        <TextView android:textSize="@dimen/font_13" android:textColor="#ff9a9a9a" android:gravity="center" android:id="@id/club_info_desc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="30.0dip" android:singleLine="true" android:layout_below="@id/club_info_logo" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/club_level" android:background="@drawable/bg_oval_1" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/club_info_logo" android:layout_alignBottom="@id/club_info_logo" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/font_13" android:textColor="#ff9a9a9a" android:id="@id/club_info_notice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="55.0dip" android:text="" android:singleLine="true" android:layout_centerInParent="true" />
+</RelativeLayout>

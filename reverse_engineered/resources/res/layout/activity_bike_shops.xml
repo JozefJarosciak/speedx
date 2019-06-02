@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/activity_bike_shops" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.beastbikes.android.widget.SwipeRefreshAndLoadLayout android:id="@r$id/activity_bike_shops_refresh_and_load" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.beastbikes.android.widget.stickylistlibrary.stickygridheaders.StickyGridHeadersGridView android:id="@r$id/activity_bike_shops_list_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="0dp" android:columnWidth="0dp" android:numColumns="1"/>
+    </com.beastbikes.android.widget.SwipeRefreshAndLoadLayout>
+</LinearLayout>

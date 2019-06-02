@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="60dp">
+    <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@r$id/fans_and_follow_item_avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/ic_avatar_club" android:scaleType="centerInside" android:layout_centerVertical="true" android:contentDescription="@r$string/empty"/>
+    <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:id="@r$id/fans_and_follow_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:singleLine="true" android:layout_toRightOf="@r$id/fans_and_follow_item_avatar" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/font_12" android:textColor="@color/text_black_color" android:gravity="center" android:id="@r$id/fans_and_follow_item_status" android:layout_width="64dp" android:layout_height="26dp" android:layout_marginRight="15dp" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

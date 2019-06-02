@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/surfaceView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/markerViewContainer" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.mapbox.mapboxsdk.maps.widgets.MyLocationView android:id="@id/userLocationView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.mapbox.mapboxsdk.maps.widgets.CompassView android:id="@id/compassView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/logoView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/attribution_logo" android:contentDescription="@string/mapboxIconContentDescription" />
+    <ImageView android:id="@id/attributionView" android:background="@drawable/bg_default_selector" android:padding="7.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_outline_24dp_selector" android:adjustViewBounds="true" android:contentDescription="@string/attributionsIconContentDescription" />
+</merge>

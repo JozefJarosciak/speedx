@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#181818" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_24" android:textColor="@android:color/white" android:id="@r$id/tv_sign_up_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@r$string/str_sign_up_with_phone" android:lines="1"/>
+    <TextView android:id="@r$id/tv_sign_up_desc" android:layout_marginTop="20dp" android:text="@r$string/str_sign_up_with_phone_desc" style="@r$style/TVAuthNormalWhite"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@r$layout/layout_input_phone_num"/>
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@r$layout/layout_input_email"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+        <Button android:layout_gravity="end" android:id="@r$id/btn_auth_register_next" android:background="@drawable/bg_btn_white_with_corners_without_stroke" android:layout_width="120dp" android:layout_height="45dp" android:text="@r$string/str_next"/>
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@r$id/tv_auth_register_switch" android:layout_height="45dp" android:text="@r$string/str_sign_up_with_email" style="@r$style/TVAuthNormalWhite"/>
+    </FrameLayout>
+</LinearLayout>

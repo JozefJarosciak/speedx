@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_13" android:textColor="#fff" android:layout_gravity="center" android:id="@r$id/tv_mail_phone_bound_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginBottom="40dp" android:drawableTop="@drawable/ic_account_mail_bound" android:drawablePadding="15dp"/>
+    <TextView android:id="@r$id/tv_mail_phone_bound_reset" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginBottom="3dp" style="@r$style/btn_account"/>
+    <TextView android:textColor="@color/member_manager_item_time" android:id="@r$id/tv_mail_phone_bound_unbound" android:background="@drawable/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp" android:text="@r$string/activity_remove_bound_mail_remove_str" style="@r$style/btn_account"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:id="@r$id/linear_navigation" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="27dp" android:paddingTop="21dp" android:paddingRight="34.8dp" android:paddingBottom="21dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="27dp" android:paddingEnd="34.8dp">
+        <TextView android:textColor="#999999" android:id="@r$id/activity_navigation_tv_my_location" android:text="@r$string/str_navigation_select_start" android:drawableLeft="@drawable/ic_select_location_my_location_gray" style="@r$style/NavigationSelectLocationText"/>
+        <com.beastbikes.android.ble.ui.widget.WayPointLinearLayout android:id="@r$id/wayPointLinear" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textColor="#999999" android:id="@r$id/activity_navigation_tv_destination_location" android:text="@r$string/str_navigation_select_destination" android:drawableLeft="@drawable/ic_select_location_destination_gray" style="@r$style/NavigationSelectLocationText"/>
+    </LinearLayout>
+    <ViewStub android:id="@r$id/viewStub_route_info" android:layout="@r$layout/layout_route_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.5dp"/>
+    <Button android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:id="@r$id/btn_calculate_route" android:background="@drawable/bg_navigation_btn_gray" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@r$string/str_navigation_calculate_route"/>
+    <TextView android:textSize="11sp" android:textColor="#999999" android:id="@r$id/tv_navigation_how_to_use_nav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@r$string/str_navigation_how_to_use_navigation"/>
+</LinearLayout>

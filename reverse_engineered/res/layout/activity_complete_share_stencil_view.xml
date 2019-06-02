@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/activity_complete_window" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/activity_complete_stencil_data_btn" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="70.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="26.0dip" android:src="@drawable/ic_stencil_data" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:text="@string/activity_complete_activity_data_report" />
+        </LinearLayout>
+        <View android:background="@color/warmGrey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/activity_complete_stencil_camera_btn" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="70.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="26.0dip" android:src="@drawable/ic_stencil_camera" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:text="@string/activity_complete_activity_watermark_camera" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

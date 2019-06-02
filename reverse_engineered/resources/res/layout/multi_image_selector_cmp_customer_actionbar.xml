@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#070707" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@r$id/btn_back" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/multi_image_selector_btn_back" android:layout_centerVertical="true"/>
+    <TextView android:textSize="20sp" android:textColor="@android:color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图片" android:layout_toRightOf="@r$id/btn_back" android:layout_centerVertical="true"/>
+    <Button android:textSize="14sp" android:textColor="@color/multi_image_selector_default_text_color" android:id="@r$id/commit" android:background="#00000000" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:minWidth="1dp" android:minHeight="1dp" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

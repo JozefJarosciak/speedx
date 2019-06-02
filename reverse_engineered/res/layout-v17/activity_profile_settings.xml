@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ff111111" android:paddingLeft="55.0dip" android:paddingRight="55.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="55.0dip" android:paddingEnd="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@id/img_profile_settings_avatar" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="100.0dip" android:src="@drawable/ic_avatar" android:contentDescription="@string/empty" app:imageBorderWidth="2.0dip" app:borderColor="@android:color/white" />
+    <TextView android:textSize="@dimen/font_13" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/str_add_avatar" />
+    <EditText android:textSize="@dimen/font_13" android:textColor="@android:color/white" android:textColorHint="@color/home_activity_tab_bar_item_label_default" android:gravity="center" android:id="@id/edit_profile_settings_nickname" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginTop="30.0dip" android:hint="@string/str_nickname" android:inputType="text" />
+    <View android:background="#ff323232" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_profile_settings_region" android:layout_width="wrap_content" android:layout_height="95.0dip" android:text="@string/str_region" />
+    <View android:background="#ff323232" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

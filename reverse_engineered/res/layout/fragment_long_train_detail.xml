@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_black_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TabLayout android:id="@id/course_info_tab_layout" android:layout_width="fill_parent" android:layout_height="60.0dip" app:tabIndicatorColor="@color/red_color" app:tabIndicatorHeight="0.0dip" app:tabContentStart="0.0dip" app:tabBackground="@color/bg_black_color" app:tabMode="scrollable" app:tabGravity="fill" app:tabTextColor="#ff999999" app:tabSelectedTextColor="@color/text_white_color" />
+    <View android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.beastbikes.android.widget.NonScrollListView android:id="@id/course_info_course_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <FrameLayout android:id="@id/course_info_course_view_all" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/str_view_all_train" />
+        <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:src="@drawable/ic_arrow_right" />
+    </FrameLayout>
+</LinearLayout>

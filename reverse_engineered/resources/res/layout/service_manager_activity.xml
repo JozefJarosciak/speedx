@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="#999" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="20dp" android:text="@r$string/service_manager_title"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#111" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@r$id/service_manager_activity_icon" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_strava" android:scaleType="center" android:layout_weight="1"/>
+        <TextView android:textColor="#fff" android:id="@r$id/service_manager_activity_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Strava" android:layout_weight="1"/>
+        <LinearLayout android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_13" android:textColor="#fff" android:gravity="center" android:id="@r$id/service_manager_activity_contact" android:background="@drawable/border_0_5_px_solid_b9b9b9_width_radius_5dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="70dp" android:layout_height="wrap_content" android:text="@r$string/service_manager_contact"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:gravity="center" android:id="@id/tvnonearby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="79.0dip" android:text="@string/no_near_by_club" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/btn_create_club" android:background="@drawable/bg_createvlub" android:layout_width="150.0dip" android:layout_height="44.0dip" android:layout_marginTop="24.5dip" android:text="@string/club_create_activity_title" android:layout_below="@id/tvnonearby" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dialog_start_train_use_app" android:layout_width="0.0dip" android:layout_height="150.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_13" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/str_training_start_with_app" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:src="@drawable/ic_start_train_use_app" />
+    </LinearLayout>
+    <View android:background="#ff222222" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dialog_start_train_use_speedforce" android:layout_width="0.0dip" android:layout_height="150.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_13" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/str_training_start_with_device" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:src="@drawable/ic_start_train_use_speedforce" />
+    </LinearLayout>
+</LinearLayout>

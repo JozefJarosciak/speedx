@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" app:cardBackgroundColor="#ff222222" app:cardCornerRadius="4.0dip" app:cardElevation="4.0dip" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ImageView android:id="@id/train_long_time_course_item_img" android:layout_width="fill_parent" android:layout_height="160.0dip" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/train_long_time_course_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="#b1ffffff" android:gravity="center_horizontal" android:id="@id/train_long_time_course_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

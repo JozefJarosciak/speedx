@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view" android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_temp" android:layout_width="65.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="25.0sp" android:textColor="@android:color/white" android:id="@id/tv_chart_data_compare_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/ic_chart_speed" android:drawablePadding="5.0dip" />
+            <TextView android:textSize="@dimen/font_11" android:textColor="@android:color/white" android:id="@id/tv_chart_data_compare_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" />
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.LineChart android:id="@id/linear_chart_data_compare" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="21.0dip" android:layout_toRightOf="@id/linear_temp" />
+    </RelativeLayout>
+</RelativeLayout>

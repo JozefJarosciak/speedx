@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="270dp" android:layout_height="wrap_content">
+    <TextView android:textSize="17sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:paddingTop="22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/rc_cs_evaluate_robot"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/rc_cs_yes_no" android:paddingTop="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_ic_yes_selector"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/rc_ic_no_selector"/>
+    </LinearLayout>
+    <View android:layout_marginTop="20dp" style="@style/horizontal_light_thin_divider"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="17sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/rc_btn_ok" android:layout_width="135dp" android:layout_height="match_parent" android:text="@string/rc_cs_submit"/>
+        <View style="@style/vertical_light_thin_divider"/>
+        <TextView android:textSize="17sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/rc_btn_cancel" android:layout_width="135dp" android:layout_height="match_parent" android:text="@string/rc_cs_cancel"/>
+    </LinearLayout>
+</LinearLayout>

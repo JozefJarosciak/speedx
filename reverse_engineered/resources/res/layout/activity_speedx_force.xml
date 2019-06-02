@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@r$id/toolbar" android:background="@color/action_bar_background" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:title="" app:subtitle="">
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/club_act_white" android:gravity="center" android:layout_gravity="center" android:id="@r$id/textView_speedx_force_title" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:id="@r$id/activity_speedx_force_sync_rela" android:background="#e05757" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp">
+        <TextView android:textSize="@dimen/font_12" android:textColor="@color/text_default" android:id="@r$id/activity_speedx_force_unsync_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/ic_activity_finished_cheat_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@r$string/empty"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@r$id/activity_speedx_force_device_logo" android:layout_width="260dp" android:layout_height="152dp" android:layout_marginTop="50dp" android:src="@drawable/ic_default_bike"/>
+                <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="@color/color_activity_speedx_force_black_text" android:id="@r$id/activity_speedx_force_device_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                    <ImageView android:id="@r$id/activity_speedx_force_device_type_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/ic_club_arrow_right" android:layout_toRightOf="@r$id/activity_speedx_force_device_type" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <com.beastbikes.android.ble.ui.widget.TextViewWithBoardAndCorners android:textSize="@dimen/font_11" android:textColor="#ffffff" android:gravity="center" android:id="@r$id/activity_speedx_force_connect_to_bike" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginTop="40dp" android:layout_marginBottom="40dp" android:text="@r$string/str_ble_connection_state_connected" android:drawableLeft="@drawable/ic_ble_connected" android:drawablePadding="4dp" app:drawableColor="@android:color/transparent" app:radius="20dp" app:solidColor="@android:color/transparent"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include android:id="@r$id/speedx_force_total_distance" android:layout_width="match_parent" android:layout_height="124dp" android:layout_weight="1" layout="@r$layout/speedx_force_data_item"/>
+                    <View android:background="#222222" android:layout_width="1px" android:layout_height="match_parent"/>
+                    <include android:id="@r$id/speedx_force_total_time" android:layout_width="match_parent" android:layout_height="124dp" android:layout_weight="1" layout="@r$layout/speedx_force_data_item"/>
+                    <View android:background="#222222" android:layout_width="1px" android:layout_height="match_parent"/>
+                    <include android:id="@r$id/speedx_force_total_count" android:layout_width="match_parent" android:layout_height="124dp" android:layout_weight="1" layout="@r$layout/speedx_force_data_item"/>
+                </LinearLayout>
+                <View android:background="#222222" android:layout_width="match_parent" android:layout_height="1px"/>
+                <LinearLayout android:orientation="vertical" android:background="#ff141414" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView android:id="@r$id/activity_speedx_force_go_to_navigate" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="10dp" app:label="@r$string/speed_force_activity_go_to_navigate"/>
+                    <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView android:id="@r$id/speedx_force_service_location" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" app:label="@r$string/speed_force_after_sell" app:lineVisible="false"/>
+                    <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView android:id="@r$id/speedx_force_bikes_settings" android:layout_width="match_parent" android:layout_height="56dp" app:isEnable="false" app:label="@r$string/label_central_setting" app:lineVisible="false"/>
+                    <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView android:id="@r$id/speedx_force_bikes_offline_map" android:layout_width="match_parent" android:layout_height="56dp" app:isEnable="false" app:label="@r$string/str_ble_offline_map_area" app:lineVisible="false"/>
+                    <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView android:id="@r$id/speedx_force_gps_version" android:layout_width="match_parent" android:layout_height="56dp" app:label="@r$string/str_ble_gps_file_update" app:isItemEnable="false"/>
+                    <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView android:id="@r$id/speedx_force_ota_version" android:layout_width="match_parent" android:layout_height="56dp" app:label="@r$string/str_ble_version_info" app:isItemEnable="false" app:lineVisible="false"/>
+                    <View android:background="#222222" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="20dp"/>
+                    <TextView android:textSize="@dimen/font_15" android:textColor="#ff002a" android:gravity="center" android:id="@r$id/activity_speedx_force_unbind_bike" android:layout_width="match_parent" android:layout_height="64dp" android:text="@r$string/str_ble_delete_device"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@r$id/speed_force_device_battery_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="10dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_35" android:textColor="#ffffff" android:id="@r$id/speed_force_device_battery_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_12" android:textColor="#ffffff" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:text="%"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/font_12" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_battery"/>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/linear_input_email" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@r$id/tv_auth_email_action_desc" android:text="@r$string/str_signin_with_email" style="@r$style/TVAuthNormalWhite"/>
+    <com.beastbikes.android.widget.ClearableEditText android:id="@r$id/edit_auth_email" android:layout_marginTop="15dp" android:hint="@r$string/str_please_input_email" android:inputType="textEmailAddress" style="@r$style/et_account"/>
+</LinearLayout>

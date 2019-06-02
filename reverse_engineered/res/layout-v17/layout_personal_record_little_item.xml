@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_11" android:textColor="#ff999999" android:id="@id/tv_personal_record_little_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.5dip" android:text="--" android:minEms="6" android:layout_marginStart="17.5dip" />
+    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:id="@id/tv_personal_record_little_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+    <TextView android:textSize="@dimen/font_13" android:textColor="#ffffffff" android:id="@id/tv_personal_record_little_item_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="km" />
+</LinearLayout>

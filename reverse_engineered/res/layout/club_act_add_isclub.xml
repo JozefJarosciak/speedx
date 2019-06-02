@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/club_act_white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/club_act_black" android:id="@id/club_act_info_isclub_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/club_act_info_isclub" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@id/laboratory_activity_grid_switch" android:layout_marginRight="15.0dip" android:checked="false" android:layout_alignParentRight="true" android:layout_centerInParent="true" style="@style/material_design_switch_style" />
+    </RelativeLayout>
+</LinearLayout>

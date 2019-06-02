@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@r$id/route_self_route_edit" android:title="@r$string/route_self_edit"/>
+    <item android:id="@r$id/route_self_route_rename" android:title="@r$string/route_self_rename"/>
+    <item android:id="@r$id/route_self_route_delete" android:title="@r$string/delete"/>
+    <item android:id="@r$id/route_self_route_cancel" android:title="@r$string/cancel"/>
+</menu>

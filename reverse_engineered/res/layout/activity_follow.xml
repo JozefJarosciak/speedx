@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_theme_black_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:banner="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/activity_follow_search_bar" android:background="@drawable/bg_follow_search_333" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="5.0dip">
+        <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_search_icon" android:contentDescription="@string/empty" />
+        <EditText android:textSize="@dimen/font_12" android:textColor="#ff777777" android:textColorHint="#ffcccccc" android:id="@id/follow_activity_search_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip" android:hint="@string/friends_search_edittext_hint" android:singleLine="true" android:maxLength="20" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/edit_text_cursor" />
+    </LinearLayout>
+    <com.beastbikes.android.widget.convenientbanner.ConvenientBanner android:id="@id/follow_activity_other_banner" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="80.0dip" banner:canLoop="true" />
+    <FrameLayout android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="@dimen/font_14" android:textColor="@color/color_686868" android:layout_gravity="center" android:id="@id/activity_follow_empty_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_follow_empty_tip" android:drawableTop="@drawable/ic_cycling_default" android:drawablePadding="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/follow_activity_list_parent_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

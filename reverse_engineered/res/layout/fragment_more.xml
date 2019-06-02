@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="66.0dip" />
+        <include android:id="@id/goal_settings" android:layout_width="fill_parent" android:layout_height="72.0dip" layout="@layout/layout_morefragment_detail" />
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="66.0dip" />
+        <include android:id="@id/profile_fragment_detail_item_grid" android:layout_width="fill_parent" android:layout_height="72.0dip" layout="@layout/layout_morefragment_detail" />
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="66.0dip" />
+        <include android:id="@id/settings" android:layout_width="fill_parent" android:layout_height="72.0dip" layout="@layout/layout_morefragment_detail" />
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#111111" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="#292929" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:id="@r$id/cycling_page_settings" android:layout_width="match_parent" android:layout_height="70dp">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@r$string/cycling_setting_title"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/ic_arrow_right"/>
+    </FrameLayout>
+    <FrameLayout android:id="@r$id/bluetooth_sensor_settings" android:layout_width="match_parent" android:layout_height="70dp">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@r$string/str_ble_sensor_device_title"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/ic_arrow_right"/>
+    </FrameLayout>
+    <FrameLayout android:id="@r$id/cycling_page_sensor_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70dp">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@r$string/str_sensor_device"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/ic_arrow_right"/>
+    </FrameLayout>
+    <View android:background="#292929" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="20dp"/>
+    <include android:id="@r$id/cycling_setting_screen_view" android:layout_width="match_parent" android:layout_height="70dp" layout="@r$layout/speed_force_setting_switch_item"/>
+    <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:id="@r$id/setting_fragment_item_voice_prompt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:text="@r$string/setting_fragment_item_voice_prompt"/>
+    <include android:id="@r$id/cycling_setting_auto_pause_view" android:layout_width="match_parent" android:layout_height="70dp" layout="@r$layout/speed_force_setting_switch_item"/>
+    <View android:background="#292929" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp"/>
+    <View android:background="#292929" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp"/>
+    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginLeft="20dp">
+        <TextView android:textColor="#ffffff" android:id="@r$id/activity_cycling_setting_mile_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@r$string/str_mileage_unit_mile" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <com.beastbikes.android.widget.materialdesign.MaterialRadioButton android:id="@r$id/activity_cycling_setting_miles_radiobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@r$id/activity_cycling_setting_mile_title" android:layout_centerVertical="true"/>
+        <TextView android:textColor="#ffffff" android:id="@r$id/activity_cycling_setting_kilometer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@r$string/kilometre" android:layout_toLeftOf="@r$id/activity_cycling_setting_miles_radiobutton" android:layout_centerVertical="true"/>
+        <com.beastbikes.android.widget.materialdesign.MaterialRadioButton android:id="@r$id/activity_cycling_setting_kilometer_radiobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@r$id/activity_cycling_setting_kilometer_title" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/activity_cycling_setting_distance_unit" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#292929" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#111" android:paddingBottom="50dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@r$id/viewPager_cycling_completed_chart" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@r$id/indicator"/>
+    <com.beastbikes.android.widget.CircleIndicator android:id="@r$id/indicator" android:background="#111" android:layout_width="match_parent" android:layout_height="30dp" android:layout_above="@r$id/record_train_cycling_completed" app:ci_width="6dp" app:ci_height="6dp" app:ci_selected_width="18dp" app:ci_selected_height="6dp" app:ci_margin="6dp" app:ci_animator="@animator/indicator_animator" app:ci_animator_reverse="@animator/indicator_animator_reverse" app:ci_drawable="@drawable/white_radius_square" app:ci_drawable_unselected="@drawable/white_radius"/>
+    <com.beastbikes.android.modules.cycling.activity.ui.record.RecordTrain android:id="@r$id/record_train_cycling_completed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/activity_medals_view" android:background="#101010" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp">
+        <LinearLayout android:orientation="vertical" android:id="@r$id/activity_medal_get_view" android:background="#101010" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@r$id/activity_medals_no_medal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_medal_no_get_icon"/>
+                    <TextView android:textSize="@dimen/font_13" android:textColor="#444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@r$string/label_no_medal"/>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView android:id="@r$id/activity_medals_already_get" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <RelativeLayout android:id="@r$id/activity_medals_visible_view" android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="6dp" android:layout_marginBottom="10dp" android:layout_weight="0">
+                <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@r$string/label_already_expired" android:layout_centerVertical="true"/>
+                <ImageView android:id="@r$id/activity_medals_expired_visible" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/ic_medal_pack_up_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/activity_medals_already_expired_view" android:background="#101010" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="110dp">
+            <RelativeLayout android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="6dp">
+                <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@r$string/label_already_expired" android:layout_centerVertical="true"/>
+                <ImageView android:id="@r$id/activity_medals_expired_gone" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/ic_medal_unfold_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView android:id="@r$id/activity_medals_already_expired" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:orientation="horizontal" android:background="@drawable/bg_medal_list_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/ic_medal_list_top_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:layout_gravity="center_horizontal" android:id="@r$id/activity_medals_medal_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@r$string/label_medals_count"/>
+    </FrameLayout>
+</FrameLayout>

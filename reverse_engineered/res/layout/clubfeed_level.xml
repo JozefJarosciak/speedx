@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.beastbikes.framework.ui.android.widget.CircleImageView android:layout_gravity="center_horizontal" android:id="@id/club_info_logo" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/ic_avatar" android:contentDescription="@string/empty" app:borderColor="#2cffffff" app:borderType="outside" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#fffffff2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/clubfeed_current_level_prerogative" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/privileges_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="@dimen/font_14" android:textColor="#fffffff2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/clubfeed_current_level" />
+                <TextView android:textSize="@dimen/font_14" android:textStyle="bold" android:textColor="#ffea3232" android:id="@id/tv_current_level" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="30.0dip" android:paddingRight="15.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_14" android:textColor="#fffffff2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clubfeed_next_level" />
+                <TextView android:textSize="@dimen/font_14" android:textStyle="bold" android:textColor="#ffea3232" android:id="@id/tv_next_level" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.beastbikes.android.widget.ListViewForScroll android:id="@id/lv_level" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+        </LinearLayout>
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="@dimen/font_14" android:textColor="#fffffff2" android:gravity="center_vertical" android:id="@id/tv_understanding" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/clubfeed_level_understand" android:drawableRight="@drawable/ic_arrow_right_icon" />
+        <View android:background="@color/bg_border_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@id/img_segment_rank_first_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="26.0dip" android:src="@drawable/ic_avatar" />
+    <RelativeLayout android:id="@id/rela_temp" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.5dip" android:layout_marginRight="10.5dip" android:layout_alignTop="@id/img_segment_rank_first_avatar" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/img_segment_rank_first" android:layout_width="140.0dip" android:layout_height="243.0dip" android:src="@drawable/ic_score_rank_first" android:layout_alignParentRight="true" />
+        <com.beastbikes.android.widget.NumberTextView android:textSize="60.0sp" android:textColor="@android:color/white" android:id="@id/tv_profile_score_rank_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="115.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:gravity="center" android:id="@id/tv_segment_rank_first_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_segment_champion" android:layout_below="@id/img_segment_rank_first" android:layout_alignLeft="@id/img_segment_rank_first" android:layout_alignRight="@id/img_segment_rank_first" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_toLeftOf="@id/rela_temp" android:layout_below="@id/img_segment_rank_first_avatar">
+        <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@id/tv_segment_rank_first_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/font_11" android:textColor="#ff999999" android:id="@id/tv_segment_rank_first_user_name_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_segment_jersey_leader" />
+        <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@id/tv_segment_rank_first_cycling_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+        <TextView android:textSize="@dimen/font_11" android:textColor="#ff999999" android:id="@id/tv_segment_rank_first_cycling_time_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_cycling_start_end_time" />
+        <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@id/tv_segment_rank_first_cycling_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+        <TextView android:textSize="@dimen/font_11" android:textColor="#ff999999" android:id="@id/tv_segment_rank_first_cycling_date_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_segment_ride_date" />
+    </LinearLayout>
+    <View android:id="@id/view_temp" android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="50.0dip" android:layout_marginBottom="30.0dip" android:layout_below="@id/rela_temp" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="#ff959595" android:id="@id/tv_all_achievement" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="30.0dip" android:text="@string/str_segment_all_achievement" android:layout_below="@id/rela_temp" />
+</RelativeLayout>

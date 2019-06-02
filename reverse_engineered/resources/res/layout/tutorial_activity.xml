@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/ic_bg_tutorial" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@r$id/viewPager_tutorial_page" android:paddingBottom="140dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@r$id/viewStub_index" android:layout="@r$layout/layout_tutorial_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="140dp"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@r$id/linear_tutorial_page_indicator" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="30dp" android:layout_above="@r$id/linear_temp"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@r$id/linear_temp" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="45dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@r$id/btn_tutorial_page_join_now" android:background="@drawable/bg_btn_tutorial_register_red" android:layout_width="140dp" android:layout_height="50dp" android:text="@r$string/str_join_now"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@r$id/btn_tutorial_page_login" android:background="@drawable/bg_btn_tutorial_login_black" android:layout_width="140dp" android:layout_height="50dp" android:text="@r$string/str_sign_in"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

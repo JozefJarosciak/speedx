@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.rong.photoview.PhotoView android:id="@id/rc_photoView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/rc_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/rc_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

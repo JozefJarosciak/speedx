@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_activity_feedback_dev_reply" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="40dp" android:layout_marginBottom="10dp" android:layout_alignParentLeft="true">
+        <TextView android:textSize="21sp" android:textColor="#333" android:id="@+id/avoscloud_feedback_content" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="@color/feedback_activity_timestamp_gray" android:id="@+id/avoscloud_feedback_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

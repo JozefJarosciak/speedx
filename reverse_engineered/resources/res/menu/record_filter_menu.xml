@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@r$id/menu_item_record_filter" android:title="@r$string/str_add_data" app:showAsAction="always" app:actionProviderClass="com.beastbikes.android.modules.user.view.RecordMenuActionProvider"/>
+</menu>

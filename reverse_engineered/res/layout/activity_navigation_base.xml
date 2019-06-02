@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rela_navi_temp" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/viewStub_before_select_location" android:layout="@layout/layout_navigation_select_location" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/viewStub_select_location" android:layout="@layout/layout_navigation_select_location_on_map" android:layout_width="fill_parent" android:layout_height="180.0dip" />
+    </RelativeLayout>
+    <android.support.design.widget.CoordinatorLayout android:id="@id/detail_content" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rela_navi_temp"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <android.support.design.widget.CollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:id="@id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:title="" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:contentScrim="?colorPrimary" app:titleEnabled="false">
+            <com.beastbikes.android.modules.map.SpeedxMap android:id="@id/mapView_navigation" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:layout_collapseMode="parallax" />
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:title="" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <Button android:id="@id/btn_move_to_current_location" android:background="@drawable/ic_navigation_move_to_my_location" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="12.5dip" android:layout_marginBottom="20.0dip" android:layout_above="@id/rela_navi_temp" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_toRightOf="@id/btn_move_to_current_location" android:layout_alignBottom="@id/btn_move_to_current_location">
+        <ImageView android:id="@id/img_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_navigation_scale_bar" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff444444" android:id="@id/textView_navigation_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_above="@id/img_temp" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout" android:background="@drawable/ic_navigation_bg_zoom_in_and_out" android:layout_width="44.0dip" android:layout_height="wrap_content" android:layout_marginRight="12.5dip" android:layout_marginBottom="20.0dip" android:layout_above="@id/rela_navi_temp" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/img_navigation_zoom_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.5dip" android:src="@drawable/ic_navi_map_zoom_in" />
+        <ImageView android:id="@id/img_navigation_zoom_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.5dip" android:src="@drawable/ic_navi_map_zoom_out" />
+    </LinearLayout>
+</RelativeLayout>

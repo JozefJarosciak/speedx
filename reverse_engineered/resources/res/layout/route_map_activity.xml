@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.baidu.mapapi.map.MapView android:id="@r$id/route_map_activity_view" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@r$id/route_map_activity_map_button_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginBottom="15dp" android:src="@drawable/ic_map_location" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@r$string/empty"/>
+    <ImageView android:id="@r$id/route_map_activity_elevation" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="15dp" android:src="@drawable/ic_map_zoom_elevation" android:scaleType="centerInside" android:layout_toRightOf="@r$id/route_map_activity_map_button_location" android:layout_alignParentBottom="true" android:contentDescription="@r$string/empty"/>
+    <FrameLayout android:id="@r$id/route_map_make_zoom" android:layout_width="39dp" android:layout_height="92dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/route_map_make_search_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@r$id/route_map_make_zoom_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="3dp" android:layout_marginRight="3dp"/>
+            <ImageView android:id="@r$id/route_map_activity_map_button_zoom_out" android:layout_width="39dp" android:layout_height="46dp" android:src="@drawable/ic_map_zoom_out" android:scaleType="centerInside" android:contentDescription="@r$string/empty"/>
+            <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="3dp" android:layout_marginRight="3dp"/>
+            <ImageView android:id="@r$id/route_map_activity_map_button_zoom_in" android:layout_width="39dp" android:layout_height="46dp" android:src="@drawable/ic_map_zoom_in" android:scaleType="centerInside" android:contentDescription="@r$string/empty"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/action_bar_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <com.beastbikes.android.ble.ui.widget.ShapeIndicatorView android:layout_gravity="bottom" android:id="@id/activity_speddx_cadence_setting_tab_indicator" android:layout_width="fill_parent" android:layout_height="2.0dip" app:fullColor="@color/red_color" />
+        <android.support.design.widget.TabLayout android:id="@id/activity_speedx_cadence_setting_tablayout" android:layout_width="fill_parent" android:layout_height="45.0dip" app:tabIndicatorColor="@color/red_color" app:tabIndicatorHeight="0.0dip" app:tabContentStart="0.0dip" app:tabBackground="@color/bg_black_color" app:tabMode="scrollable" app:tabGravity="fill" app:tabTextColor="@color/text_white_color" app:tabSelectedTextColor="@color/text_white_color" />
+        <ImageView android:layout_gravity="center|left|top" android:background="@drawable/bg_cadence_tab_left" android:layout_width="30.0dip" android:layout_height="42.0dip" />
+        <ImageView android:layout_gravity="center|right|top" android:background="@drawable/bg_cadence_tab_right" android:layout_width="50.0dip" android:layout_height="42.0dip" />
+    </FrameLayout>
+    <android.support.v4.view.ViewPager android:id="@id/activity_speedx_cadence_setting_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <Button android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:id="@id/activity_speedx_cadence_setting_btn" android:background="@drawable/selector_btn_red_to_grep_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/select" android:layout_weight="0.0" />
+</LinearLayout>

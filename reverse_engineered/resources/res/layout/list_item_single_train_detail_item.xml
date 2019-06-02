@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_13" android:textColor="#999" android:id="@r$id/tv_single_train_detail_item_stage_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@r$string/str_training_stage_order"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <RelativeLayout android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_training_time"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="#999" android:id="@r$id/tv_single_train_detail_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_target_power"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="#999" android:id="@r$id/tv_single_train_detail_item_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_target_cadence"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="#999" android:id="@r$id/tv_single_train_detail_item_cadence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

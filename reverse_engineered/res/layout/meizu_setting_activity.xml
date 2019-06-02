@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/miui_setting_desc_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_meizu_5" android:contentDescription="@string/empty" />
+        <Button android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:id="@id/miui_setting_go_open" android:background="@drawable/bg_orange_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="60.0dip" android:layout_marginBottom="40.0dip" android:text="@string/miui_setting_go_open" />
+    </LinearLayout>
+</ScrollView>

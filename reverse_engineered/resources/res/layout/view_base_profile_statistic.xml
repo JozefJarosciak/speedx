@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="#111111" android:layout_width="match_parent" android:layout_height="80dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@r$id/base_profile_follow_number_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_25" android:textColor="#ffffff" android:id="@r$id/base_profile_follow_number_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+        <TextView android:textSize="@dimen/font_12" android:textColor="@color/text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@r$string/profile_fragment_follow"/>
+    </LinearLayout>
+    <View android:background="#232323" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+    <FrameLayout android:id="@r$id/base_profile_follower_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_25" android:textColor="#ffffff" android:id="@r$id/base_profile_follower_number_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+            <TextView android:textSize="@dimen/font_12" android:textColor="@color/text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@r$string/profile_fragment_follower"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_10" android:textColor="#ffffff" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@r$id/base_profile_follower_dot" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="10dp"/>
+    </FrameLayout>
+    <View android:background="#232323" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="0"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@r$id/base_profile_follow_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <Button android:textSize="@dimen/font_15" android:textColor="#ffffff" android:id="@r$id/base_profile_follow_btn" android:background="@drawable/border_1px_solid_b9b9b9_width_radius_30dp" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@r$string/profile_fragment_follow"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1a1a1a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="136.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/cycling_setting_screen_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_screen_always_selector" />
+            <TextView android:textSize="@dimen/font_13" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/label_screen_always_on" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/cycling_setting_auto_pause_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_auto_pause_selector" />
+            <TextView android:textSize="@dimen/font_13" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/setting_fragment_item_auto_pause" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/bg_theme_black_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/cycling_setting_select_route_rl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:id="@id/cycling_setting_select_route_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="37.0dip" android:layout_marginRight="70.0dip" android:text="@string/str_cycling_use_route_un_selected" android:maxLines="1" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/cycling_setting_route_delete" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_arrow_right" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/bg_theme_black_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/font_17" android:textColor="@color/design_color_c7" android:gravity="center" android:id="@id/cycling_setting_dialog_cancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/cancel" />
+</LinearLayout>

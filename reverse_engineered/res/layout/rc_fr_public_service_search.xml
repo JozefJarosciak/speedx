@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+        <EditText android:textSize="16.0sp" android:textColor="#ffcfcfcf" android:layout_gravity="bottom" android:id="@id/rc_search_ed" android:background="@drawable/rc_ed_public_service_search_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:singleLine="true" android:layout_weight="2.0" />
+        <Button android:textSize="15.0sp" android:textColor="@color/rc_text_color_primary_inverse" android:layout_gravity="bottom" android:id="@id/rc_search_btn" android:background="#ff0195ff" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="14.0dip" android:text="搜索" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/rc_search_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

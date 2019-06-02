@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:su="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/wheelviewsave" android:id="@id/savebtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/activity_alert_dialog_text_ok" android:layout_alignParentRight="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/wheel_view_cancel" android:id="@id/cancelbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/cancel" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.beastbikes.android.dialog.Wheelview android:id="@id/one" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_weight="1.0" su:normalTextColor="#ff777777" su:normalTextSize="14.0sp" su:selecredTextColor="#ff000000" su:selecredTextSize="22.0sp" su:unitHight="50.0dip" su:itemNumber="3" su:lineColor="@color/wheel_view_line_color" su:maskHight="32.0dip" su:noEmpty="true" />
+        <com.beastbikes.android.dialog.Wheelview android:id="@id/two" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_weight="1.0" su:normalTextColor="#ff777777" su:normalTextSize="14.0sp" su:selecredTextColor="#ff000000" su:selecredTextSize="22.0sp" su:unitHight="50.0dip" su:itemNumber="3" su:lineColor="@color/wheel_view_line_color" su:maskHight="32.0dip" su:noEmpty="true" />
+    </LinearLayout>
+</LinearLayout>

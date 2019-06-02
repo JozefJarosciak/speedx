@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ff181818" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip">
+                <FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip">
+                    <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25" android:layout_marginTop="15.0dip">
+                        <TextView android:textSize="@dimen/font_25" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_train_course_title" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_train_course_subtitle" />
+                    </LinearLayout>
+                    <com.beastbikes.framework.ui.android.widget.CircleImageView android:layout_gravity="right" android:id="@id/train_default_user_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ic_avatar" />
+                </FrameLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/ic_train_quote" />
+                <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/str_train_course_desc" android:lineSpacingExtra="7.0sp" />
+                <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/ic_train_back_quote" />
+            </LinearLayout>
+            <View android:layout_gravity="bottom" android:background="@drawable/bg_train_default_title" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/str_train_course_calendar" />
+            <ImageView android:layout_gravity="right" android:id="@id/train_default_calendar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27.0dip" android:src="@drawable/ic_calendar" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="50.0dip">
+            <View android:layout_gravity="center|left" android:background="#ffff002a" android:layout_width="4.0dip" android:layout_height="14.0dip" android:layout_marginLeft="12.0dip" />
+            <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/str_train_single_course_title" />
+            <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:layout_gravity="center|right" android:id="@id/train_default_single_course_view_all_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:text="@string/str_view_all" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/train_default_single_course_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <android.support.v4.view.ViewPager android:id="@id/train_default_single_course_view" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="140.0dip" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="25.0dip">
+            <View android:layout_gravity="center|left" android:background="#ffff002a" android:layout_width="4.0dip" android:layout_height="14.0dip" android:layout_marginLeft="12.0dip" />
+            <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/str_train_long_time_synthesis_plan" />
+            <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:layout_gravity="center|right" android:id="@id/train_default_long_time_view_all_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:text="@string/str_view_all" />
+        </FrameLayout>
+        <com.beastbikes.android.widget.NonScrollListView android:id="@id/train_default_long_time_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

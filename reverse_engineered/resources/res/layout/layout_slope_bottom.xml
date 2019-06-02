@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.beastbikes.android.modules.cycling.activity.ui.record.widget.SlopePieBottomItemView android:id="@r$id/slope_pie_bottom_item_view1" android:layout_width="match_parent" android:layout_height="wrap_content" app:slopeDesc="@r$string/str_label_uphill" app:slopeColor="#1f8b4d"/>
+    <com.beastbikes.android.modules.cycling.activity.ui.record.widget.SlopePieBottomItemView android:id="@r$id/slope_pie_bottom_item_view2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" app:slopeDesc="@r$string/str_label_flat_road" app:slopeColor="#27ae60"/>
+    <com.beastbikes.android.modules.cycling.activity.ui.record.widget.SlopePieBottomItemView android:id="@r$id/slope_pie_bottom_item_view3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" app:slopeDesc="@r$string/str_label_downhill" app:slopeColor="#2ecc71"/>
+</LinearLayout>

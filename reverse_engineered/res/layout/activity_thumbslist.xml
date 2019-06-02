@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.beastbikes.android.widget.PullRefreshListView android:id="@id/thumbs_list" android:background="@color/discover_color3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="0.0dip" />
+    <ImageView android:id="@id/loadfailiv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="116.0dip" android:src="@drawable/thumbloadfail" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/feedback_activity_text_gray" android:id="@id/loadfailtv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/str_loading_failed" android:layout_below="@id/loadfailiv" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@r$id/rc_conversation_item_system_left_fl" android:layout_width="wrap_content" android:layout_height="74dp" android:layout_marginLeft="13dp" android:layout_centerVertical="true">
+        <com.beastbikes.framework.ui.android.widget.CircleImageView android:layout_gravity="center" android:id="@r$id/rc_image_view" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_launch_logo" android:scaleType="center"/>
+        <TextView android:textSize="10dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@r$id/rc_unread_message1" android:background="@drawable/rc_unread_count_bg" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="4dp"/>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="74dp" android:layout_marginLeft="10dp" android:layout_toRightOf="@r$id/rc_conversation_item_system_left_fl" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_toLeftOf="@+id/rc_time">
+            <TextView android:textSize="14sp" android:textColor="#000" android:id="@r$id/rc_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/beast_helper" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="#a7a7a7" android:ellipsize="end" android:id="@r$id/rc_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#d8d8d8" android:id="@+id/rc_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="13dp" android:singleLine="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="#ddd" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

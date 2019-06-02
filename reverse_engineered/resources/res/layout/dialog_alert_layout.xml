@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="16.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="37dp" android:layout_marginRight="37dp">
+        <TextView android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center" android:id="@r$id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp"/>
+        <TextView android:textSize="12sp" android:textColor="#757575" android:gravity="center_horizontal" android:id="@r$id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3"/>
+    </LinearLayout>
+    <View android:background="#33979797" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="47dp">
+        <Button android:textSize="15.5sp" android:textColor="#1981fb" android:gravity="center" android:id="@r$id/cancle" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@r$string/activity_alert_dialog_text_cancel" android:layout_weight="1"/>
+        <View android:background="#33979797" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <Button android:textSize="15.5sp" android:textColor="#1981fb" android:gravity="center" android:id="@r$id/sure" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@r$string/activity_alert_dialog_text_ok" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

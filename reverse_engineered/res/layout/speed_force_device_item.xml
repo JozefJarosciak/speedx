@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:number="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/speed_force_device_item_icon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/ic_speed_force" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_toRightOf="@id/speed_force_device_item_icon">
+        <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_17" android:textColor="#ff434343" android:id="@id/speed_force_device_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" number:typefaceName="@string/number_type_face_name" />
+        <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:id="@id/speed_force_device_item_just_connect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/speed_force_device_item_just_connect" />
+    </LinearLayout>
+    <ImageView android:id="@id/speed_force_device_item_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/ic_speed_force_device_checked_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

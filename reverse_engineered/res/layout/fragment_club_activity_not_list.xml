@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="103.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/fragment_club_activity_not_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:src="@drawable/ic_club_activity_shape" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_black_color" android:gravity="center" android:layout_gravity="center" android:id="@id/fragment_club_activity_not_list_tv" android:layout_width="128.0dip" android:layout_height="44.0dip" android:layout_marginBottom="10.0dip" android:text="@string/fragment_club_activity_not_list_ms" />
+    <TextView android:textSize="17.0sp" android:textColor="#ffff0000" android:gravity="center" android:layout_gravity="center" android:id="@id/fragment_club_activity_not_list_commit" android:background="@drawable/activity_club_activity_list_now" android:layout_width="180.0dip" android:layout_height="44.0dip" android:layout_marginBottom="10.0dip" android:text="@string/fragment_club_activity_not_list_commit" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/item_act_list_user" android:layout_width="match_parent" android:layout_height="56dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="55dp">
+        <com.beastbikes.framework.ui.android.widget.CircleImageView android:layout_gravity="center" android:id="@r$id/item_act_list_user_iv" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="16dp"/>
+        <TextView android:textSize="@dimen/font_17" android:textColor="#f4f4f4" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@r$id/item_act_list_user_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+    <View android:background="#292929" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

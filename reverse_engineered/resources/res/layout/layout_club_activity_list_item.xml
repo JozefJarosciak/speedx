@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@r$id/layout_club_activity_list_item_cover" android:background="@drawable/bg_layout_club_activity_list_item" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="17sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@r$id/layout_club_activity_list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.5dp">
+            <com.beastbikes.framework.ui.android.widget.CircleImageView android:layout_gravity="center_vertical" android:id="@r$id/layout_club_activity_list_item_avater" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_avatar"/>
+            <TextView android:textSize="13sp" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@r$id/layout_club_activity_list_item_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@r$id/layout_club_activity_list_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dp"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@r$id/layout_club_activity_list_item_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="center" android:id="@r$id/layout_club_activity_list_item_status" android:background="@drawable/bg_layout_club_activity_list_item_status_cancel" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="center" android:id="@r$id/layout_club_activity_list_item_manage" android:background="@drawable/bg_club_activity_ismanager_tv" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@r$string/manage" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

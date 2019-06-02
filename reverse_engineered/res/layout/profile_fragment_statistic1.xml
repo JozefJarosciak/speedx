@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_profile_fragment_gradual_change" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/profile_fragment_follower_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/design_color_c7" android:id="@id/profile_fragment_statistic_item_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/profile_fragment_follow" />
+    </LinearLayout>
+    <View android:background="#ff222222" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="0.0" />
+    <FrameLayout android:id="@id/profile_fragment_fans_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/font_16" android:textColor="@color/design_color_c7" android:id="@id/profile_fragment_statistic_item_follower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_white_color" android:id="@id/profile_fragment_statistic_item_value1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/profile_fragment_follower" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_10" android:textColor="#ffffffff" android:layout_gravity="center|right|top" android:id="@id/dot_follower" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" />
+    </FrameLayout>
+    <View android:background="#ff222222" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="0.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/profile_fragment_medal_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/design_color_c7" android:id="@id/profile_fragment_statistic_item_medal_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_white_color" android:id="@id/profile_fragment_statistic_item_medal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/profile_fragment_medal" />
+    </LinearLayout>
+    <View android:background="#ff222222" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="0.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/profile_fragment_achievement_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/design_color_c7" android:id="@id/profile_fragment_statistic_item_achievement_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        <TextView android:textSize="@dimen/font_11" android:textColor="@color/text_white_color" android:id="@id/profile_fragment_statistic_achievement_medal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/str_personal_achievement" />
+    </LinearLayout>
+</LinearLayout>

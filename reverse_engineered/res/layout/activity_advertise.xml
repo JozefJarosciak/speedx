@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_black_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/activity_advertise_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/activity_advertise_viewGroup" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/activity_advertise_timecount" android:background="@color/common_bg_color" android:layout_width="25.0dip" android:layout_height="25.0dip" android:text="3" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/activity_advertise_ms" />
+        <TextView android:background="@drawable/ic_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

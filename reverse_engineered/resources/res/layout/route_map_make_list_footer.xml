@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@r$id/route_map_make_add_point" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="40dp">
+    <View android:background="#2f979797" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/route_map_make_add_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@r$string/empty"/>
+        <TextView android:textSize="@dimen/font_12" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:background="#fff" android:layout_width="wrap_content" android:layout_height="40dp" android:minHeight="40dp" android:text="@r$string/route_map_make_activity_add_point"/>
+    </LinearLayout>
+    <View android:background="#2f979797" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

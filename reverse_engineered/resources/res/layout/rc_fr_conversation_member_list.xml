@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <io.rong.imkit.model.RongGridView android:gravity="center" android:id="@+id/rc_list" android:background="#eeeeee" android:paddingBottom="10dp" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="32dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="0dp" android:verticalSpacing="0dp" android:stretchMode="columnWidth" android:columnWidth="82dp" android:numColumns="auto_fit"/>
+</LinearLayout>

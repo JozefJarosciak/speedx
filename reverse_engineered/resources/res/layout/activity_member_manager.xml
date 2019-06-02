@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_12" android:textColor="@color/member_managet_label" android:gravity="center_vertical" android:paddingLeft="14dp" android:layout_width="match_parent" android:layout_height="20dp" android:text="@r$string/activity_member_manager_captain_label"/>
+    <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <include android:id="@r$id/captain_layout" layout="@r$layout/club_member_list_item"/>
+    <View android:background="@color/bg_border_line_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="50dp"/>
+    <TextView android:textSize="@dimen/font_12" android:textColor="@color/member_managet_label" android:gravity="center_vertical" android:paddingLeft="14dp" android:layout_width="match_parent" android:layout_height="20dp" android:text="@r$string/activity_member_manager_member_label"/>
+    <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ListView android:id="@r$id/activity_club_manager_member_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0dp"/>
+    <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

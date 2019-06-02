@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@r$id/rela_navi_temp" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@r$id/viewStub_before_select_location" android:layout="@r$layout/layout_navigation_select_location" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ViewStub android:id="@r$id/viewStub_select_location" android:layout="@r$layout/layout_navigation_select_location_on_map" android:layout_width="match_parent" android:layout_height="180dp"/>
+    </RelativeLayout>
+    <android.support.design.widget.CoordinatorLayout android:id="@r$id/detail_content" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@r$id/rela_navi_temp">
+        <android.support.design.widget.CollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:id="@r$id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:title="" app:layout_scrollFlags="3" app:contentScrim="?attr/colorPrimary" app:titleEnabled="false">
+            <com.beastbikes.android.modules.map.SpeedxMap android:id="@r$id/mapView_navigation" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="3" app:layout_collapseMode="2"/>
+            <android.support.v7.widget.Toolbar android:id="@r$id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:title="" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:layout_collapseMode="1"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <Button android:id="@r$id/btn_move_to_current_location" android:background="@drawable/ic_navigation_move_to_my_location" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="12.5dp" android:layout_marginBottom="20dp" android:layout_above="@r$id/rela_navi_temp"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_toRightOf="@r$id/btn_move_to_current_location" android:layout_alignBottom="@r$id/btn_move_to_current_location">
+        <ImageView android:id="@r$id/img_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_navigation_scale_bar" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="11sp" android:textColor="#444444" android:id="@r$id/textView_navigation_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:layout_above="@r$id/img_temp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@r$id/linearLayout" android:background="@drawable/ic_navigation_bg_zoom_in_and_out" android:layout_width="44dp" android:layout_height="wrap_content" android:layout_marginRight="12.5dp" android:layout_marginBottom="20dp" android:layout_above="@r$id/rela_navi_temp" android:layout_alignParentRight="true">
+        <ImageView android:id="@r$id/img_navigation_zoom_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.5dp" android:src="@drawable/ic_navi_map_zoom_in"/>
+        <ImageView android:id="@r$id/img_navigation_zoom_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.5dp" android:src="@drawable/ic_navi_map_zoom_out"/>
+    </LinearLayout>
+</RelativeLayout>

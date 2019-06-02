@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.beastbikes.android.modules.cycling.club.ui.widget.MyViewPager android:id="@id/sticky_list_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <com.beastbikes.android.widget.CircleIndicator android:layout_gravity="bottom" android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="30.0dip" app:ci_width="6.0dip" app:ci_height="6.0dip" app:ci_selected_width="18.0dip" app:ci_selected_height="6.0dip" app:ci_margin="6.0dip" app:ci_animator="@animator/indicator_animator" app:ci_animator_reverse="@animator/indicator_animator_reverse" app:ci_drawable="@drawable/white_radius_square" app:ci_drawable_unselected="@drawable/white_radius" />
+    <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/cycling_completed_bottom_tip" />
+</LinearLayout>

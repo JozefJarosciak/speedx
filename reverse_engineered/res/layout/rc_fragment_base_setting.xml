@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rc_setting_item" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff252525" android:id="@id/rc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="名称" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <CheckBox android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/rc_checkbox" android:layout_width="90.0dip" android:layout_height="wrap_content" android:button="@drawable/rc_switch_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

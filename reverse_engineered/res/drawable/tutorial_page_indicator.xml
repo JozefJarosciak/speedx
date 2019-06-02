@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/circle_indicator_solid" />
+    <item android:state_selected="true" android:drawable="@drawable/circle_indicator_solid" />
+    <item android:drawable="@drawable/circle_indicator_stroke" />
+</selector>

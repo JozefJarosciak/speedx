@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/club_act_deadline" android:background="@color/club_act_white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/club_act_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/club_act_deadline_str" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/club_act_black" android:ellipsize="end" android:layout_gravity="center|right" android:id="@id/club_act_deadline_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/club_act_time_str" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

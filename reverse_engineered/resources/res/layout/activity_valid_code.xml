@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#181818" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_24" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@r$string/str_input_valid_code" android:lines="1"/>
+    <TextView android:id="@r$id/tv_auth_valid_code_desc" android:layout_marginTop="20dp" android:text="@r$string/str_vcode_has_sent_to" style="@r$style/TVAuthNormalWhite"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" layout="@r$layout/layout_input_valid_code"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+        <Button android:layout_gravity="end" android:id="@r$id/btn_auth_valid_code_next" android:background="@drawable/bg_btn_white_with_corners_without_stroke" android:layout_width="120dp" android:layout_height="45dp" android:text="@r$string/str_next"/>
+    </FrameLayout>
+</LinearLayout>

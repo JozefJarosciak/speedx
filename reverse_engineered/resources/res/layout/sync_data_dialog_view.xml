@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_17" android:textColor="#000000" android:gravity="center_horizontal" android:id="@r$id/sync_data_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@r$string/label_syncing_activity"/>
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.beastbikes.android.ble.ui.painter.progress.ArcProgress android:layout_gravity="center_horizontal" android:id="@r$id/sync_data_progress_view" android:layout_width="150dp" android:layout_height="150dp" app:borderWidth="8dp" app:unprogresColor="#d9d9d9" app:progressColor="@color/design_color_c7" app:degree="0" app:progressStyle="0"/>
+        <TextView android:textSize="@dimen/font_17" android:textColor="#212121" android:layout_gravity="center" android:id="@r$id/sync_data_progress_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_12" android:textColor="#000000" android:layout_gravity="center" android:id="@r$id/sync_data_progress_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:layout_marginRight="20dp" android:layout_marginBottom="15dp" android:text="@r$string/sync_data_message"/>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="@dimen/font_17" android:textColor="@color/design_color_c7" android:gravity="center" android:id="@r$id/sync_data_cancel_sync" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@r$string/sync_data_cancel_sync"/>
+</LinearLayout>

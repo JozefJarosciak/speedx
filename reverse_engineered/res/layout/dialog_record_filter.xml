@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff141414" android:layout_width="120.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/record_filter_all_data_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/str_add_data" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/record_filter_by_source_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/str_filter_by_source" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/record_filter_by_time_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/str_filter_by_time" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_ble_sensor_list" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/sensor_diameter_setting_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="20.0dip" layout="@layout/speed_force_setting_item" />
+    <TextView android:textSize="@dimen/font_15" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/str_history_device" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:layout_gravity="center" android:id="@id/sensor_never_connect_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_never_connect_device" />
+        <android.support.v7.widget.RecyclerView android:id="@id/sensor_device_recycle_view" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

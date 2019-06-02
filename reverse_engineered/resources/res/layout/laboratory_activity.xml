@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="20dp"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#111111" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="@dimen/font_14" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="@r$string/map_view_style_optimization"/>
+        <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/laboratory_activity_grid_switch" android:layout_marginRight="16dp" android:checked="false" android:layout_alignParentRight="true" style="@r$style/material_design_switch_style"/>
+    </RelativeLayout>
+    <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#111111" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="@dimen/font_14" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="@r$string/setting_fragment_item_foreground"/>
+        <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/laboratory_activity_foreground_switch" android:layout_marginRight="16dp" android:checked="false" android:layout_alignParentRight="true" style="@r$style/material_design_switch_style"/>
+    </RelativeLayout>
+    <View android:background="@color/bg_border_line_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#111111" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="@dimen/font_14" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="@r$string/label_cycling_screen_on"/>
+        <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/laboratory_activity_cycling_screen_switch" android:layout_marginRight="16dp" android:checked="false" android:layout_alignParentRight="true" style="@r$style/material_design_switch_style"/>
+    </RelativeLayout>
+    <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@r$id/laboratory_activity_cycling_keepalive_suggest" android:background="#111111" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="@dimen/font_14" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="@r$string/label_cycling_keepalive_suggest"/>
+        <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@r$id/laboratory_activity_cycling_repair_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#111111" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="@dimen/font_14" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="@r$string/str_cycling_record_repair_data_automatically"/>
+            <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/laboratory_activity_cycling_repair_switch" android:layout_marginRight="16dp" android:checked="false" android:layout_alignParentRight="true" style="@r$style/material_design_switch_style"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/font_12" android:textColor="#555555" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="7dp" android:layout_marginRight="15dp" android:text="@r$string/str_cycling_record_repair_data_desc"/>
+    </LinearLayout>
+</LinearLayout>

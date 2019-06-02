@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#111" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@r$id/recyclerView_speedx_force_screens" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="48.5dp" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@r$id/recyclerView_speedx_force_screens">
+        <com.beastbikes.android.modules.cycling.activity.ui.widget.CyclingPreviewLayout android:id="@r$id/cycling_preview_layout" android:background="#1e1e1e" android:layout_width="240dp" android:layout_height="320dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:id="@r$id/linear_speedx_force_screen_setting_up" android:layout_width="match_parent" android:layout_height="30dp">
+            <ImageView android:id="@r$id/img_speedx_force_screen_setting_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_speedx_force_screen_up"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@r$id/linear_speedx_force_screen_setting_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/black" android:gravity="top|center_vertical|center_horizontal|center" android:id="@r$id/tv_speedx_force_screen_setting_edit" android:layout_width="0dp" android:layout_height="match_parent" android:text="@r$string/str_edit" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/black" android:gravity="top|center_vertical|center_horizontal|center" android:id="@r$id/tv_speedx_force_screen_setting_delete" android:layout_width="0dp" android:layout_height="match_parent" android:text="@r$string/delete" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

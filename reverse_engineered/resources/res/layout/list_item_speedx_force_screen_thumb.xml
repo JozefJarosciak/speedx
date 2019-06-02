@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.beastbikes.android.modules.cycling.activity.ui.widget.CyclingPreviewLayout android:id="@r$id/cycling_preview_layout_speedx_force_screen_thumb" android:background="#333" android:layout_width="96dp" android:layout_height="128dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+    <RelativeLayout android:id="@r$id/rela_speedx_force_screen_checked" android:background="#b2000000" android:visibility="gone" android:layout_width="96dp" android:layout_height="128dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ble_screen_settings_checked" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

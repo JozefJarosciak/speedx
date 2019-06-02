@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <com.beastbikes.android.dialog.DoublePicker android:id="@id/dialog_double_picker_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <com.beastbikes.android.dialog.PickerView android:id="@id/double_picker_view_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:normalTextColor="#ff999999" app:normalTextSize="14.0sp" app:selecredTextColor="#ffffffff" app:selecredTextSize="22.0sp" app:unitHight="50.0dip" app:itemNumber="5" app:lineColor="#ff222222" app:maskHight="32.0dip" app:noEmpty="true" app:unitSize="15.0sp" />
+            <com.beastbikes.android.dialog.PickerView android:id="@id/double_picker_view_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:normalTextColor="#ff999999" app:normalTextSize="14.0sp" app:selecredTextColor="#ffffffff" app:selecredTextSize="22.0sp" app:unitHight="50.0dip" app:itemNumber="5" app:lineColor="#ff222222" app:maskHight="32.0dip" app:noEmpty="true" app:unitSize="15.0sp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="250.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <View android:background="@drawable/bg_141414_2_transparent" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="2.0" />
+            <View android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_weight="0.0" />
+            <View android:background="@drawable/bg_transparent_2_141414" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

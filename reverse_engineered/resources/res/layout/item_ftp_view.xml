@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="90dp">
+    <TextView android:textSize="@dimen/font_15" android:textColor="#ffffff" android:id="@r$id/item_ftp_view_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@r$id/item_ftp_view_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/ic_club_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@r$string/empty"/>
+    <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:id="@r$id/item_ftp_view_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:layout_toLeftOf="@r$id/item_ftp_view_arrow" android:layout_centerVertical="true"/>
+    <View android:id="@r$id/item_ftp_view_line" android:background="#222222" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

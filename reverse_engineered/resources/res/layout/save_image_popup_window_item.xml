@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="46dp">
+    <TextView android:textSize="14.5sp" android:textColor="#1c1c1c" android:gravity="left|center_vertical|center_horizontal|center" android:id="@r$id/save_image_list_view_item" android:paddingLeft="12dp" android:layout_width="280dp" android:layout_height="46dp"/>
+</LinearLayout>

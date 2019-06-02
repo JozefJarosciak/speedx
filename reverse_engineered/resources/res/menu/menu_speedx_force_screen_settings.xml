@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@r$id/menu_speedx_force_screen_settings_synchronized" android:title="@r$string/str_synchronization" app:showAsAction="always"/>
+</menu>

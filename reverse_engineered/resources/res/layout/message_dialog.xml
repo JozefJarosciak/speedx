@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <EditText android:textSize="@dimen/font_12" android:textColor="#000000" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@r$id/edit" android:background="@drawable/bg_club_apply_dialog_edit" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="110dp" android:hint="@r$string/club_dialog_input_hint" android:maxLength="20"/>
+    <TextView android:textSize="@dimen/font_11" android:textColor="#cc353535" android:id="@r$id/tv_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@r$string/club_dialog_hint" android:lineSpacingExtra="4.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="300dp" android:layout_height="35dp" android:layout_marginTop="12dp">
+        <Button android:textSize="@dimen/font_14" android:textColor="#fff" android:gravity="center" android:id="@r$id/cancle" android:background="@drawable/message_dialog_cancle_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="17dp" android:text="@r$string/activity_alert_dialog_text_cancel" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/font_14" android:textColor="#fff" android:gravity="center" android:id="@r$id/sure" android:background="@drawable/selector_btn_message_create_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@r$string/club_dialog_btn_sure" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

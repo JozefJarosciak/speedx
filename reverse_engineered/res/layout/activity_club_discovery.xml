@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.modules.cycling.club.ui.widget.MyFrameLayout android:orientation="vertical" android:id="@id/club_feed_frag_fl" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/discover_color3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/club_discover_apply_tip" android:background="#ffe34848" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/club_activity_apply_tip" android:drawableLeft="@drawable/ic_club_apply" android:drawablePadding="10.0dip" />
+            <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/ic_arrow_right" android:contentDescription="@string/empty" />
+        </FrameLayout>
+        <LinearLayout android:id="@id/searchbarLL" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <View android:id="@id/clubtabmidview" android:layout_width="0.100000024dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recommend_tab" android:background="@drawable/selector_discoverclubtab_bg" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:text="@string/discover_recommend" android:layout_toLeftOf="@id/clubtabmidview" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/nearby_tab" android:background="@drawable/selector_discoverclubtab_bg" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:text="@string/club_discover_group_city" android:layout_toRightOf="@id/clubtabmidview" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/frag_container" android:background="@color/discover_color3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</com.beastbikes.android.modules.cycling.club.ui.widget.MyFrameLayout>

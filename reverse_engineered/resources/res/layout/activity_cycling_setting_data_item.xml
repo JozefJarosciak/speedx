@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.widget.RippleView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_black_color" android:layout_width="match_parent" android:layout_height="wrap_content" app:rv_type="2">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:id="@r$id/cycling_setting_delete_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_item_edit_delete"/>
+            <TextView android:textSize="@dimen/font_15" android:textColor="@color/text_white_color" android:id="@r$id/activity_cycling_setting_data_item_label" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@r$string/cycling_setting_one_data" android:layout_weight="5"/>
+            <View android:background="@color/bg_border_line_color" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/font_15" android:textColor="@color/text_white_color" android:gravity="center" android:id="@r$id/activity_cycling_setting_data_item_value" android:layout_width="0dp" android:layout_height="wrap_content" android:text="时间，平均速度" android:layout_weight="3"/>
+            <ImageView android:id="@r$id/activity_cycling_setting_drag_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginRight="10dp" android:src="@drawable/route_map_make_item_drag" android:scaleType="center"/>
+        </LinearLayout>
+        <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+</com.beastbikes.android.widget.RippleView>

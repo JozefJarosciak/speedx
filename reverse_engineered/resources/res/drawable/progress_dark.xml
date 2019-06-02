@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:drawable="@drawable/dgts__spinner_dark" android:fromDegrees="0" android:toDegrees="720" android:pivotX="50%" android:pivotY="50%" android:repeatCount="infinite"/>

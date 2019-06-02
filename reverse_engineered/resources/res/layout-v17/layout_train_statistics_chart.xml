@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/window_background" android:paddingBottom="50dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@r$id/rela_temp" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="45dp">
+        <View android:id="@r$id/view_train_statistics_name_left" android:layout_width="10dp" android:layout_height="20dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/font_12" android:textColor="#ebebeb" android:id="@r$id/tv_train_statistics_chart_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="--" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="@dimen/font_25" android:ellipsize="end" android:id="@r$id/tv_train_statistics_chart_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="--" android:lines="1" android:layout_toRightOf="@r$id/view_train_statistics_name_left" android:layout_centerVertical="true" android:layout_marginStart="15dp" android:layout_toEndOf="@r$id/view_train_statistics_name_left"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="100dp">
+        <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_20" android:textColor="@android:color/white" android:gravity="center" android:id="@r$id/tv_train_statistics_time" android:layout_width="0dp" android:layout_height="match_parent" android:text="--:--:--" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <View android:id="@r$id/view_train_statistics_mine" android:layout_width="5dp" android:layout_height="10dp"/>
+                <TextView android:textSize="@dimen/font_12" android:textColor="@android:color/white" android:id="@r$id/tv_train_statistics_mine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="--" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_20" android:textColor="@android:color/white" android:gravity="center" android:id="@r$id/tv_train_statistics_my_value" android:layout_width="wrap_content" android:layout_height="0dp" android:text="--" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/font_12" android:gravity="center" android:id="@r$id/tv_train_statistics_state" android:layout_width="wrap_content" android:layout_height="0dp" android:text="--" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <View android:id="@r$id/view_train_statistics_target" android:layout_width="5dp" android:layout_height="10dp"/>
+                <TextView android:textSize="@dimen/font_12" android:textColor="@android:color/white" android:id="@r$id/tv_train_statistics_target" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="--" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_20" android:textColor="@android:color/white" android:id="@r$id/tv_train_statistics_target_value" android:layout_width="wrap_content" android:layout_height="0dp" android:text="--" android:layout_weight="1"/>
+            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@r$layout/layout_chart_background"/>
+        <com.github.mikephil.charting.charts.CombinedChart android:id="@r$id/combinedChart_train_statistics" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

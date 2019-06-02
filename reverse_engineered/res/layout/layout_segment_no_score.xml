@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/rela_segment_no_score" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:id="@id/tv_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_cycling_report_un_cross_segments" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_segment_know_seg_achievement" android:layout_below="@id/tv_temp" />
+</RelativeLayout>

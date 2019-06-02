@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@r$id/toolbar" android:background="@color/action_bar_background" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:title="" app:subtitle="">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@r$id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@r$style/mProgress_circle"/>
+            <TextView android:textSize="@dimen/font_18" android:textColor="@color/club_act_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@r$string/discover_result_label"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ListView android:id="@r$id/speed_force_manager_list" android:background="@color/bg_white_color" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:stackFromBottom="true" android:divider="@color/text_light_color" android:dividerHeight="2px"/>
+</LinearLayout>

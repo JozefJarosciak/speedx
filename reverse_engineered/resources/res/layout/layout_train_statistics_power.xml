@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.modules.cycling.activity.ui.record.widget.TrainStatisticsChartView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" app:mainColor="#fa3c09" app:mainName="@r$string/str_power" app:chartUnit="@r$string/str_unit_power" app:mineLabel="@r$string/str_my_power" app:targetLabel="@r$string/str_target_power"/>

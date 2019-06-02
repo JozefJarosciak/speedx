@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <com.baidu.mapapi.map.MapView android:id="@r$id/route_map_make_activity_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <RelativeLayout android:orientation="horizontal" android:id="@r$id/route_map_make_select_point_view" android:paddingLeft="56dp" android:paddingBottom="30dp" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <Button android:textSize="@dimen/font_11" android:textColor="#87d536" android:gravity="center" android:id="@r$id/route_map_make_select_start_point" android:background="@drawable/route_map_make_select_start_point_bg" android:paddingLeft="4dp" android:layout_width="60dp" android:layout_height="22dp" android:layout_marginLeft="28dp" android:layout_marginTop="6dp" android:text="@r$string/route_map_make_activity_select_start_point"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/route_map_make_start_icon" android:contentDescription="@r$string/empty"/>
+                </RelativeLayout>
+                <ImageView android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-35dp" android:src="@drawable/route_map_make_icon_bg" android:layout_below="@r$id/route_map_make_select_point_view" android:layout_centerHorizontal="true" android:contentDescription="@r$string/empty"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                    <ImageView android:id="@r$id/route_map_make_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/route_map_make_back" android:contentDescription="@r$string/empty"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@r$id/route_map_make_search" android:background="@drawable/route_map_make_search_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="13dp">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/route_map_make_search" android:contentDescription="@r$string/empty"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:id="@r$id/route_map_make_activity_map_button_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginBottom="15dp" android:src="@drawable/ic_map_location" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@r$string/empty"/>
+                <FrameLayout android:id="@r$id/route_map_make_zoom" android:layout_width="39dp" android:layout_height="92dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <View android:background="@drawable/route_map_make_search_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@r$id/route_map_make_zoom_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@r$id/route_map_make_activity_map_button_zoom_out" android:layout_width="39dp" android:layout_height="46dp" android:src="@drawable/ic_map_zoom_out" android:scaleType="centerInside" android:contentDescription="@r$string/empty"/>
+                        <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="3dp" android:layout_marginRight="3dp"/>
+                        <ImageView android:id="@r$id/route_map_make_activity_map_button_zoom_in" android:layout_width="39dp" android:layout_height="46dp" android:src="@drawable/ic_map_zoom_in" android:scaleType="centerInside" android:contentDescription="@r$string/empty"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@r$id/route_map_make_distance_view" android:background="@drawable/route_map_make_distance_bg" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="15dp" android:layout_marginBottom="17.5dp" android:layout_toLeftOf="@r$id/route_map_make_zoom" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="@dimen/font_15" android:textColor="#fff" android:id="@r$id/route_map_make_distance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/font_12" android:textColor="#fff" android:gravity="bottom" android:id="@r$id/route_map_make_activity_distance_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="@r$string/str_mileage_unit_km"/>
+                </LinearLayout>
+                <View android:background="@drawable/route_map_make_plan_list_bg" android:layout_width="8dp" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@r$id/route_map_make_activity_elevation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_map_zoom_elevation" android:scaleType="centerInside" android:layout_toRightOf="@r$id/route_map_make_activity_map_button_location" android:layout_alignTop="@r$id/route_map_make_activity_map_button_location" android:contentDescription="@r$string/empty"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@r$id/route_map_make_point_list" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="2">
+                <RelativeLayout android:background="#383838" android:layout_width="match_parent" android:layout_height="30dp">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#fff" android:gravity="center_vertical" android:id="@r$id/route_map_make_point_list_title" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@r$string/route_map_make_activity_point_title"/>
+                    <TextView android:textSize="@dimen/font_14" android:textColor="#fff" android:gravity="center_vertical" android:layout_gravity="right" android:id="@r$id/route_map_make_point_list_edit" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@r$string/str_edit" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <com.beastbikes.android.modules.cycling.route.ui.widget.DragSortListView android:id="@r$id/route_map_make_point_list_view" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:divider="#2f979797" android:dividerHeight="1px" android:layout_weight="1" android:footerDividersEnabled="true"/>
+                <View android:background="#2f979797" android:layout_width="match_parent" android:layout_height="1px" android:layout_weight="0"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#fff" android:gravity="center" android:id="@r$id/route_map_make_save_points" android:background="#89d437" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:text="@r$string/route_map_make_activity_save_points" android:layout_weight="0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@r$id/route_map_make_upload" android:background="#8f000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:background="#333" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ProgressBar android:layout_gravity="center_vertical" android:layout_width="60dp" android:layout_height="60dp" style="@android:attr/progressBarStyleLarge"/>
+                <TextView android:textColor="#fff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="80dp" android:text="@r$string/route_map_make_activity_saving"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

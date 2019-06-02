@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#eeeeee" android:paddingLeft="15dp" android:paddingRight="15dp" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="bottom" android:background="@drawable/bg_white_without_border_and_corners" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="5dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@r$id/img_search_location_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:src="@drawable/ic_search_location_back" android:layout_centerVertical="true"/>
+        <View android:id="@r$id/view_temp" android:background="#979797" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="14.5dp" android:layout_toRightOf="@r$id/img_search_location_back" android:layout_centerVertical="true"/>
+        <ImageView android:id="@r$id/img_search_location_delete" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12dp" android:src="@drawable/ic_search_location_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="@dimen/font_13" android:textColor="@android:color/black" android:textColorHint="#999999" android:gravity="center_vertical" android:id="@r$id/edit_search_location" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:lines="1" android:layout_toLeftOf="@r$id/img_search_location_delete" android:layout_toRightOf="@r$id/view_temp" android:layout_centerVertical="true" android:imeOptions="actionSearch"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_white_without_border_and_corners" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@r$id/linear_search_location_mine" android:layout_width="0dp" android:layout_height="47.5dp" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@r$string/str_navigation_my_location" android:drawableLeft="@drawable/ic_search_location_mine" android:drawablePadding="4.5dp"/>
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="14.5dp" android:layout_marginBottom="14.5dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@r$id/linear_search_location_on_map" android:layout_width="0dp" android:layout_height="47.5dp" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@r$string/select_from_map" android:drawableLeft="@drawable/ic_search_location_on_map" android:drawablePadding="4.5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@r$id/listView_search_location" android:background="@drawable/bg_white_without_border_and_corners" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+</LinearLayout>

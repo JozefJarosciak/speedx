@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="folder_cover_size">82dp</dimen>
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">3dp</dimen>
+    <dimen name="tw__padding_permission_horizontal_container">128dp</dimen>
+</resources>

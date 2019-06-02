@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="#fff" android:gravity="center" android:id="@r$id/club_transfer_activity_cancel_transfer" android:layout_width="match_parent" android:layout_height="40dp" android:text="@r$string/club_transfer_activity_cancel_transfer"/>
+    <TextView android:textColor="#fff" android:gravity="center" android:id="@r$id/club_transfer_activity_tip_transfer" android:layout_width="match_parent" android:layout_height="40dp" android:text="@r$string/club_transfer_activity_tip_transfer"/>
+</LinearLayout>

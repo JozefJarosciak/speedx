@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rc_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <io.rong.imkit.widget.AsyncImageView android:id="@android:id/icon" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="16dp" android:layout_centerHorizontal="true" app:RCShape="1"/>
+    <ImageView android:id="@android:id/icon2" android:visibility="gone" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="16dp" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:singleLine="true" android:layout_below="@android:id/icon" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@android:id/icon1" android:padding="2.5dp" android:layout_width="22.5dp" android:layout_height="22.5dp" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:src="@drawable/rc_mebmer_delete"/>
+</RelativeLayout>

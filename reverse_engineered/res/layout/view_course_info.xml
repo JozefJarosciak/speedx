@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:layout_gravity="center|right|top" android:id="@id/course_info_train_calendar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/str_train_course_calendar" android:drawableLeft="@drawable/ic_calendar" android:drawablePadding="4.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_marginBottom="70.0dip">
+            <ImageView android:id="@id/course_info_course_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_train_course_default" />
+            <TextView android:textSize="@dimen/font_26" android:textStyle="bold|italic" android:textColor="#ffffffff" android:gravity="center" android:id="@id/course_info_course_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/str_train_course_day_off" android:textScaleX="1.2" />
+            <TextView android:textSize="@dimen/font_13" android:textColor="#ffffffff" android:id="@id/course_info_course_info_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/str_train_course_current_train_info" android:drawableLeft="@drawable/ic_train_current_train" android:drawablePadding="4.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/course_info_rating_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_12" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_training_lesson_leve" />
+                <RatingBar android:layout_gravity="center" android:id="@id/course_info_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:numStars="5" android:rating="5.0" android:isIndicator="true" style="@style/RedRatingBar" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/course_info_course_data_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_18" android:textColor="#ffffffff" android:id="@id/course_info_train_time_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/font_10" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_start_navigation_selected_time_facility" />
+        </LinearLayout>
+        <View android:background="#30979797" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_20" android:textColor="#ffffffff" android:id="@id/course_info_train_tss_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/font_11" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_training_volume" />
+        </LinearLayout>
+        <View android:background="#30979797" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_20" android:textColor="#ffffffff" android:id="@id/course_info_train_if_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/font_11" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_training_intensity" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/font_17" android:textColor="#ffffffff" android:id="@id/course_info_start_train_btn" android:background="@drawable/bg_red_btn" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="28.0dip" android:text="@string/str_start_training" android:textAllCaps="false" />
+</LinearLayout>

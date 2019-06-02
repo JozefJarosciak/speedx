@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/ic_close_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="25.0dip" android:text="@string/str_cycling_report_training_analysis_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.beastbikes.android.modules.cycling.activity.ui.record.widget.VerticalViewPager android:id="@id/vertical_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

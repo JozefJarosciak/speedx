@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#eee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:text="@r$string/accuracy_setting_activity_tip"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_ffffff_with_border_top_bottom_1px_solid_1affffff" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@r$id/accuracy_setting_activity_mode_high" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="@r$string/accuracy_setting_activity_mode_high"/>
+            <View android:background="#999999" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@r$id/accuracy_setting_activity_mode_power_saving" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="@r$string/accuracy_setting_activity_mode_power_saving"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

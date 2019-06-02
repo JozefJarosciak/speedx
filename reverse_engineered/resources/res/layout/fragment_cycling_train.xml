@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@r$id/view_temp" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="15dp" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@r$id/view_temp">
+        <TextView android:textSize="@dimen/font_13" android:textColor="@android:color/white" android:id="@r$id/tv_cycling_train_name_with_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+        <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_68" android:textColor="@android:color/white" android:id="@r$id/tv_cycling_train_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="--:--"/>
+        <View android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="#999999" android:id="@r$id/tv_cycling_train_current_power_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_current_power"/>
+                <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_68" android:textColor="@android:color/white" android:id="@r$id/tv_cycling_train_current_power_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dp" android:text="0"/>
+            </LinearLayout>
+            <View android:background="@android:color/black" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="#999999" android:id="@r$id/tv_cycling_train_current_cadence_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_current_cadence"/>
+                <com.beastbikes.android.widget.CyclingNumberTextView android:textSize="@dimen/font_68" android:textColor="@android:color/white" android:id="@r$id/tv_cycling_train_current_cadence_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dp" android:text="0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ViewStub android:id="@r$id/viewStub_cycling_train_state1" android:layout="@r$layout/layout_cycling_train_current_state1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ViewStub android:id="@r$id/viewStub_cycling_train_state2" android:layout="@r$layout/layout_cycling_train_current_state_2" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

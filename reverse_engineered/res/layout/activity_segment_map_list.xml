@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout android:gravity="bottom" android:id="@id/sliding_layout_segment" android:layout_width="fill_parent" android:layout_height="fill_parent" app:umanoFadeColor="@android:color/transparent" app:umanoDragView="@id/linear_segment_drag_view" app:umanoScrollableView="@id/nested_scrollView_segment_bottom" app:umanoOverlay="true" app:umanoAnchorPoint="0.7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.CoordinatorLayout android:id="@id/detail_content" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.design.widget.CollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:id="@id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:title="" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:contentScrim="?colorPrimary" app:titleEnabled="false">
+                <com.beastbikes.android.modules.map.SpeedxMap android:id="@id/mapView_segment" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:layout_collapseMode="parallax" />
+                <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:title="" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:layout_collapseMode="pin" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.CoordinatorLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/rela_segment_my_location" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="15.0dip">
+            <ImageView android:id="@id/img_segment_my_location" android:layout_width="35.5dip" android:layout_height="35.5dip" android:src="@drawable/ic_segment_my_location" android:layout_alignParentLeft="true" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_segment_not_find_segment" android:background="@drawable/bg_segment_not_find_segment" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="35.5dip" android:layout_marginRight="20.0dip" android:text="@string/str_loading" android:layout_alignParentRight="true" />
+                <android.support.v7.widget.CardView android:id="@id/cardView_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:cardBackgroundColor="#ff181818" app:cardCornerRadius="5.0dip">
+                    <RelativeLayout android:id="@id/rela_segment_refresh" android:layout_width="35.5dip" android:layout_height="35.5dip" android:layout_alignParentRight="true">
+                        <ImageView android:id="@id/img_segment_refresh" android:layout_width="19.0dip" android:layout_height="19.0dip" android:src="@drawable/ic_segment_refresh" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_segment_drag_view" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView android:orientation="vertical" android:id="@id/nested_scrollView_segment_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/frame_segment_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/layout_segment_base_info" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_segment_content" android:background="#ff0e0e0e" android:paddingLeft="8.5dip" android:paddingRight="8.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <include layout="@layout/layout_segment_relative_segment" />
+                        <include layout="@layout/layout_segment_rank" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_stage_share_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout>

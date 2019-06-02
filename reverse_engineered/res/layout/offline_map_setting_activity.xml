@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpandableListView android:id="@id/offline_map_setting_activity_items" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:groupIndicator="@null" android:childIndicator="@null" android:childDivider="#ffcccccc" android:divider="#ffcccccc" android:dividerHeight="1.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

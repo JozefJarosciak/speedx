@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/nearby_bike_shop_see_more" android:background="#ff282828" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="15.0dip" android:text="@string/str_bicycle_shop_view_all_button_title" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="#ffd32323" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/nearby_bike_shop_apply_join" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip" android:text="@string/str_bicycle_shop_apple_settled_button_title" android:drawableRight="@drawable/ic_nearby_bike_shop_join_icon" android:drawablePadding="4.0dip" />
+</LinearLayout>

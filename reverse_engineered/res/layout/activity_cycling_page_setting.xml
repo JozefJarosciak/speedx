@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/activity_cycling_setting_add_data" android:background="@color/bg_black_color" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="@dimen/font_19" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cycling_target_add_data" android:drawableLeft="@drawable/ic_cycling_add_icon" android:drawablePadding="8.0dip" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/activity_cycling_setting_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+</LinearLayout>

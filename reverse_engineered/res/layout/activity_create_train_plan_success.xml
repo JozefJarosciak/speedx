@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/activity_create_train_plan_success" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/long_train_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center|top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_30" android:textColor="#ffffffff" android:id="@id/train_plan_success_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="两周骑行训练" />
+            <TextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:id="@id/train_plan_success_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="迈出第一步" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_12" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_train_plan_train_day" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_25" android:textColor="#ffffffff" android:id="@id/train_plan_success_days" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/font_11" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/str_day" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_12" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_train_plan_avg_day" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_25" android:textColor="#ffffffff" android:id="@id/train_plan_success_avg_day" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/font_11" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/activity_start_navigation_selected_time_facility" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_12" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_train_plan_avg_day_tss" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_25" android:textColor="#ffffffff" android:id="@id/train_plan_success_avg_day_tss" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="40.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="40.0dip" />
+        <TextView android:textSize="@dimen/font_17" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/str_train_plan_desired_effect" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <TextView android:textSize="@dimen/font_13" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_train_course_complete_ctl" />
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_17" android:textColor="#ffffffff" android:id="@id/train_plan_success_ctl_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <TextView android:textSize="@dimen/font_13" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_train_course_complete_atl" />
+            <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_17" android:textColor="#ffffffff" android:id="@id/train_plan_success_atl_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/font_17" android:textColor="#ff111111" android:layout_gravity="bottom" android:id="@id/train_plan_success_enter_course_btn" android:background="@drawable/bg_white_btn" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="12.0dip" android:text="@string/str_enter_train_course" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@r$id/linear_segment_rank_item" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:gravity="center" android:id="@r$id/tv_segment_rank_num" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerVertical="true"/>
+    <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@r$id/img_segment_rank_avatar" android:layout_width="39dp" android:layout_height="39dp" android:layout_marginLeft="12.5dp" android:src="@drawable/ic_avatar" android:layout_centerVertical="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="61dp" android:layout_marginLeft="17.6dp">
+        <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:id="@r$id/tv_segment_rank_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:10:21" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toLeftOf="@r$id/tv_segment_rank_time">
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@r$id/tv_segment_rank_user_name" android:layout_width="wrap_content" android:layout_height="0dp" android:text="Zachary Berry" android:layout_weight="1"/>
+            <TextView android:textColor="#999999" android:gravity="center" android:id="@r$id/tv_segment_rank_date" android:layout_width="wrap_content" android:layout_height="0dp" android:text="2016.02.12" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

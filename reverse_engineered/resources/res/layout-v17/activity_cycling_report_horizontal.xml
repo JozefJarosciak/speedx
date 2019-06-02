@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#111" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="#111" android:layout_width="match_parent" android:layout_height="75dp">
+        <RelativeLayout android:padding="8.5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@r$id/tv_cycling_report_horizontal_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_close" android:lines="1" android:layout_centerVertical="true"/>
+            <RelativeLayout android:id="@r$id/rela_cycling_report_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@r$id/tv_cycling_report_horizontal_close" android:layout_toEndOf="@r$id/tv_cycling_report_horizontal_close">
+                <com.beastbikes.android.modules.cycling.activity.ui.record.widget.SuperscriptView android:id="@r$id/superscript_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginStart="40dp" app:superscriptLineColor="#01fe74"/>
+                <TextView android:textSize="@dimen/font_15" android:textColor="#01fe74" android:id="@r$id/tv_cycling_report_horizontal_left_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="速度（KM/H）" android:lines="1" android:layout_toRightOf="@r$id/superscript_left" android:layout_toEndOf="@r$id/superscript_left"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_alignLeft="@r$id/tv_cycling_report_horizontal_left_name" android:layout_alignParentBottom="true" android:layout_alignStart="@r$id/tv_cycling_report_horizontal_left_name">
+                    <TextView android:textSize="@dimen/font_12" android:textColor="#888" android:id="@r$id/tv_cycling_report_horizontal_left_max" android:layout_width="0dp" android:layout_height="wrap_content" android:text="最大速度：23.5" android:lines="1" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/font_12" android:textColor="#888" android:id="@r$id/tv_cycling_report_horizontal_left_avg" android:layout_width="0dp" android:layout_height="wrap_content" android:text="平均速度：23.5" android:lines="1" android:layout_weight="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:padding="8.5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@r$id/tv_cycling_report_horizontal_overlying" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_overlying" android:lines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            <RelativeLayout android:id="@r$id/rela_cycling_report_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="40dp" android:layout_alignParentStart="true">
+                <com.beastbikes.android.modules.cycling.activity.ui.record.widget.SuperscriptView android:id="@r$id/superscript_right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:superscriptLineColor="@android:color/white"/>
+                <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:id="@r$id/tv_cycling_report_horizontal_right_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="海拔（M）" android:lines="1" android:layout_toRightOf="@r$id/superscript_right" android:layout_toEndOf="@r$id/superscript_right"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_alignLeft="@r$id/tv_cycling_report_horizontal_right_name" android:layout_alignParentBottom="true" android:layout_alignStart="@r$id/tv_cycling_report_horizontal_right_name">
+                    <TextView android:textSize="@dimen/font_12" android:textColor="#888" android:id="@r$id/tv_cycling_report_horizontal_right_max" android:layout_width="0dp" android:layout_height="wrap_content" android:text="最大速度：23.5" android:lines="1" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/font_12" android:textColor="#888" android:id="@r$id/tv_cycling_report_horizontal_right_avg" android:layout_width="0dp" android:layout_height="wrap_content" android:text="平均速度：23.5" android:lines="1" android:layout_weight="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@r$layout/layout_cycling_horizontal_marker_view"/>
+    <com.github.mikephil.charting.charts.LineChart android:id="@r$id/lineChart_cycling_report_horizontal" android:background="#111" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

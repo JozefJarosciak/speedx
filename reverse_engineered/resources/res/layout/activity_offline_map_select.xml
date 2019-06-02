@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/detail_content" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.CollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:id="@r$id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:title="" app:layout_scrollFlags="3" app:contentScrim="?attr/colorPrimary" app:titleEnabled="false">
+        <FrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="3" app:layout_collapseMode="2">
+            <com.mapbox.mapboxsdk.maps.MapView android:id="@r$id/mapView_select_offline_area" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="3" app:layout_collapseMode="2"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <Button android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:gravity="center" android:id="@r$id/btn_select_offline_area_sync" android:background="#ff002a" android:layout_width="match_parent" android:layout_height="45dp" android:text="@r$string/str_sync_offline_map_region" android:layout_alignParentBottom="true"/>
+                <RelativeLayout android:id="@r$id/rela_temp" android:background="#b2000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:gravity="center" android:id="@r$id/tv_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="82.5dp" android:layout_marginBottom="17.5dp" android:text="@r$string/str_ble_select_offline_area_desc" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@r$id/rela_temp1" android:background="#b2000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@r$id/btn_select_offline_area_sync">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:gravity="center" android:id="@r$id/tv_select_offline_area_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="62dp" android:text="@r$string/str_offline_map_choose_description" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <View android:id="@r$id/view_select_offline_area" android:background="@drawable/bg_select_offline_area_with_red_bounds" android:layout_width="300dp" android:layout_height="375dp" android:layout_above="@r$id/rela_temp1" android:layout_below="@r$id/rela_temp" android:layout_centerHorizontal="true"/>
+                <View android:background="#b2000000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@r$id/view_select_offline_area" android:layout_above="@r$id/rela_temp1" android:layout_below="@r$id/rela_temp"/>
+                <View android:background="#b2000000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@r$id/view_select_offline_area" android:layout_above="@r$id/rela_temp1" android:layout_below="@r$id/rela_temp"/>
+            </RelativeLayout>
+        </FrameLayout>
+        <android.support.v7.widget.Toolbar android:id="@r$id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:title="@r$string/str_ble_select_offline_area" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:layout_collapseMode="1"/>
+    </android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.CoordinatorLayout>

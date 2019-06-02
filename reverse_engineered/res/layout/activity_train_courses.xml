@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/activity_train_courses" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/train_courses_bg_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/empty" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_marginBottom="130.0dip">
+                <TextView android:textSize="@dimen/font_30" android:textStyle="italic" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/train_courses_train_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                <TextView android:textSize="@dimen/font_16" android:textStyle="italic" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/train_courses_train_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+            </LinearLayout>
+            <ExpandableListView android:id="@id/train_courses_list_view" android:background="#ff181818" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

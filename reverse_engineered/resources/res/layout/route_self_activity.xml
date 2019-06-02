@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@r$id/task_self_no_task_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/route_map_make_no_route" android:contentDescription="@r$string/empty"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="#777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="@r$string/route_self_activity_no_line"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="#777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@r$string/route_self_activity_add_first_line"/>
+            <Button android:textSize="@dimen/font_15" android:textColor="#121212" android:id="@r$id/route_make_first_btn" android:background="@drawable/route_make_line_btn" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="85dp" android:layout_marginTop="25dp" android:layout_marginRight="85dp" android:text="@r$string/route_self_activity_make"/>
+        </LinearLayout>
+        <ListView android:id="@r$id/route_self_list_view" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+    </FrameLayout>
+</RelativeLayout>

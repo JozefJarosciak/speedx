@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@r$id/activity_about_image" android:background="@drawable/bg_activity_about" android:layout_width="match_parent" android:layout_height="230dp">
+            <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@r$id/activity_about_version_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48dp" android:drawablePadding="15dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/activity_about_list_content" android:background="@drawable/bg_ffffff_with_border_top_bottom_1px_solid_1affffff" android:paddingLeft="23dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:id="@r$id/activity_about_tutorial" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="@r$string/about_activity_tutorial" android:drawableRight="@drawable/ic_item_arrow" android:drawablePadding="15dp"/>
+            <View android:id="@r$id/about_view" android:background="@color/about_activity_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_wechat_label"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#666" android:gravity="center_vertical" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_wechat_value" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:background="@color/about_activity_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_qqgroup_label"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#666" android:gravity="center_vertical" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_qqgroup_value" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:background="@color/about_activity_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_qq_feedback_group_label"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#666" android:gravity="center_vertical" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_qq_feedback_group_value" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:background="@color/about_activity_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_weibo_label"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#666" android:gravity="center_vertical" android:id="@r$id/activity_about_enter_weibo_tv" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_weibo_value" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:background="@color/about_activity_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_customer_line_label"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#666" android:gravity="center_vertical" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_customer_line_value" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:background="@color/about_activity_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_customer_email_label"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#666" android:gravity="center_vertical" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_customer_email_value" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:background="@color/about_activity_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:id="@r$id/about_activity_email_lay" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_service_email_label"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#666" android:gravity="center_vertical" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_service_email_value" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:background="@color/about_activity_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_work_time"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#666" android:gravity="center_vertical" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/about_activity_work_time_value" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@r$id/activity_about_update_group" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_16" android:textColor="#444" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/version_update_tv"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#666" android:gravity="center_vertical" android:id="@r$id/activity_about_update_tv" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@r$string/version_update_not_has_new" android:drawablePadding="10dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

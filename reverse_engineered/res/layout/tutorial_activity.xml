@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ic_bg_tutorial" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewPager_tutorial_page" android:paddingBottom="140.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/viewStub_index" android:layout="@layout/layout_tutorial_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="140.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/linear_tutorial_page_indicator" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="30.0dip" android:layout_above="@id/linear_temp" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/linear_temp" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="45.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@id/btn_tutorial_page_join_now" android:background="@drawable/bg_btn_tutorial_register_red" android:layout_width="140.0dip" android:layout_height="50.0dip" android:text="@string/str_join_now" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@id/btn_tutorial_page_login" android:background="@drawable/bg_btn_tutorial_login_black" android:layout_width="140.0dip" android:layout_height="50.0dip" android:text="@string/str_sign_in" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

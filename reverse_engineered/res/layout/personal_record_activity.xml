@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff131313" android:paddingLeft="7.5dip" android:paddingRight="7.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:number="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="horizontal" android:id="@id/radioGroup_personal_record" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <RadioButton android:id="@id/radioBtn_personal_record_weekly" android:background="@drawable/bg_personal_record_radio_btn_left" android:checked="true" android:text="@string/week" style="@style/RadioBtnPersonalRecord" />
+        <RadioButton android:id="@id/radioBtn_personal_record_monthly" android:background="@drawable/bg_personal_record_radio_btn_nor" android:text="@string/month" style="@style/RadioBtnPersonalRecord" />
+        <RadioButton android:id="@id/radioBtn_personal_record_year" android:background="@drawable/bg_personal_record_radio_btn_nor" android:text="@string/year" style="@style/RadioBtnPersonalRecord" />
+        <RadioButton android:id="@id/radioBtn_personal_record_total" android:background="@drawable/bg_personal_record_radio_btn_right" android:checked="false" android:text="@string/total" style="@style/RadioBtnPersonalRecord" />
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/font_11" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_personal_record_data_time" android:background="@drawable/bg_personal_record_data" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" />
+        <com.beastbikes.android.widget.convenientbanner.ConvenientBanner android:id="@id/convenient_personal_record_data_viewpager" android:layout_width="fill_parent" android:layout_height="300.0dip" number:canLoop="true" />
+        <TextView android:textSize="@dimen/font_11" android:textColor="@android:color/white" android:id="@id/tv_personal_record_data_time_and_mileage_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip" android:text="@string/str_cycling_time_with_unit" android:drawableRight="@drawable/ic_medal_unfold_icon" android:drawablePadding="3.0dip" android:drawableEnd="@drawable/ic_medal_unfold_icon" />
+        <com.github.mikephil.charting.charts.LineChart android:id="@id/line_chart_personal_record_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

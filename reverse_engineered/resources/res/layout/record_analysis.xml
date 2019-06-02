@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="#111111" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" app:cardBackgroundColor="#181818" app:cardCornerRadius="10dp">
+        <RelativeLayout android:id="@r$id/record_analysis_stage_item" android:layout_width="match_parent" android:layout_height="60dp">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp">
+                <TextView android:textSize="@dimen/font_14" android:textColor="#fff" android:id="@r$id/record_analysis_stage_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_segment_no_join"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#fff" android:id="@r$id/record_analysis_stage_rank_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@r$id/record_analysis_stage_title_tv"/>
+                <TextView android:textSize="@dimen/font_12" android:textColor="#666" android:id="@r$id/record_analysis_stage_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_segment_know_seg_achievement" android:layout_below="@r$id/record_analysis_stage_title_tv"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="20dp" android:layout_alignParentRight="true">
+                <ImageView android:id="@r$id/record_analysis_stage_rank_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_club_arrow_right" android:contentDescription="@r$string/empty"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" app:cardBackgroundColor="#181818" app:cardCornerRadius="10dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@r$id/record_analysis_linear" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="2">
+                <TextView android:textSize="11sp" android:textColor="#fff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@r$string/str_cycling_start_end_time"/>
+                <TextView android:textSize="12sp" android:textColor="#999" android:id="@r$id/record_analysis_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--:--:-- －--:--:--"/>
+            </LinearLayout>
+            <TextView android:textColor="#ccc" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@r$string/record_analysis" android:drawableRight="@drawable/ic_club_arrow_right" android:drawablePadding="10dp" android:layout_weight="2"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

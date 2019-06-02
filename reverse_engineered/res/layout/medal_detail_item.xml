@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_medal_info" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/activity_medal_info_light_view" android:background="@drawable/bg_medal_info_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/activity_medal_info_icon" android:layout_width="160.0dip" android:layout_height="172.0dip" android:layout_marginTop="112.0dip" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/activity_medal_info_viewStub_item" android:layout="@layout/layout_medal_detail_item_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/activity_medal_info_viewStub_push_item" android:layout="@layout/layout_medal_detail_item_push_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

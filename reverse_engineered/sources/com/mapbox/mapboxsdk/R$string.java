@@ -1,0 +1,46 @@
+package com.mapbox.mapboxsdk;
+
+public final class R$string {
+    public static final int abc_action_bar_home_description = 2131361792;
+    public static final int abc_action_bar_home_description_format = 2131361793;
+    public static final int abc_action_bar_home_subtitle_description_format = 2131361794;
+    public static final int abc_action_bar_up_description = 2131361795;
+    public static final int abc_action_menu_overflow_description = 2131361796;
+    public static final int abc_action_mode_done = 2131361797;
+    public static final int abc_activity_chooser_view_see_all = 2131361798;
+    public static final int abc_activitychooserview_choose_application = 2131361799;
+    public static final int abc_capital_off = 2131361800;
+    public static final int abc_capital_on = 2131361801;
+    public static final int abc_search_hint = 2131361802;
+    public static final int abc_searchview_description_clear = 2131361803;
+    public static final int abc_searchview_description_query = 2131361804;
+    public static final int abc_searchview_description_search = 2131361805;
+    public static final int abc_searchview_description_submit = 2131361806;
+    public static final int abc_searchview_description_voice = 2131361807;
+    public static final int abc_shareactionprovider_share_with = 2131361808;
+    public static final int abc_shareactionprovider_share_with_application = 2131361809;
+    public static final int abc_toolbar_collapse_description = 2131361810;
+    public static final int appbar_scrolling_view_behavior = 2131363610;
+    public static final int attributionTelemetryMessage = 2131363611;
+    public static final int attributionTelemetryNegative = 2131363612;
+    public static final int attributionTelemetryNeutral = 2131363613;
+    public static final int attributionTelemetryPositive = 2131363614;
+    public static final int attributionTelemetryTitle = 2131363615;
+    public static final int attributionsDialogTitle = 2131363616;
+    public static final int attributionsIconContentDescription = 2131363617;
+    public static final int bottom_sheet_behavior = 2131363619;
+    public static final int character_counter_pattern = 2131363620;
+    public static final int compassContentDescription = 2131363621;
+    public static final int infoWindowAddress = 2131363628;
+    public static final int infoWindowDescription = 2131363629;
+    public static final int infoWindowTitle = 2131363630;
+    public static final int mapboxIconContentDescription = 2131363632;
+    public static final int status_bar_notification_info_overflow = 2131361874;
+    public static final int style_dark = 2131363655;
+    public static final int style_emerald = 2131363656;
+    public static final int style_light = 2131363657;
+    public static final int style_mapbox_streets = 2131363658;
+    public static final int style_outdoors = 2131363659;
+    public static final int style_satellite = 2131363660;
+    public static final int style_satellite_streets = 2131363661;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@r$id/activity_cycling_record_filter_time" android:background="#141414" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@r$id/cycling_record_filter_start_date_view" android:layout_width="match_parent" android:layout_height="90dp" layout="@r$layout/speed_force_setting_item"/>
+    <View android:background="#222222" android:layout_width="match_parent" android:layout_height="1px"/>
+    <include android:id="@r$id/cycling_record_filter_end_date_view" android:layout_width="match_parent" android:layout_height="90dp" layout="@r$layout/speed_force_setting_item"/>
+</LinearLayout>

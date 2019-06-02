@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/font_12" android:textColor="#ff000000" android:gravity="center|left|top" android:id="@id/edit" android:background="@drawable/bg_club_apply_dialog_edit" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="110.0dip" android:hint="@string/club_dialog_input_hint" android:maxLength="20" />
+    <TextView android:textSize="@dimen/font_11" android:textColor="#cc353535" android:id="@id/tv_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/club_dialog_hint" android:lineSpacingExtra="4.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="300.0dip" android:layout_height="35.0dip" android:layout_marginTop="12.0dip">
+        <Button android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/cancle" android:background="@drawable/message_dialog_cancle_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="17.0dip" android:text="@string/activity_alert_dialog_text_cancel" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/sure" android:background="@drawable/selector_btn_message_create_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/club_dialog_btn_sure" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

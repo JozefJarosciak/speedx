@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_mail_phone_valid_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/str_account_manage_pls_set_pwd" style="@style/tv_account_tip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <EditText android:id="@id/et_account_pwd_reset_old_pwd" android:layout_width="fill_parent" android:layout_height="44.0dip" android:hint="@string/str_account_manage_please_input_old_pwd" android:maxLength="16" android:inputType="textPassword" style="@style/et_account" />
+        <View android:background="#ff292929" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" />
+        <EditText android:id="@id/et_account_pwd_reset_new_pwd" android:layout_width="fill_parent" android:layout_height="44.0dip" android:hint="@string/str_account_manage_please_enter_new_pwd" android:maxLength="16" android:inputType="textPassword" style="@style/et_account" />
+        <View android:background="#ff292929" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <EditText android:id="@id/et_account_pwd_reset_pwd_confirm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/str_account_manage_confirm_new_pwd" android:maxLength="16" android:inputType="textPassword" style="@style/et_account" />
+        <TextView android:textColor="@color/selector_btn_account" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/tv_account_pwd_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/font_12" android:text="@string/str_account_manage_two_pwd_not_same" />
+    </FrameLayout>
+    <TextView android:enabled="false" android:id="@id/tv_account_pwd_reset_commit" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="30.0dip" android:text="@string/activity_alert_dialog_text_ok" style="@style/btn_account" />
+</LinearLayout>

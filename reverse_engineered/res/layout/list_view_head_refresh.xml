@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom|center" android:id="@id/list_view_head" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <ImageView android:id="@id/list_view_head_refresh" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginTop="4.0dip" android:contentDescription="@string/empty" />
+    </RelativeLayout>
+</LinearLayout>

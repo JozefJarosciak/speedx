@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true">
+    <io.rong.imkit.model.LinkTextView android:autoLink="all" android:id="@+id/evaluate_text" android:layout_width="185dp" android:layout_height="wrap_content" style="@style/RCTheme.Message.TextView"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/layout_praise" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/tv_line" android:background="#c3c3c3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_praise_area" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginTop="15dp" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_complete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:src="@drawable/rc_complete"/>
+            <TextView android:textSize="16sp" android:textColor="#a3a3a3" android:layout_gravity="center_vertical" android:id="@+id/tv_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <ImageView android:id="@+id/iv_yes" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:src="@drawable/rc_praise" android:adjustViewBounds="true"/>
+            <ImageView android:id="@+id/iv_no" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:src="@drawable/rc_no" android:adjustViewBounds="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

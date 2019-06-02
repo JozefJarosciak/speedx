@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/activity_ble_sensor_manager" android:background="#111111" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:text="@r$string/str_ble_sensor_enable_description"/>
+        <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:text="@r$string/str_ble_sensor_subtitle_manage_sensor"/>
+        <FrameLayout android:id="@r$id/ble_sensor_manager_heart_rate_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+            <include android:id="@r$id/ble_sensor_manager_heart_rate" android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginRight="30dp" layout="@r$layout/speed_force_setting_switch_item"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_arrow_right"/>
+        </FrameLayout>
+        <FrameLayout android:id="@r$id/ble_sensor_manager_power_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@r$id/ble_sensor_manager_power" android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginRight="30dp" layout="@r$layout/speed_force_setting_switch_item"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_arrow_right"/>
+        </FrameLayout>
+        <FrameLayout android:id="@r$id/ble_sensor_manager_speed_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@r$id/ble_sensor_manager_speed" android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginRight="30dp" layout="@r$layout/speed_force_setting_switch_item"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_arrow_right"/>
+        </FrameLayout>
+        <FrameLayout android:id="@r$id/ble_sensor_manager_cadence_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@r$id/ble_sensor_manager_cadence" android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginRight="30dp" layout="@r$layout/speed_force_setting_switch_item"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_arrow_right"/>
+        </FrameLayout>
+        <FrameLayout android:id="@r$id/ble_sensor_manager_speed_and_cadence_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@r$id/ble_sensor_manager_speed_and_cadence" android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginRight="30dp" layout="@r$layout/speed_force_setting_switch_item"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_arrow_right"/>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="@color/member_manager_item_time" />
+    <item android:state_enabled="true" android:color="@color/account_management_color" />
+</selector>

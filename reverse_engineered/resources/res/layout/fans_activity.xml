@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_theme_black_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_14" android:textColor="#444444" android:gravity="center" android:id="@r$id/fans_activity_no_fans_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@r$string/activity_record_activity_no_record" android:drawableTop="@drawable/ic_activity_record_no_record" android:drawablePadding="20dp" android:layout_centerInParent="true"/>
+    <FrameLayout android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
+        <TextView android:textSize="@dimen/font_14" android:textColor="@color/color_686868" android:layout_gravity="center" android:id="@r$id/activity_fans_empty_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/activity_fans_empty_tip" android:drawableTop="@drawable/ic_cycling_default" android:drawablePadding="20dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/fans_activity_list_parent_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</RelativeLayout>

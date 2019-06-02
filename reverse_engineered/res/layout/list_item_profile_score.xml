@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_15" android:textColor="#ffdfdfdf" android:id="@id/tv_profile_score_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/img_profile_score_item_beast" android:visibility="gone" android:layout_width="19.0dip" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/ic_profile_score_trophy" android:layout_toRightOf="@id/tv_profile_score_item_date" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/font_15" android:textColor="#ffdfdfdf" android:id="@id/tv_profile_score_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="13.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:id="@id/speed_force_setting_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/speed_force_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/ic_club_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/empty" />
+    <TextView android:textSize="@dimen/font_13" android:textColor="#ff999999" android:id="@id/speed_force_setting_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_toLeftOf="@id/speed_force_setting_arrow" android:layout_centerVertical="true" />
+    <View android:id="@id/speed_force_setting_item_dot" android:background="@drawable/bg_oval" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/speed_force_setting_item_value" android:layout_centerVertical="true" />
+    <View android:id="@id/speed_force_setting_item_bottom_line" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="18.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

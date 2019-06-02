@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@r$id/main" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@r$id/user_setting_activity_avatar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp">
+                <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_avatar" android:layout_centerVertical="true"/>
+                <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@r$id/user_setting_activity_avatar_value" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="15dp" android:src="@drawable/ic_avatar" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:id="@r$id/user_setting_activity_nickname" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/user_setting_activity_label_nickname" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:id="@r$id/user_setting_activity_nickname_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawablePadding="13dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:id="@r$id/user_setting_activity_gender" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_gender" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:id="@r$id/user_setting_activity_gender_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawablePadding="13dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="horizontal" android:id="@r$id/user_setting_activity_location" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@r$id/user_setting_activity_location_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/user_setting_activity_label_location" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:ellipsize="end" android:gravity="right" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@r$id/user_setting_activity_location_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="15dp" android:singleLine="true" android:drawablePadding="13dp" android:layout_weight="1" android:layout_toRightOf="@r$id/user_setting_activity_location_tv" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </LinearLayout>
+            <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:id="@r$id/user_setting_activity_height" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_height" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:id="@r$id/user_setting_activity_height_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawablePadding="13dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:id="@r$id/user_setting_activity_weight" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_weight" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:id="@r$id/user_setting_activity_weight_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawablePadding="13dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:id="@r$id/user_setting_activity_birth" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/str_birthday" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:id="@r$id/user_setting_activity_birth_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawablePadding="13dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@r$id/user_setting_fragment_line3" android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:id="@r$id/user_setting_activity_email" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="@dimen/font_14" android:textColor="@android:color/white" android:id="@r$id/user_setting_activity_email_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/user_setting_activity_label_email" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:gravity="right" android:id="@r$id/user_setting_activity_email_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:layout_toRightOf="@r$id/user_setting_activity_email_label" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <View android:id="@r$id/user_setting_fragment_line1" android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="30dp"/>
+        <TextView android:textColor="@color/design_color_c7" android:gravity="center" android:id="@r$id/user_setting_activity_button_sign_out" android:layout_width="match_parent" android:layout_height="46dp" android:text="@r$string/str_save" android:elevation="0dp"/>
+        <View android:id="@r$id/user_setting_fragment_line2" android:background="@color/bg_border_line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+</ScrollView>

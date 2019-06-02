@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/bg_black_color" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:gravity="center_vertical" android:id="@r$id/profile_fragment_detail_item_statistics" android:paddingLeft="15dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="30dp" android:text="@r$string/str_personal_record" android:drawableRight="@drawable/ic_arrow_right_icon"/>
+    <View android:background="#222" android:layout_width="match_parent" android:layout_height="1px" android:layout_weight="0"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80dp">
+        <include android:id="@r$id/profile_fragment_statistic_item_total_elapsed_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" layout="@r$layout/profile_fragment_statistic_item"/>
+        <View android:background="#222" android:layout_width="1px" android:layout_height="match_parent" android:layout_weight="0"/>
+        <include android:id="@r$id/profile_fragment_statistic_item_total_distance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" layout="@r$layout/profile_fragment_statistic_item"/>
+        <View android:background="#222" android:layout_width="1px" android:layout_height="match_parent" android:layout_weight="0"/>
+        <include android:id="@r$id/profile_fragment_statistic_item_total_calories" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" layout="@r$layout/profile_fragment_statistic_item"/>
+        <View android:background="#222" android:layout_width="1px" android:layout_height="match_parent" android:layout_weight="0"/>
+        <include android:id="@r$id/profile_fragment_statistic_item_total_times" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" layout="@r$layout/profile_fragment_statistic_item"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:number="http://schemas.android.com/apk/res-auto">
+    <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/font_30" android:textColor="#ffffffff" android:id="@id/speedx_force_data_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" number:typefaceName="@string/number_type_face_name" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:id="@id/speedx_force_data_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</LinearLayout>

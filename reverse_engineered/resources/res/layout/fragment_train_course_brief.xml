@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/window_background" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+            <TextView android:textSize="@dimen/font_17" android:textColor="@android:color/white" android:id="@r$id/tv_train_course_brief_idea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@r$string/str_training_advice"/>
+            <TextView android:textSize="@dimen/font_11" android:textColor="#999" android:id="@r$id/tv_train_course_brief_idea_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@r$string/str_training_advice_desc" android:layout_below="@r$id/tv_train_course_brief_idea"/>
+            <View android:background="#ff002a" android:layout_width="5dp" android:layout_height="32dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/linear_train_course_brief_idea" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="20dp"/>
+        <com.github.mikephil.charting.charts.CandleStickChart android:id="@r$id/candleChart_train_course_brief" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:minHeight="200dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ff292929" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/cycling_page_settings" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:layout_gravity="center|left" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/cycling_setting_title" />
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/ic_arrow_right" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/bluetooth_sensor_settings" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:layout_gravity="center|left" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/str_ble_sensor_device_title" />
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/ic_arrow_right" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/cycling_page_sensor_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:layout_gravity="center|left" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/str_sensor_device" />
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/ic_arrow_right" />
+    </FrameLayout>
+    <View android:background="#ff292929" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+    <include android:id="@id/cycling_setting_screen_view" android:layout_width="fill_parent" android:layout_height="70.0dip" layout="@layout/speed_force_setting_switch_item" />
+    <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:id="@id/setting_fragment_item_voice_prompt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:text="@string/setting_fragment_item_voice_prompt" />
+    <include android:id="@id/cycling_setting_auto_pause_view" android:layout_width="fill_parent" android:layout_height="70.0dip" layout="@layout/speed_force_setting_switch_item" />
+    <View android:background="#ff292929" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+    <View android:background="#ff292929" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+    <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="20.0dip">
+        <TextView android:textColor="#ffffffff" android:id="@id/activity_cycling_setting_mile_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/str_mileage_unit_mile" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.beastbikes.android.widget.materialdesign.MaterialRadioButton android:id="@id/activity_cycling_setting_miles_radiobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/activity_cycling_setting_mile_title" android:layout_centerVertical="true" />
+        <TextView android:textColor="#ffffffff" android:id="@id/activity_cycling_setting_kilometer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/kilometre" android:layout_toLeftOf="@id/activity_cycling_setting_miles_radiobutton" android:layout_centerVertical="true" />
+        <com.beastbikes.android.widget.materialdesign.MaterialRadioButton android:id="@id/activity_cycling_setting_kilometer_radiobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/activity_cycling_setting_kilometer_title" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_light_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_cycling_setting_distance_unit" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ff292929" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+</LinearLayout>

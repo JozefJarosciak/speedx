@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/textView_chart_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/label_cycling_time_proportion"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

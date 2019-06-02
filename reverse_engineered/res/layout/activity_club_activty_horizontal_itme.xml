@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="35.0dip" android:layout_height="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.beastbikes.framework.ui.android.widget.CircleImageView android:id="@id/activity_club_activty_horizontal_itme_iv" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+    <View android:layout_width="10.0dip" android:layout_height="25.0dip" />
+</LinearLayout>

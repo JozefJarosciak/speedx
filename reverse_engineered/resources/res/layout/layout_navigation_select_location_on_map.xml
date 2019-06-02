@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="180dp">
+    <ListView android:id="@r$id/listView_navi_locations" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <android.support.v7.widget.RecyclerView android:id="@r$id/recyclerView_bottom_location" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

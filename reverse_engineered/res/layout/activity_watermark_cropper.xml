@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_watermark_cropper_bar" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@id/activity_watermark_cropper_back" android:paddingTop="12.0dip" android:paddingBottom="13.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_activity_watermark_back" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:contentDescription="@string/empty" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="编辑裁剪" android:layout_centerInParent="true" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/activity_watermark_cropper_next" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginRight="10.0dip" android:text="下一步" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/activity_watermark_cropper_bar">
+        <com.beastbikes.android.modules.user.filter.other.ImageCropView android:id="@id/activity_watermark_cropper_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:minHeight="300.0dip" />
+        <ImageView android:id="@id/activity_watermark_cropper_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_activity_watermark_cropper_ok" android:layout_below="@id/activity_watermark_cropper_view" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/linear_cycling_train_state2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.beastbikes.android.modules.cycling.activity.ui.widget.CyclingTrainStateProgressBar android:id="@id/progress_cycling_train_power" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="10.0dip" android:maxHeight="160.0dip" android:layout_weight="1.0" app:progress_color="#ffff002a" />
+    <View android:background="@android:color/black" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <com.beastbikes.android.modules.cycling.activity.ui.widget.CyclingTrainStateProgressBar android:id="@id/progress_cycling_train_cadence" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="25.0dip" android:maxHeight="160.0dip" android:layout_weight="1.0" app:progress_color="#ff295ff0" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.baidu.mapapi.map.MapView android:id="@r$id/shop_baidu_map" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp">
+        <RelativeLayout android:id="@r$id/activity_bike_shop_back" android:layout_width="44dp" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_new_back_icon" android:scaleType="center" android:layout_centerInParent="true" android:contentDescription="@r$string/empty"/>
+        </RelativeLayout>
+        <View android:background="#9c9c9c" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+        <RelativeLayout android:id="@r$id/activity_bike_shop_search" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="13sp" android:textColor="#9b9b9b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:text="@r$string/search_position" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@r$id/shop_baidu_map_search_result_rl" android:background="@drawable/bg_shop_map_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13sp" android:textColor="@color/bg_black_color" android:id="@r$id/shop_baidu_map_search_result_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共找到“野兽车店”相关3个结果" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@r$id/bike_shop_location_iv" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_marginBottom="10dp" android:src="@drawable/ic_bike_shop_location" android:scaleType="centerInside"/>
+        <android.support.v7.widget.CardView android:id="@r$id/shop_baidu_map_search_result_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" app:cardBackgroundColor="#ffffff" app:cardCornerRadius="4dp" app:cardElevation="4dp">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <TextView android:textSize="@dimen/font_11" android:layout_gravity="center_vertical" android:id="@r$id/shop_baidu_map_authentication" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/font_17" android:textColor="#000000" android:id="@r$id/shop_baidu_map_search_result_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="野兽骑行官方旗舰店"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                    <TextView android:textSize="10sp" android:textColor="#d62424" android:id="@r$id/str_bicycle_shop_tag_fix" android:background="@drawable/bg_bike_shop_tag1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@r$string/str_bicycle_shop_tag_fix"/>
+                    <TextView android:textSize="10sp" android:textColor="#d62424" android:id="@r$id/str_bicycle_shop_tag_care" android:background="@drawable/bg_bike_shop_tag1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@r$string/str_bicycle_shop_tag_care"/>
+                    <TextView android:textSize="10sp" android:textColor="#d62424" android:id="@r$id/str_bicycle_shop_tag_offline" android:background="@drawable/bg_bike_shop_tag1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@r$string/str_bicycle_shop_tag_offline"/>
+                    <TextView android:textSize="10sp" android:textColor="#d62424" android:id="@r$id/str_bicycle_shop_tag_rent" android:background="@drawable/bg_bike_shop_tag1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@r$string/str_bicycle_shop_tag_rent"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/font_14" android:textColor="#999999" android:id="@r$id/shop_baidu_map_search_result_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="25dp" android:text="地址：北京市海淀区中关村海淀大街1号"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/home_activity_tab_bar_item_label_default" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@r$id/shop_baidu_map_search_result_info_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="13.2km"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

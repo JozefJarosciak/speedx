@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/club_info_bg" android:background="@drawable/ic_club_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="120.0dip">
+            <com.beastbikes.android.modules.cycling.club.ui.widget.MyViewPager android:id="@id/pager_banner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:id="@id/club_feed_info_type_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/club_feed_info_type" android:layout_width="43.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.beastbikes.android.widget.PageIndicator android:gravity="bottom|center" android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="20.0dip" app:indicator_spacing="5.0dip" app:indicator_type="circle" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/font_13" android:textColor="#ffb4b4b4" android:gravity="center" android:id="@id/club_info_location" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:drawableRight="@drawable/ic_divider_line" android:layout_weight="3.0" />
+            <TextView android:textSize="@dimen/font_13" android:textStyle="bold" android:textColor="#ffb4b4b4" android:gravity="center" android:id="@id/club_info_total_distance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="3.0" />
+            <TextView android:textSize="@dimen/font_13" android:textStyle="bold" android:textColor="#ffb4b4b4" android:gravity="center" android:id="@id/club_info_member_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:drawableLeft="@drawable/ic_divider_line" android:layout_weight="3.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

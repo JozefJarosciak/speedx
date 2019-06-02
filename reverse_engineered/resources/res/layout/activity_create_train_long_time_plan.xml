@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@r$id/activity_create_train_long_time_plan" android:background="#181818" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="#222222" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                <TextView android:textSize="@dimen/font_17" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@r$string/str_write_train_target_title"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="20dp" android:layout_marginBottom="10dp" android:src="@drawable/ic_train_quote"/>
+                <TextView android:textSize="@dimen/font_13" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="36dp" android:text="@r$string/str_write_train_target_desc"/>
+                <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="36dp" android:layout_marginBottom="30dp" android:src="@drawable/ic_train_back_quote"/>
+            </LinearLayout>
+            <View android:layout_gravity="bottom" android:background="@drawable/bg_train_default_title" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="40dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@r$id/train_plan_riding_times_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="30dp">
+            <TextView android:textSize="@dimen/font_15" android:textColor="#222222" android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@r$id/train_plan_riding_times_left_tv" android:background="@drawable/dot_white" android:layout_width="18dp" android:layout_height="18dp" android:text="1"/>
+            <TextView android:textSize="@dimen/font_17" android:textColor="#ffffff" android:id="@r$id/train_plan_riding_times_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@r$string/str_riding_faw_times_a_week"/>
+        </LinearLayout>
+        <com.beastbikes.android.widget.NonScrollListView android:id="@r$id/train_plan_riding_times_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="10dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@r$id/train_plan_cycling_time_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="30dp">
+            <TextView android:textSize="@dimen/font_15" android:textColor="#222222" android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@r$id/train_plan_cycling_time_left_tv" android:background="@drawable/dot_white" android:layout_width="18dp" android:layout_height="18dp" android:text="2"/>
+            <TextView android:textSize="@dimen/font_17" android:textColor="#ffffff" android:id="@r$id/train_plan_cycling_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@r$string/str_avg_how_many_hours_fo_cycling"/>
+        </LinearLayout>
+        <com.beastbikes.android.widget.NonScrollListView android:id="@r$id/train_plan_cycling_time_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="10dp"/>
+        <Button android:textSize="@dimen/font_17" android:textColor="#111111" android:layout_gravity="bottom" android:id="@r$id/train_plan_complete_btn" android:background="@drawable/bg_white_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="18dp" android:text="@r$string/str_train_plan_complete"/>
+    </LinearLayout>
+</ScrollView>

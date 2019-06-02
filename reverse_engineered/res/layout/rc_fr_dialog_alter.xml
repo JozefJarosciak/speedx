@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/rc_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="title" />
+    <TextView android:id="@id/rc_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="rc_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/rc_btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Button1" />
+        <Button android:id="@id/rc_btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Button2" android:layout_toRightOf="@id/rc_btn_cancel" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/record_side_btn_switch" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_record_switch" android:scaleType="center" />
+    <ImageView android:id="@id/record_side_btn_visible" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_side_public" android:scaleType="center" />
+    <ImageView android:id="@id/record_side_btn_zoom" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_side_zoom_out" android:scaleType="center" />
+</LinearLayout>

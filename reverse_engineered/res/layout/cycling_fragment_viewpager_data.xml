@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:number="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/cycling_fragment_viewpager_data_1" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="13.0dip" android:textColor="@color/text_white_color" android:layout_gravity="center_horizontal" android:id="@id/cycling_fragment_viewpager_data_1_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="时间" />
+        <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/cycling_number_text_view" android:textColor="@color/text_white_color" android:gravity="center" android:layout_gravity="center" android:id="@id/cycling_fragment_viewpager_data_1_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" number:typefaceName="@string/number_type_face_name" />
+    </LinearLayout>
+    <View android:id="@id/cycling_fragment_viewpager_data_line" android:background="@color/bg_border_line_color" android:layout_width="1.0px" android:layout_height="70.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cycling_fragment_viewpager_data_2" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="13.0dip" android:textColor="@color/text_white_color" android:layout_gravity="center_horizontal" android:id="@id/cycling_fragment_viewpager_data_2_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="时间" />
+        <com.beastbikes.android.widget.NumberTextView android:textSize="@dimen/cycling_number_text_view" android:textColor="@color/text_white_color" android:gravity="center" android:layout_gravity="center" android:id="@id/cycling_fragment_viewpager_data_2_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0" number:typefaceName="@string/number_type_face_name" />
+    </LinearLayout>
+</LinearLayout>

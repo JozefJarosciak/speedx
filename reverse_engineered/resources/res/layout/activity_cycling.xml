@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.beastbikes.android.modules.cycling.activity.view.SegmentProgressBar android:id="@r$id/cycling_train_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@r$id/linear_cycling_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@r$id/img_cycling_cycling_finish" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_cycling_finish_icon" android:layout_weight="1"/>
+        <ImageView android:id="@r$id/img_cycling_cycling_pause" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_cycling_pause_icon" android:layout_weight="1"/>
+        <ImageView android:id="@r$id/img_cycling_cycling_map" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_cycling_map_icon" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@r$id/rl_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ffffff" android:id="@r$id/cycling_activity_hide_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@r$string/str_ridding_hide" android:layout_centerVertical="true"/>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@r$id/cycling_activity_setting_view" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cycling_setting_icon" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+        <LinearLayout android:gravity="center" android:id="@r$id/activity_cycling_gps_status_layout" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="13dp" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/font_11" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@r$string/GPS"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginLeft="8dp">
+                <View android:layout_gravity="center" android:id="@r$id/activity_cycling_gps_status_view1" android:background="@drawable/dot_red_bg" android:layout_width="5dp" android:layout_height="5dp"/>
+                <View android:layout_gravity="center" android:id="@r$id/activity_cycling_gps_status_view2" android:background="@drawable/dot_red_bg" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginLeft="3dp"/>
+                <View android:layout_gravity="center" android:id="@r$id/activity_cycling_gps_status_view3" android:background="@drawable/dot_red_bg" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginLeft="3dp"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/design_color_c7" android:id="@r$id/activity_cycling_gps_status_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="15dp" android:text="@r$string/str_locating"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@r$id/viewPager_cycling" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@r$id/linear_cycling_bottom" android:layout_below="@r$id/rl_top_bar"/>
+    <com.beastbikes.android.widget.CircleIndicator android:id="@r$id/cycling_activity_indicator" android:layout_width="match_parent" android:layout_height="20dp" android:layout_alignParentBottom="true" app:ci_width="6dp" app:ci_height="6dp" app:ci_selected_width="18dp" app:ci_selected_height="6dp" app:ci_margin="6dp" app:ci_animator="@animator/indicator_animator" app:ci_animator_reverse="@animator/indicator_animator_reverse" app:ci_drawable="@drawable/white_radius_square" app:ci_drawable_unselected="@drawable/white_radius"/>
+</RelativeLayout>

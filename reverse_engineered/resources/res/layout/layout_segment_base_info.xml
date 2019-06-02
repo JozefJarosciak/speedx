@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@r$id/rela_segment_actionbar" android:background="#181818" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+            <ImageView android:id="@r$id/img_segment_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.5dp" android:src="@drawable/ic_record_back" android:layout_centerVertical="true"/>
+            <ImageView android:id="@r$id/img_segment_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.5dp" android:src="@drawable/ic_record_share" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@r$id/linear_segment_base_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@r$id/linear_segment_info_parent" android:background="@drawable/bg_segment_shadow" android:paddingLeft="8.5dp" android:paddingRight="8.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@r$id/linear_segment_info" android:background="@drawable/bg_with_top_left_and_right_corners" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@r$id/img_segment_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/ic_arrow_up_segment"/>
+                <TextView android:textSize="@dimen/font_19" android:textColor="@android:color/white" android:ellipsize="middle" android:id="@r$id/tv_segment_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="10dp" android:layout_marginRight="25dp" android:lines="1"/>
+                <TextView android:textSize="@dimen/font_11" android:textColor="#999999" android:id="@r$id/tv_segment_participant_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+                <View android:background="#222222" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="22dp" android:layout_marginBottom="13dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:id="@r$id/tv_segment_elevation" style="@r$style/TVSegmentBaseInfoData"/>
+                        <TextView android:id="@r$id/tv_segment_elevation_unit" android:text="@r$string/str_elevation_diff" style="@r$style/TVSegmentBaseInfoUnit"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:id="@r$id/tv_segment_distance" style="@r$style/TVSegmentBaseInfoData"/>
+                        <TextView android:id="@r$id/tv_segment_distance_unit" android:text="@r$string/activity_param_label_distance" style="@r$style/TVSegmentBaseInfoUnit"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:id="@r$id/tv_segment_slop" style="@r$style/TVSegmentBaseInfoData"/>
+                        <TextView android:id="@r$id/tv_segment_slop_unit" android:text="@r$string/str_segment_avg_slope" style="@r$style/TVSegmentBaseInfoUnit"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#222222" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#0e0e0e" android:paddingLeft="8.5dp" android:paddingRight="8.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@r$id/rela_segment_base_info_bottom" android:background="@drawable/bg_with_bottom_left_and_right_corners" android:layout_width="match_parent" android:layout_height="94.3dp">
+                <TextView android:textSize="@dimen/font_11" android:textColor="@android:color/white" android:gravity="center" android:id="@r$id/tv_segment_collection" android:layout_width="94.3dp" android:layout_height="wrap_content" android:text="@r$string/str_segment_favorite" android:drawableTop="@drawable/ic_segment_collection_star" android:drawablePadding="6dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:id="@r$id/view_temp" android:background="#222222" android:layout_width="0.5dp" android:layout_height="47.5dp" android:layout_toLeftOf="@r$id/tv_segment_collection" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@r$id/view_temp" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/font_13" android:textColor="#999999" android:id="@r$id/tv_segment_info_start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="5dp" android:drawableLeft="@drawable/ic_segment_info_start" android:drawablePadding="13dp"/>
+                    <TextView android:textSize="@dimen/font_13" android:textColor="#999999" android:id="@r$id/tv_segment_info_destination" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="14dp" android:layout_marginRight="5dp" android:drawableLeft="@drawable/ic_segment_info_destination" android:drawablePadding="13dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

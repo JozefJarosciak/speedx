@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/club_rank_title_bg" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <RelativeLayout android:id="@id/btn_back" android:layout_width="32.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.5dip">
+            <ImageView android:layout_width="12.0dip" android:layout_height="20.5dip" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_back_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_clubtab" android:layout_width="152.0dip" android:layout_height="25.0dip" android:layout_marginTop="6.6999817dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_club_rank_month_rank_list" android:background="@drawable/bg_clublefttab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/str_club_rank_month_rank" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_club_rank_total_rank_list" android:background="@drawable/bg_clubrighttab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/str_club_rank_total_rank" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/frag_container" android:background="@color/discover_color3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

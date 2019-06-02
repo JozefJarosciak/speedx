@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_17" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="24.0dip" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/str_offline_map_sync_to_device_message" />
+    <View android:background="#ff9f9f9f" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_17" android:textColor="#ff007aff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_ble_download_cancel" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:background="#ff9f9f9f" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/font_17" android:textColor="#ff007aff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_ble_download_map" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/label_sure" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

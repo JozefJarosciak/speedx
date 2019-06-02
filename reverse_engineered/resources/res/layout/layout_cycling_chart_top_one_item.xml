@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@r$id/linear_cycling_chart_top_with_one_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="37dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.beastbikes.android.widget.NumberTextView android:textSize="70sp" android:textColor="@android:color/white" android:id="@r$id/textView_top_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+        <TextView android:textSize="@dimen/font_11" android:textColor="#999999" android:id="@r$id/textView_top_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@android:drawable/ic_menu_info_details" android:id="@r$id/activity_friends_update_remarks" android:title="@r$string/popup_window_profilepopupwindows_tv_addfriendremarks" app:showAsAction="never"/>
+    <item android:icon="@android:drawable/ic_menu_info_details" android:id="@r$id/activity_friends_delete_friend" android:title="@r$string/popup_window_profilepopupwindows_tv_removefriend" app:showAsAction="never"/>
+</menu>

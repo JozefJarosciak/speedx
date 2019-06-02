@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_black_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <com.beastbikes.android.ble.ui.widget.ShapeIndicatorView android:layout_gravity="bottom" android:id="@id/nearby_bike_shop_indicatorview" android:layout_width="fill_parent" android:layout_height="2.0dip" app:fullColor="@color/red_color" />
+        <android.support.design.widget.TabLayout android:id="@id/nearby_bike_shop_tab_layout" android:layout_width="fill_parent" android:layout_height="54.0dip" app:tabIndicatorColor="@color/red_color" app:tabIndicatorHeight="2.0dip" app:tabContentStart="0.0dip" app:tabBackground="@color/bg_black_color" app:tabMode="fixed" app:tabGravity="fill" app:tabTextColor="@color/text_black_color" app:tabSelectedTextColor="@color/design_color_c7" />
+    </FrameLayout>
+    <com.beastbikes.framework.ui.android.widget.ScrollableViewPager android:id="@id/nearby_bike_shop_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:layout_gravity="center|left" android:id="@id/calendar_view_last_month" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_calendar_last" android:scaleType="center" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/calendar_view_next_month" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_calendar_next" android:scaleType="center" />
+        <TextView android:textSize="@dimen/font_17" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/calendar_view_month_value_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2017.1" android:drawableLeft="@drawable/ic_calendar" android:drawablePadding="6.0dip" />
+    </FrameLayout>
+    <com.beastbikes.android.widget.calendar.WeekBarView android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <com.beastbikes.android.widget.calendar.MonthView android:id="@id/calendar_view_month_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" />
+</LinearLayout>

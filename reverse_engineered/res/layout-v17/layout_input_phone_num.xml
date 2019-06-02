@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_input_phone_num" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_auth_phone_action_desc" android:text="@string/str_signin_with_phone" style="@style/TVAuthNormalWhite" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="@dimen/font_20" android:id="@id/tv_auth_phone_area_code" android:drawableRight="@drawable/ic_arrow_down_segment" android:drawablePadding="8.0dip" android:drawableEnd="@drawable/ic_arrow_down_segment" style="@style/TVAuthNormalWhite" />
+        <com.beastbikes.android.widget.ClearableEditText android:id="@id/edit_auth_phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:hint="@string/str_please_input_phone_number" android:digits="\ 1234567890" android:inputType="phone" android:layout_marginStart="19.0dip" style="@style/et_account" />
+    </LinearLayout>
+</LinearLayout>

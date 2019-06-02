@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/pingpp_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/pingpp_back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" android:src="@drawable/pingpp_back" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pingpp_title">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.pingplusplus.android.WebViewEx android:id="@id/pingpp_webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/pingpp_progressbar" android:background="@drawable/tips_bg" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    </FrameLayout>
+</RelativeLayout>

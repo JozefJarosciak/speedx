@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="fill_horizontal" android:background="@color/avoscloud_blue" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/avoscloud_search_actionbar_back" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8dp" android:src="@drawable/avoscloud_search_actionbar_back" android:layout_centerVertical="true"/>
+    <TextView android:textSize="22sp" android:textColor="#fff" android:id="@+id/avoscloud_search_actionbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/avoscloud_search_result_title" android:layout_centerInParent="true"/>
+</RelativeLayout>

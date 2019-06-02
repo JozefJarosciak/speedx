@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="#fff" android:layout_width="match_parent" android:layout_height="44dp">
+    <RelativeLayout android:layout_width="44dp" android:layout_height="match_parent">
+        <ImageView android:id="@r$id/route_map_search_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/route_map_search_item_icon" android:layout_centerInParent="true" android:contentDescription="@r$string/empty"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="16dp">
+        <TextView android:textSize="@dimen/font_14" android:textColor="#037aff" android:id="@r$id/route_map_search_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_10" android:textColor="#7f000000" android:id="@r$id/route_map_search_item_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

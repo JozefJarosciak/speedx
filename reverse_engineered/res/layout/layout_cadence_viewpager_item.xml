@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" card_view:cardBackgroundColor="#ffffffff" card_view:cardCornerRadius="6.0dip" card_view:cardElevation="2.0dip" card_view:cardMaxElevation="4.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="65.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="80.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_30" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/cadence_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R1" />
+                <TextView android:textSize="@dimen/font_15" android:textColor="#ff000000" android:id="@id/cadence_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="(60-70 RPM)" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/cadence_item_select_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_check_post_on" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_14" android:textColor="#ff555555" android:id="@id/cadence_item_desc" android:layout_width="wrap_content" android:layout_height="120.0dip" android:layout_marginTop="20.0dip" android:text="R1是指刚接触骑行或者骑行经验不丰富的用户，需要适应性训练打好基础，将踏频设定为61~70，略高于普通用户的骑行踏频，减少了提升难度，同时为未来提升能力做好准备。" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

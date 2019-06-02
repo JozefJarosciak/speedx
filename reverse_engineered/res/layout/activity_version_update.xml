@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/ic_launcher" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/app_name" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/version_update_tv" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:id="@id/activity_version_update_version_code" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/version_update_release_time" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:id="@id/activity_version_update_release_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/activity_version_update_btn" android:background="@drawable/red_btn_bg1" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:text="@string/version_update_ok" />
+        </LinearLayout>
+        <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="25.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/version_update_content" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/activity_version_update_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

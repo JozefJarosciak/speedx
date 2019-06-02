@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_white_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@r$id/activity_group_setting_my_group_name_lay" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="10dp">
+            <TextView android:textSize="@dimen/font_16" android:textColor="@color/bg_theme_black_color" android:id="@r$id/activity_group_setting_my_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/activity_group_setting_my_group_name" android:layout_centerVertical="true"/>
+            <EditText android:textSize="@dimen/font_16" android:textColor="@color/text_black_color" android:gravity="right|center_vertical|center_horizontal|center" android:id="@r$id/activity_group_setting_my_group_name_value" android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:singleLine="true" android:maxLength="20" android:layout_toRightOf="@r$id/activity_group_setting_my_group_name" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/text_black_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="10dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@r$id/activity_group_setting_see_all_lay" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="10dp">
+                <TextView android:textSize="@dimen/font_16" android:textColor="@color/bg_theme_black_color" android:id="@r$id/activity_group_setting_see_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/activity_group_settint_group_member" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_black_color" android:gravity="right|center_vertical|center_horizontal|center" android:id="@r$id/activity_group_setting_my_group_see_all_value" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@r$string/str_view_all" android:singleLine="true" android:drawableRight="@drawable/ic_club_arrow_right" android:drawablePadding="10dp" android:layout_toRightOf="@r$id/activity_group_setting_see_all" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <com.beastbikes.android.widget.LinearListView android:orientation="horizontal" android:id="@r$id/activity_group_setting_group_member" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="10dp" android:dividerPadding="5dp"/>
+        </LinearLayout>
+        <View android:background="@color/text_light_color" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="10dp">
+            <TextView android:textSize="@dimen/font_16" android:textColor="@color/bg_theme_black_color" android:id="@r$id/activity_group_setting_msg_dnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/activity_group_setting_msg_dnd" android:layout_centerVertical="true"/>
+            <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/activity_group_setting_msg_dnd_switch" android:layout_marginRight="12.5dp" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@r$style/material_design_switch_style"/>
+        </RelativeLayout>
+        <View android:background="@color/text_black_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="10dp"/>
+        <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="10dp">
+            <TextView android:textSize="@dimen/font_16" android:textColor="@color/bg_theme_black_color" android:id="@r$id/activity_group_setting_friend_name_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@r$string/activity_group_setting_friend_name_show" android:layout_centerVertical="true"/>
+            <com.beastbikes.android.widget.materialdesign.mdswitch.Switch android:id="@r$id/activity_group_setting_friend_name_show_switch" android:layout_marginRight="12.5dp" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@r$style/material_design_switch_style"/>
+        </RelativeLayout>
+        <View android:background="@color/text_light_color" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:textSize="@dimen/font_16" android:textColor="@color/bg_theme_black_color" android:id="@r$id/activity_group_setting_gropu_notices_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@r$string/activity_group_setting_group_notice"/>
+            <TextView android:textSize="@dimen/font_16" android:textColor="@color/text_black_color" android:id="@r$id/activity_group_setting_gropu_notices_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@r$id/activity_group_setting_gropu_notices_key"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

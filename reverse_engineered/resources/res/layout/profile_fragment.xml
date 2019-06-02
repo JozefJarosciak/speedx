@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/common_bg_color" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@r$id/profile_fragment_header" layout="@r$layout/profile_fragment_header"/>
+        <View android:layout_width="match_parent" android:layout_height="6dp"/>
+        <include android:id="@r$id/profile_fragment_cycling_details" layout="@r$layout/profile_fragment_cycling_details"/>
+        <View android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:textSize="@dimen/font_14" android:textColor="#979797" android:gravity="left|center_vertical|center_horizontal|center" android:id="@r$id/profile_fragment_same_grid_count_tv" android:background="@color/bg_black_color" android:paddingLeft="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:text="@r$string/profile_fragment_same_grid_count" android:drawableLeft="@drawable/red_dot_bg" android:drawablePadding="8dp"/>
+        <View android:background="@color/splitlinecolor" android:layout_width="match_parent" android:layout_height="1px"/>
+        <include android:id="@r$id/profile_fragment_detail" layout="@r$layout/profile_fragment_details"/>
+        <View android:layout_width="match_parent" android:layout_height="6dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@r$id/profile_fragment_histogram_user_view" android:background="@color/bg_black_color" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

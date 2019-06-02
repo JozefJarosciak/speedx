@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_13" android:textColor="@color/text_white_color" android:layout_gravity="center_horizontal" android:id="@id/activity_medal_info_light_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/font_24" android:textColor="@color/text_white_color" android:layout_gravity="center_horizontal" android:id="@id/activity_medal_info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="@dimen/font_11" android:textColor="#ff444444" android:layout_gravity="center_horizontal" android:id="@id/activity_medal_info_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_medal_un_get" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="@color/text_black_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/activity_medal_info_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="18.0dip" />
+</LinearLayout>

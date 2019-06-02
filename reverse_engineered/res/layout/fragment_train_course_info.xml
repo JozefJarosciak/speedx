@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/activity_course_info" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/course_info_bg_img" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.beastbikes.android.modules.train.ui.view.CourseInfoView android:id="@id/course_info_course_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/frame_train_course_info_container" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <FrameLayout android:id="@id/course_info_course_stop" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <TextView android:textSize="@dimen/font_15" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/str_stop_train_plan" />
+                <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:src="@drawable/ic_arrow_right" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

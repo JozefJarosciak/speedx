@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/bg_black_color" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="32dp">
+        <EditText android:textSize="13sp" android:textColor="@color/text_default" android:textColorHint="@color/wheel_view_cancel" android:id="@r$id/activity_find_pass_word_mail_edit" android:background="@null" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:hint="@r$string/activity_find_pass_word_mail_hint" android:maxLength="25" android:inputType="textEmailAddress"/>
+    </LinearLayout>
+    <TextView android:textSize="15sp" android:textColor="@color/account_management_color" android:gravity="center" android:id="@r$id/activity_find_pass_word_mail_commit" android:background="@color/bg_black_color" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="9dp" android:text="@r$string/activity_find_pass_word_mail_commit_str"/>
+</LinearLayout>

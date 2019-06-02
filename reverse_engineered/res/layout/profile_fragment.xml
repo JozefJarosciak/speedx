@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_bg_color" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/profile_fragment_header" layout="@layout/profile_fragment_header" />
+        <View android:layout_width="fill_parent" android:layout_height="6.0dip" />
+        <include android:id="@id/profile_fragment_cycling_details" layout="@layout/profile_fragment_cycling_details" />
+        <View android:layout_width="fill_parent" android:layout_height="6.0dip" />
+        <TextView android:textSize="@dimen/font_14" android:textColor="#ff979797" android:gravity="center|left" android:id="@id/profile_fragment_same_grid_count_tv" android:background="@color/bg_black_color" android:paddingLeft="13.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/profile_fragment_same_grid_count" android:drawableLeft="@drawable/red_dot_bg" android:drawablePadding="8.0dip" />
+        <View android:background="@color/splitlinecolor" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <include android:id="@id/profile_fragment_detail" layout="@layout/profile_fragment_details" />
+        <View android:layout_width="fill_parent" android:layout_height="6.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/profile_fragment_histogram_user_view" android:background="@color/bg_black_color" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

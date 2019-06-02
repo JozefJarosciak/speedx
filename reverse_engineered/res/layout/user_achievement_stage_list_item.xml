@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="68.0dip" android:layout_marginLeft="30.0dip" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/achievement_item_rank_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/ic_section_achievement_type_1" android:contentDescription="@string/empty" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:id="@id/achievement_item_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赛段第一名" />
+            <TextView android:textSize="@dimen/font_12" android:textColor="#ff999999" android:id="@id/achievement_item_date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016.12.12" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="68.0dip" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/font_15" android:textColor="#ffffffff" android:id="@id/achievement_item_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="12:12:12" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:contentDescription="@string/empty" />
+    </LinearLayout>
+</RelativeLayout>
