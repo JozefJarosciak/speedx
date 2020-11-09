@@ -7,3 +7,4 @@
  - /original_apk - contains the last apk for Android:  com.beastbikes.android_2017-10-09.apk
  - /reverse_engineered - contains entire reverse engineered code (note, this is obfuscated)
  - /tools - contains tools that were used to reverse engineer original apk
+ - Logging In.md - instructions on how to set up a proxy to get the app past login to be able to pair with and change settings on the bike.
